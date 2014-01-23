@@ -57,7 +57,7 @@ BoagenGenerator.prototype.app = function app() {
   this.mkdir('app/fonts');
 
   this.copy('_package.json', 'package.json');
-  this.copy('bowercc', 'bowercc.json');
+  this.copy('bowercc', '.bowercc');
   this.copy('_bower.json', 'bower.json');
 };
 
