@@ -1,0 +1,30 @@
+
+
+a { text-decoration: none; color:@primary-color; .transition(color .3s ease-in-out); 
+	&:hover { color:@gold; }
+}
+p {
+	a { color:red; text-decoration: none; line-height: inherit; 
+		&:visited {  }
+		&:hover { color:red; text-decoration: none; border-bottom:1px solid red; cursor:pointer; }
+		&:focus { outline: thin dotted;} 
+	} 
+}
+
+
+/* Show more pagination link */
+.show-more { 
+	margin:1.5rem 0; padding: 0.25rem 0 0; background:white; display:block; font-family:'BG-Light';
+	color:gray; text-transform: uppercase; text-align: center; letter-spacing: 1px; font-size:1.25rem;
+	border: 1px solid #e2e3e4; border-bottom: 1px solid #e2e3e4;
+	&:hover {
+		color:black;
+	}
+} 
+
+/* Read More links*/
+.rm { .margin-top(1); display: block; .font-size(.75); .margin-bottom(.25);
+	&:after { content: " \00bb"; .font-size(.875); }
+	&:hover:after { text-decoration: none; }
+}
+

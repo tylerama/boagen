@@ -1,0 +1,30 @@
+/*==========*/
+/* # Home # */
+/*==========*/
+.hero { 
+	figure { .height(35); .padding-top(7);
+		background-image: url(../img/inferno-2.jpg); 
+	}
+	h1 { .padding(3,6,2,6); border:12px double @white; color:@white; 
+		
+		@media @mobile-sm {
+	      border:12px double @yellow; color:@yellow;
+	    }
+	    @media @mobile {
+	      border:12px double @yellow; color:@yellow;
+	    }
+	     @media @tablet {
+	      border:12px double @orange; color:@orange;
+	    }
+		
+	    @media @desktop-lg {
+	      border:12px double @white; color:@white;
+	    }
+	     @media @desktop {
+	      border:12px double @red; color:@red;
+	    }
+	    @media @desktop, @desktop-lg {
+	      border:12px double @white; color:@white;
+	    }
+	}
+}

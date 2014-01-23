@@ -1,0 +1,53 @@
+/*=====================*/
+/* # Styled Elements # */
+/*=====================*/
+
+// Customize the background color of selected text to match your design.
+::-moz-selection,
+::selection {    
+	text-shadow: none;
+}
+::-moz-selection { background: #b3d4fc; }
+::selection { background: #b3d4fc; }
+
+
+// Blockquotes
+blockquote { margin: 0 1rem 1rem 1rem; border-left: 3px solid #eee; 
+	p { margin-left: 1rem; padding-top: .25rem;
+		text-align: left !important; 
+	  	font-size: 1rem; font-weight: bold; 
+	 	line-height: 1.5rem; color: #999; font-style: italic; 
+	}
+	p:before, 
+	blockquote p:after { 
+		font-size: 24px; font-size: 2.5rem; 
+		vertical-align: middle; 
+	}
+	blockquote p:before { content: "\201C\0020"; }
+	blockquote p:after { content: "\0020\201D"; }
+}
+
+// Abbreviations
+abbr, 
+acronym {text-transform: uppercase; font-size: 90%; 
+	color: #222; border-bottom: 1px solid #ddd; cursor: help;
+}
+abbr {text-transform: none;}
+
+// A better looking default horizontal rule
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+// Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}

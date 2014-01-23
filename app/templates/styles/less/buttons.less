@@ -1,0 +1,64 @@
+/* ============= */
+/*  # Buttons #  */
+/* ============= */	
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	display: inline-block;
+	
+	vertical-align: middle;
+	cursor: pointer;
+	
+	color: white;
+	white-space: nowrap;
+	letter-spacing:0px;
+	text-decoration: none;
+	font-weight:bold;
+	text-shadow: 0 1px rgba(0,0,0,.5);
+	font-style: normal;
+
+	position: relative;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+	text-shadow: none;
+}
+
+.btn:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+	
+}
+
+/* Size */
+.btn-sm  { .padding ( .25, .5, .25, .5 ) }
+.btn-med { .padding ( .5, 1, .5, 1 ) }
+.btn-lg  { .padding ( .75, 1.5, .75, 1.5 ) }
+
+/* Background Colors */
+.btn-red { background-color:red; border:1px solid transparent }
+.btn-red:hover	{ background-color:white; color:#cc3333; border:1px solid #cc3333 }
+
+/* Cohesive Horizontal Button Unit w/ round ends */
+.btn-group { 
+	li {
+		&:first-child a { .border-radius(5px 0 0 5px); }
+		&:last-child a { .border-radius(0 5px 5px 0); }
+	}
+	a { padding:.125rem 1.5rem;  background:silver; color:white; }
+ }

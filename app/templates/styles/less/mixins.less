@@ -1,0 +1,137 @@
+/*============*/
+/* # Mixins # */
+/*============*/
+// REM to PX Sizing Shortcuts
+// Width & Height
+.width(@sizeValue) {
+	@remValue: @sizeValue;
+	@pxValue: (@sizeValue * 16);
+	width: ~"@{pxValue}px"; 
+	width: ~"@{remValue}rem";
+}
+.height(@sizeValue) {
+	@remValue: @sizeValue;
+	@pxValue: (@sizeValue * 16);
+	height: ~"@{pxValue}px"; 
+	height: ~"@{remValue}rem";
+}
+
+// Margin
+.margin (@margin1: 16; @margin2: 16; @margin3: 16; @margin4: 16;) {
+	@margin1Value: (@margin1);
+	@margin2Value: (@margin2);
+	@margin3Value: (@margin3);
+	@margin4Value: (@margin4);
+	margin: (@margin1 * 16px) (@margin2 * 16px) (@margin3 * 16px) (@margin4 * 16px);
+	margin: ~"@{margin1Value}rem" ~"@{margin2Value}rem" ~"@{margin3Value}rem" ~"@{margin4Value}rem";
+}
+.margin(@sizeValue) {
+	@remValue: @sizeValue;
+	@pxValue: (@sizeValue * 16);
+	margin: ~"@{pxValue}px"; 
+	margin: ~"@{remValue}rem";
+}
+.margin-top(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  margin-top: ~"@{pxValue}px"; 
+  margin-top: ~"@{remValue}rem";
+}
+.margin-right(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  margin-right: ~"@{pxValue}px"; 
+  margin-right: ~"@{remValue}rem";
+}
+.margin-bottom(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  margin-bottom: ~"@{pxValue}px"; 
+  margin-bottom: ~"@{remValue}rem";
+}
+.margin-left(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  margin-left: ~"@{pxValue}px"; 
+  margin-left: ~"@{remValue}rem";
+}
+
+// Padding
+.padding (@padding1: 16; @padding2: 16; @padding3: 16; @padding4: 16;) {
+	@padding1Value: (@padding1);
+	@padding2Value: (@padding2);
+	@padding3Value: (@padding3);
+	@padding4Value: (@padding4);
+	padding: (@padding1 * 16px) (@padding2 * 16px) (@padding3 * 16px) (@padding4 * 16px);
+	padding: ~"@{padding1Value}rem" ~"@{padding2Value}rem" ~"@{padding3Value}rem" ~"@{padding4Value}rem";
+}
+.padding(@sizeValue) {
+	@remValue: @sizeValue;
+	@pxValue: (@sizeValue * 16);
+	padding: ~"@{pxValue}px"; 
+	padding: ~"@{remValue}rem";
+}
+.padding-top(@sizeValue) {
+	@remValue: @sizeValue;
+	@pxValue: (@sizeValue * 16);
+	padding-top: ~"@{pxValue}px"; 
+	padding-top: ~"@{remValue}rem";
+}
+.padding-right(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  padding-right: ~"@{pxValue}px"; 
+  padding-right: ~"@{remValue}rem";
+}
+.padding-bottom(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  padding-bottom: ~"@{pxValue}px"; 
+  padding-bottom: ~"@{remValue}rem";
+}
+.padding-left(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  padding-left: ~"@{pxValue}px"; 
+  padding-left: ~"@{remValue}rem";
+}
+
+// Type Related
+.font-size(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+.line-height(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  line-height: ~"@{pxValue}px"; 
+  line-height: ~"@{remValue}rem";
+}
+
+// Positioning
+.top(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  top: ~"@{pxValue}px"; 
+  top: ~"@{remValue}rem";
+}
+.right(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  right: ~"@{pxValue}px"; 
+  right: ~"@{remValue}rem";
+}
+.bottom(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  bottom: ~"@{pxValue}px"; 
+  bottom: ~"@{remValue}rem";
+}
+.left(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  left: ~"@{pxValue}px"; 
+  left: ~"@{remValue}rem";
+}

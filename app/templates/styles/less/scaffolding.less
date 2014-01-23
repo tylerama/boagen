@@ -1,0 +1,128 @@
+/*===============================*/
+/* # Global Structural Classes # */
+/*===============================*/
+// Linear Elements // 
+// Linear Elements => Center (Don't close <li> to avoid gap between inline-block elements)
+.inline-center { text-align: center;
+	> * { display:inline-block; 
+		&:last-child { margin-right:0; padding-right:0; }
+		&:first-child { margin-left:0; padding-left:0; }
+	}
+}
+// Linear Elements => Right (Don't forget to clearfix)
+.inline-right { float:right;
+	> * { float:left; 
+		&:last-child { margin-right:0; padding-right:0; }
+	}
+}
+// Linear Elements => Left (Don't forget to clearfix)
+.inline-left { float:left;
+	> * { float:left; 
+		&:first-child { margin-left:0; padding-left:0; }
+	}
+}
+// Vertical / Horizontal Align Anything
+.vh-align { 
+	position: relative;
+  	top: 50%;
+	.transform(translateY(-50%));
+	// Horizontal Centering
+	margin:0 auto;
+	display:table;
+}
+
+// Vertical Align Anything
+.v-align { 
+	position: relative;
+  	top: 50%;
+	.transform(translateY(-50%));
+}
+
+// Global Margins
+.mar { margin:@global-margin; }
+.mar { margin:@global-margin; }
+.mar { margin:@global-margin; }
+
+.mar-tb { margin-top:@global-margin; margin-bottom:@global-margin; } 
+.mar-tb-sm { margin-top:@global-margin-sm; margin-bottom:@global-margin-sm; } 
+.mar-tb-lg { margin-top:@global-margin-lg; margin-bottom:@global-margin-lg; } 
+
+.mar-lr { margin-left:@global-margin; margin-right:@global-margin; }
+.mar-lr-sm { margin-left:@global-margin-sm; margin-right:@global-margin-sm; }
+.mar-lr-lg { margin-left:@global-margin-lg; margin-right:@global-margin-lg; }
+
+.mar-t { margin-top:@global-margin; }
+.mar-t-sm { margin-top:@global-margin-sm; }
+.mar-t-lg { margin-top:@global-margin-lg; }
+
+.mar-r { margin-right:@global-margin; }
+.mar-r-sm { margin-right:@global-margin-sm; }
+.mar-r-lg { margin-right:@global-margin-lg; }
+
+.mar-b { margin-bottom:@global-margin; }
+.mar-b-sm { margin-bottom:@global-margin-sm; }
+.mar-b-lg { margin-bottom:@global-margin-lg; }
+
+.mar-l { margin-left:@global-margin; }
+.mar-l-sm { margin-left:@global-margin-sm; }
+.mar-l-lg { margin-left:@global-margin-lg; }
+
+
+// Global Padding
+.pad { padding:@global-padding; }
+.pad-sm { padding:@global-padding; }
+.pad-lg { padding:@global-padding; }
+
+.pad-tb { padding-top:@global-padding; padding-bottom:@global-padding; }
+.pad-tb-sm { padding-top:@global-padding-sm; padding-bottom:@global-padding-sm; }
+.pad-tb-lg { padding-top:@global-padding-lg; padding-bottom:@global-padding-lg; }
+
+.pad-lr { padding-left:@global-padding; padding-right:@global-padding; }
+.pad-lr-sm { padding-left:@global-padding-sm; padding-right:@global-padding-sm; }
+.pad-lr-lg { padding-left:@global-padding-lg; padding-right:@global-padding-lg; }
+
+.pad-t { padding-top:@global-padding; }
+.pad-t-sm { padding-top:@global-padding-sm; }
+.pad-t-lg { padding-top:@global-padding-lg; }
+
+.pad-r { padding-right:@global-padding; }
+.pad-r-sm { padding-right:@global-padding-sm; }
+.pad-r-lg { padding-right:@global-padding-lg; }
+
+.pad-b { padding-bottom:@global-padding; }
+.pad-b-sm { padding-bottom:@global-padding-sm; }
+.pad-b-lg { padding-bottom:@global-padding-lg; }
+
+.pad-l { padding-left:@global-padding; }
+.pad-l-sm { padding-left:@global-padding-sm; }
+.pad-l-lg { padding-left:@global-padding-lg; }
+
+
+// Needed For Nesting Grids
+.row { .row(12) }
+// Common Structural Widths
+.col-full { .column(12); }
+.col-half { .column(6); }
+
+// Reserved for Primary Content Sections
+.col-content { .column(9); 
+	// Avoids Double Padding From Container
+	> *:last-child { border-bottom:none; padding-bottom: 0; }
+}
+.col-sidebar { .column(3); }
+
+// The Entire Grid
+.col-1 { .column(1); }
+.col-2 { .column(2); }
+.col-3 { .column(3); }
+.col-4 { .column(4); }
+.col-5 { .column(5); }
+.col-6 { .column(6); }
+.col-7 { .column(7); }
+.col-8 { .column(8); }
+.col-9 { .column(9); }
+.col-10 { .column(10); }
+.col-11 { .column(11); }
+.col-12 { .column(12); }
+
+

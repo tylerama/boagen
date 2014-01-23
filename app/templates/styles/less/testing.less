@@ -1,0 +1,56 @@
+// Example Grid
+.test-grid { background:@silver; .margin-bottom(1); 
+	li {  min-height: 3rem; background: @gray; }
+}
+.inline-3 > li { .column(4); }
+.inline-4 > li { .column(3); }
+.inline-5 > li { .column(2.4); }
+.inline-6 > li { .column(2); }
+.inline-7 > li { .column(1.714); }
+
+.hybrid-14 > li { .column(1, 14); }
+
+.hyb-7 { .column(7, 14); 
+	.nest-left { .row(12); 
+		li { .column(4, 12); background: darken(@gray, 15%); }
+	}
+	.nest-right{ .row(14); 
+		li { .column(2.4, 12); background: darken(@gray, 15%); }
+	}
+}
+
+//This adds a label in the top-left corner that displays the current media query state.
+body {
+    &:after { 
+    background: red;
+    color: @white;
+    content: "undefined";
+    left: 0;
+    .opacity(80);
+    padding: .5em 1em;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+    @media @mobile-sm {
+      background: @yellow;
+      content: "mobile-sm";
+    }
+    @media @mobile {
+      background: @orange;
+      content: "mobile";
+    }
+    @media @tablet {
+      background: @purple;
+      content: "tablet";
+    }
+    @media @desktop {
+      background: @green;
+      content: "desktop";
+    }
+    @media @desktop-lg {
+      background: @blue;
+      content: "desktop-xl";
+    }
+  }
+}
