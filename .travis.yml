@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - '0.8'
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-boagen' ]; then cd .. && eval "mv $currentfolder generator-boagen" && cd generator-boagen; fi
+
