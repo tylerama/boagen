@@ -4,7 +4,7 @@
   "dependencies": {
   	"modernizr": "~2.6.2",<% if (gumby) { %>
     "gumby": "x",<% } %>
-  	"jquery": "~2.x.x",
+  	"jquery": "latest",
     "jquery-1-10-2": "http://code.jquery.com/jquery-1-10-2.js"
   },
   "devDependencies": {}
