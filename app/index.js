@@ -23,13 +23,23 @@ BoagenGenerator.prototype.askFor = function askFor() {
   console.log(this.yeoman);
 
   var prompts = [{
+    name: 'projectName',
+    message: 'What would you like to call this project?'
+  }, {
+    type: 'confirm',
+    name: 'gumby',
+    message: 'Would you like to include Gumby?',
+    default: false
+  }, {
     type: 'confirm',
     name: 'browsersync',
-    message: 'Would you like to enable browsersync?',
+    message: 'Would you like to include browsersync?',
     default: true
   }];
 
   this.prompt(prompts, function (props) {
+    this.projectName = props.projectName;
+    this.gumby = props.gumby;
     this.browsersync = props.browsersync;
 
     cb();
@@ -38,11 +48,30 @@ BoagenGenerator.prototype.askFor = function askFor() {
 
 BoagenGenerator.prototype.app = function app() {
   this.mkdir('app');
-  this.mkdir('app/templates');
+  this.mkdir('app/bower_components');
+  this.mkdir('app/img');
+  this.mkdir('app/scripts');
+  this.mkdir('app/styles');
+  this.mkdir('app/styles/less');
+  this.mkdir('app/fonts');
 
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
 };
+
+// BoagenGenerator.prototype.dist = function dist() {
+//   this.mkdir('dist');
+//   this.mkdir('dist/bower_components');
+//   this.mkdir('dist/scripts');
+//   this.mkdir('dist/styles');
+//   this.mkdir('dist/img');
+// };
+
+// BoagenGenerator.prototype.test = function test() {
+//   this.mkdir('test');
+//   this.mkdir('test/bower_components');
+//   this.mkdir('test/spec');
+// };
 
 BoagenGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', '.editorconfig');

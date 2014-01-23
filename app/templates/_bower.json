@@ -1,6 +1,12 @@
 {
-  "name": "package",
+  "name": "<%= _.slugify(projectName) %>",
   "version": "0.0.0",
-  "dependencies": {}
+  "dependencies": {
+  	"modernizr": "~2.6.2",<% if (gumby) { %>
+    "gumby": "x",<% } %>
+  	"jquery": "~2.x.x",
+    "jquery-1-10-2": "http://code.jquery.com/jquery-1-10-2.js",
+    }
+  }
 }
 
