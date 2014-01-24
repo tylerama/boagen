@@ -1,0 +1,2462 @@
+@import "../css/fonts.css";
+/*=====================*/
+/*   Master of Pages   */
+/*=====================*/
+/*=================*/
+/* # Image Grids # */
+/*=================*/
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\image-grid.less */
+.grid-3 {
+  display: block;
+  width: 105.07246376811594%;
+  margin: 0 -2.536231884057971%;
+}
+/* line 71, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.grid-3:before,
+.grid-3:after {
+  content: "";
+  display: table;
+}
+/* line 75, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.grid-3:after {
+  clear: both;
+}
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\image-grid.less */
+.grid-3 li {
+  display: inline;
+  float: left;
+  width: 28.26086956521739%;
+  margin: 0 2.536231884057971%;
+  margin-bottom: 1.5rem;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\image-grid.less */
+.grid-3 li:nth-last-child(1),
+.grid-3 li:nth-last-child(2),
+.grid-3 li:nth-last-child(3) {
+  margin-bottom: 0;
+}
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\image-grid.less */
+.grid-5 {
+  display: block;
+  width: 102.53623188405795%;
+  margin: 0 -1.2681159420289856%;
+}
+/* line 71, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.grid-5:before,
+.grid-5:after {
+  content: "";
+  display: table;
+}
+/* line 75, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.grid-5:after {
+  clear: both;
+}
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\image-grid.less */
+.grid-5 li {
+  display: inline;
+  float: left;
+  width: 17.463768115942027%;
+  margin: 0 1.2681159420289856%;
+  margin-bottom: .5rem;
+}
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\image-grid.less */
+.grid-5 li:nth-last-child(1),
+.grid-5 li:nth-last-child(2),
+.grid-5 li:nth-last-child(3),
+.grid-5 li:nth-last-child(4),
+.grid-5 li:nth-last-child(5) {
+  margin-bottom: 0;
+}
+/*============*/
+/* # Mixins # */
+/*============*/
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+/* line 4, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/* line 20, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* line 29, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/* line 35, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+[hidden] {
+  display: none;
+}
+/* ===============================
+   Base
+   =============================== */
+/* line 45, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+html {
+  font-size: 100%;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/* line 53, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+/* line 62, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+body {
+  margin: 0;
+}
+/* ===============================
+   Links
+   =============================== */
+/* line 71, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+a:focus {
+  outline: thin dotted;
+}
+/* line 74, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* line 80, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/* line 85, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+b,
+strong {
+  font-weight: bold;
+}
+/* line 90, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+blockquote {
+  margin: 1em 40px;
+}
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 98, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+/* line 107, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+/* line 117, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 126, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+p,
+pre {
+  margin: 1em 0;
+}
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 135, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 148, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+/* line 158, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+q {
+  quotes: none;
+}
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+/* line 166, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 176, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 184, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 192, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+sup {
+  top: -0.5em;
+}
+/* line 196, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+sub {
+  bottom: -0.25em;
+}
+/* ===============================
+   Lists
+   =============================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 208, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+dl,
+menu,
+ol,
+ul {
+  margin: 0;
+}
+/* line 215, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+dd {
+  margin: 0;
+}
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+/* line 223, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+menu,
+ol,
+ul {
+  padding: 0;
+}
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+/* line 233, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+ul,
+ol {
+  list-style: none;
+  list-style-image: none;
+}
+/* ===============================
+   Embedded content
+   =============================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+/* line 248, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+img {
+  border: 0;
+  /* 1 */
+
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+
+}
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 257, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ===============================
+   Figures
+   =============================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 269, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+figure {
+  margin: 0;
+}
+/* ================================
+   Forms
+   ================================ */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+/* line 281, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+form {
+  margin: 0;
+}
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 289, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 301, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+
+  *margin-left: -7px;
+  /* 3 */
+
+}
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+/* line 315, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+
+  margin: 0;
+  /* 2 */
+
+  vertical-align: baseline;
+  /* 3 */
+
+  *vertical-align: middle;
+  /* 3 */
+
+}
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 330, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+button,
+input {
+  line-height: normal;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 342, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 357, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+  *overflow: visible;
+  /* 4 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 370, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 382, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+  *height: 13px;
+  /* 3 */
+
+  *width: 13px;
+  /* 3 */
+
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 396, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* 2 */
+
+  box-sizing: border-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 408, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+/* line 417, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 428, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+textarea {
+  overflow: auto;
+  /* 1 */
+
+  vertical-align: top;
+  /* 2 */
+
+}
+/* =======================
+   Tables
+   ======================= */
+/* line 439, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* =======================
+   Box Model
+   ======================= */
+/* line 447, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\normalize.less */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*===================*/
+/*  # Typography #   */
+/*===================*/
+/* Base Font => 16px */
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+body {
+  font: normal 100%;
+  font-size: 1em;
+  line-height: 1.5;
+  font-size-adjust: auto;
+}
+/* Base line grid & Base Type */
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h1 {
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-family: 'grotesque-light';
+  text-transform: uppercase;
+}
+/* line 22, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h2 {
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  font-family: 'grotesque-light';
+  text-transform: uppercase;
+}
+/* line 27, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h3 {
+  margin: 0 0 .5rem 0;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-family: 'grotesque-light';
+}
+/* line 32, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h4 {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-family: 'grotesque-light';
+}
+/* line 37, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h5 {
+  margin: 0;
+  padding: 0;
+  font-size: .875rem;
+  line-height: 1.1;
+  font-family: 'grotesque-light';
+  text-transform: uppercase;
+}
+/* line 42, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: .875rem;
+  line-height: 1.1;
+  font-family: 'grotesque-light';
+}
+/* Turn on ligatures, as well as discretionary ligatures */
+/* line 49, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+/* line 57, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit !important;
+  text-decoration: inherit;
+  color: inherit;
+}
+/* line 61, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  color: #6F6F6F;
+  font-size: 60%;
+  line-height: 0;
+}
+/* line 68, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+p {
+  margin: 1.5rem 0;
+  font-size: .875rem;
+  line-height: 1.5rem ;
+  /* For definite cross browser hyphens support */
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit*/
+
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+}
+/* line 90, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+p:first-of-type {
+  margin-top: 0;
+}
+/* line 91, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+p:last-of-type {
+  margin-bottom: 0;
+}
+/* line 95, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.serif {
+  font-family: Georgia, Times New Roman, serif;
+}
+/* line 96, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.sans {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 99, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.txt-justify {
+  text-align: justify;
+}
+/* line 100, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.txt-center {
+  text-align: center;
+}
+/* line 101, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.txt-right {
+  text-align: right;
+}
+/* line 104, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.txt-upp {
+  text-transform: uppercase;
+}
+/* line 105, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.txt-cap {
+  text-transform: capitalize;
+}
+/* line 108, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.column-2,
+.column-3 {
+  -webkit-column-rule: 1px dotted #dddddd;
+  -moz-column-rule: 1px dotted #dddddd;
+  column-rule: 1px dotted #dddddd;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+}
+/* line 113, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.column-2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+/* line 114, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\typography.less */
+.column-3 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+/*===============================*/
+/* # Global Structural Classes # */
+/*===============================*/
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-center {
+  text-align: center;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-center > * {
+  display: inline-block;
+}
+/* line 8, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-center > *:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-center > *:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-right {
+  float: right;
+}
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-right > * {
+  float: left;
+}
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-right > *:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+/* line 19, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-left {
+  float: left;
+}
+/* line 20, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-left > * {
+  float: left;
+}
+/* line 21, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.inline-left > *:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 25, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.vh-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+  display: table;
+}
+/* line 35, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.v-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 42, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar {
+  margin: 2em;
+}
+/* line 43, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar {
+  margin: 2em;
+}
+/* line 44, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar {
+  margin: 2em;
+}
+/* line 46, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-tb {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+/* line 47, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-tb-sm {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+/* line 48, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-tb-lg {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+/* line 50, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-lr {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+/* line 51, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-lr-sm {
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
+/* line 52, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-lr-lg {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+/* line 54, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-t {
+  margin-top: 2em;
+}
+/* line 55, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-t-sm {
+  margin-top: 1.25em;
+}
+/* line 56, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-t-lg {
+  margin-top: 3em;
+}
+/* line 58, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-r {
+  margin-right: 2em;
+}
+/* line 59, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-r-sm {
+  margin-right: 1.25em;
+}
+/* line 60, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-r-lg {
+  margin-right: 3em;
+}
+/* line 62, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-b {
+  margin-bottom: 2em;
+}
+/* line 63, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-b-sm {
+  margin-bottom: 1.25em;
+}
+/* line 64, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-b-lg {
+  margin-bottom: 3em;
+}
+/* line 66, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-l {
+  margin-left: 2em;
+}
+/* line 67, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-l-sm {
+  margin-left: 1.25em;
+}
+/* line 68, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.mar-l-lg {
+  margin-left: 3em;
+}
+/* line 72, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad {
+  padding: 2em;
+}
+/* line 73, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-sm {
+  padding: 2em;
+}
+/* line 74, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-lg {
+  padding: 2em;
+}
+/* line 76, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-tb {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+/* line 77, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-tb-sm {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+/* line 78, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-tb-lg {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* line 80, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-lr {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+/* line 81, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-lr-sm {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* line 82, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-lr-lg {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+/* line 84, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-t {
+  padding-top: 2em;
+}
+/* line 85, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-t-sm {
+  padding-top: 1em;
+}
+/* line 86, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-t-lg {
+  padding-top: 3em;
+}
+/* line 88, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-r {
+  padding-right: 2em;
+}
+/* line 89, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-r-sm {
+  padding-right: 1em;
+}
+/* line 90, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-r-lg {
+  padding-right: 3em;
+}
+/* line 92, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-b {
+  padding-bottom: 2em;
+}
+/* line 93, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-b-sm {
+  padding-bottom: 1em;
+}
+/* line 94, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-b-lg {
+  padding-bottom: 3em;
+}
+/* line 96, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-l {
+  padding-left: 2em;
+}
+/* line 97, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-l-sm {
+  padding-left: 1em;
+}
+/* line 98, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.pad-l-lg {
+  padding-left: 3em;
+}
+/* line 102, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.row {
+  display: block;
+  width: 102.53623188405795%;
+  margin: 0 -1.2681159420289856%;
+}
+/* line 71, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+/* line 75, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.row:after {
+  clear: both;
+}
+/* line 104, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-full {
+  display: inline;
+  float: left;
+  width: 97.46376811594203%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 105, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-half {
+  display: inline;
+  float: left;
+  width: 47.46376811594203%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 108, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-content {
+  display: inline;
+  float: left;
+  width: 72.46376811594203%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 110, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-content > *:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+/* line 112, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-sidebar {
+  display: inline;
+  float: left;
+  width: 22.463768115942027%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 115, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-1 {
+  display: inline;
+  float: left;
+  width: 5.797101449275362%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 116, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-2 {
+  display: inline;
+  float: left;
+  width: 14.130434782608695%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 117, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-3 {
+  display: inline;
+  float: left;
+  width: 22.463768115942027%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 118, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-4 {
+  display: inline;
+  float: left;
+  width: 30.79710144927536%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 119, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-5 {
+  display: inline;
+  float: left;
+  width: 39.130434782608695%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 120, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-6 {
+  display: inline;
+  float: left;
+  width: 47.46376811594203%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 121, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-7 {
+  display: inline;
+  float: left;
+  width: 55.79710144927537%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 122, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-8 {
+  display: inline;
+  float: left;
+  width: 64.13043478260869%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 123, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-9 {
+  display: inline;
+  float: left;
+  width: 72.46376811594203%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 124, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-10 {
+  display: inline;
+  float: left;
+  width: 80.79710144927536%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 125, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-11 {
+  display: inline;
+  float: left;
+  width: 89.13043478260869%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 126, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\scaffolding.less */
+.col-12 {
+  display: inline;
+  float: left;
+  width: 97.46376811594203%;
+  margin: 0 1.2681159420289856%;
+}
+/*====================*/
+/* # Styled Classes # */
+/*====================*/
+/* line 4, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.article-title + .article-meta {
+  margin-top: -0.5rem;
+}
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.article-meta {
+  line-height: 1;
+  margin-bottom: 1.1rem;
+  display: inline-block;
+  font-style: italic;
+  color: gray;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.flux {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.bdr {
+  border: 1px solid #c4c4c4;
+}
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.bdr-tb {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.bdr-lr {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.bdr-t {
+  border-top: 1px solid #dddddd;
+}
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.bdr-b {
+  border-bottom: 1px solid #dddddd;
+}
+/* line 18, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.bdr-l {
+  border-left: 1px solid #dddddd;
+}
+/* line 19, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.bdr-r {
+  border-right: 1px solid #dddddd;
+}
+/* line 22, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.panel {
+  padding: 1.5rem;
+  background: #F2F2F2;
+  border: 1px solid #D9D9D9;
+}
+/* line 29, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.parallax {
+  background-attachment: fixed !important;
+}
+/* line 33, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.oldie .parallax,
+.ie9 .parallax {
+  background-attachment: static !important;
+}
+/* line 39, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\classes.less */
+.browsehappy {
+  margin: 2.95em 0 0 0;
+  background: #ccc;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.25em 0;
+}
+/*=====================*/
+/* # Styled Elements # */
+/*=====================*/
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+::-moz-selection,
+::selection {
+  text-shadow: none;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+::-moz-selection {
+  background: #b3d4fc;
+}
+/* line 11, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+::selection {
+  background: #b3d4fc;
+}
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+blockquote {
+  margin: 0 1rem 1rem 1rem;
+  border-left: 3px solid #eee;
+}
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+blockquote p {
+  margin-left: 1rem;
+  padding-top: .25rem;
+  text-align: left !important;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  color: #999;
+  font-style: italic;
+}
+/* line 21, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+blockquote p:before,
+blockquote blockquote p:after {
+  font-size: 24px;
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
+/* line 26, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+blockquote blockquote p:before {
+  content: "\201C\0020";
+}
+/* line 27, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+blockquote blockquote p:after {
+  content: "\0020\201D";
+}
+/* line 31, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+abbr,
+acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #222;
+  border-bottom: 1px solid #ddd;
+  cursor: help;
+}
+/* line 35, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+abbr {
+  text-transform: none;
+}
+/* line 38, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/* line 48, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\elements.less */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+/* line 1, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-navy {
+  background-color: #001f3f;
+}
+/* line 2, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-blue {
+  background-color: #0074d9;
+}
+/* line 3, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-aqua {
+  background-color: #7fdbff;
+}
+/* line 4, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-teal {
+  background-color: #39cccc;
+}
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-olive {
+  background-color: #3d9970;
+}
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-green {
+  background-color: #2ecc40;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-lime {
+  background-color: #01ff70;
+}
+/* line 8, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-yellow {
+  background-color: #ffdc00;
+}
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-orange {
+  background-color: #ff851b;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-red {
+  background-color: #ff4136;
+}
+/* line 11, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-fuchsia {
+  background-color: #f012be;
+}
+/* line 12, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-purple {
+  background-color: #b10dc9;
+}
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-maroon {
+  background-color: #85144b;
+}
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-white {
+  background-color: #ffffff;
+}
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-gray {
+  background-color: #aaaaaa;
+}
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-silver {
+  background-color: #dddddd;
+}
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.bg-black {
+  background-color: #111111;
+}
+/* Colors */
+/* line 21, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.navy {
+  color: #001f3f;
+}
+/* line 22, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.blue {
+  color: #0074d9;
+}
+/* line 23, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.aqua {
+  color: #7fdbff;
+}
+/* line 24, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.teal {
+  color: #39cccc;
+}
+/* line 25, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.olive {
+  color: #3d9970;
+}
+/* line 26, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.green {
+  color: #2ecc40;
+}
+/* line 27, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.lime {
+  color: #01ff70;
+}
+/* line 28, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.yellow {
+  color: #ffdc00;
+}
+/* line 29, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.orange {
+  color: #ff851b;
+}
+/* line 30, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.red {
+  color: #ff4136;
+}
+/* line 31, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.fuchsia {
+  color: #f012be;
+}
+/* line 32, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.purple {
+  color: #b10dc9;
+}
+/* line 33, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.maroon {
+  color: #85144b;
+}
+/* line 34, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.white {
+  color: #ffffff;
+}
+/* line 35, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.silver {
+  color: #dddddd;
+}
+/* line 36, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.gray {
+  color: #aaaaaa;
+}
+/* line 37, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\colors.less */
+.black {
+  color: #111111;
+}
+/* line 2, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.shape-hex {
+  height: 16px;
+  height: 1rem;
+  background: inherit;
+  position: relative;
+  -webkit-filter: drop-shadow(0 2px 5px #000000);
+  -moz-filter: drop-shadow(0 2px 5px #000000);
+  -ms-filter: drop-shadow(0 2px 5px #000000);
+  filter: drop-shadow(0 2px 5px #000000);
+}
+/* line 3, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.shape-hex:after,
+.shape-hex:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+}
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.shape-hex:before {
+  bottom: 100%;
+  border-bottom: 12px solid #ffffff;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.shape-hex:after {
+  top: 100%;
+  border-top: 12px solid #ffffff;
+}
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.tri {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  /*  up - down   */
+
+  /*  left - right   */
+
+}
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.tri.up {
+  border-bottom: 8px solid #666;
+}
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.tri.down {
+  border-top: 8px solid #666;
+}
+/* line 19, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.tri.left {
+  border-right: 8px solid #666;
+}
+/* line 20, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.tri.right {
+  border-left: 8px solid #666;
+}
+/* Basic Shape  */
+/* line 24, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.pill {
+  -webkit-border-radius: 2em;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2em;
+  -moz-background-clip: padding;
+  border-radius: 2em;
+  background-clip: padding-box;
+}
+/* line 25, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.round {
+  -webkit-border-radius: 0px.5em;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px.5em;
+  -moz-background-clip: padding;
+  border-radius: 0px.5em;
+  background-clip: padding-box;
+}
+/* line 26, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.square {
+  -webkit-border-radius: 0px.025em;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px.025em;
+  -moz-background-clip: padding;
+  border-radius: 0px.025em;
+  background-clip: padding-box;
+}
+/* line 27, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\shapes.less */
+.circle {
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+/*============*/
+/* # Global # */
+/*============*/
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+body {
+  background: url(../img/subtle_grunge.png);
+}
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.gbl-width {
+  padding-left: 12%;
+  padding-right: 12%;
+  position: relative;
+}
+/* line 20, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.lower-ceiling {
+  margin-top: 112px;
+  margin-top: 7rem;
+}
+/*============*/
+/* # Header # */
+/*============*/
+/* line 25, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.masthead {
+  background: #dddddd;
+  -webkit-box-shadow: 0px 1px 10px rgba(20, 20, 20, 0.5);
+  -moz-box-shadow: 0px 1px 10px rgba(20, 20, 20, 0.5);
+  box-shadow: 0px 1px 10px rgba(20, 20, 20, 0.5);
+  overflow: hidden;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 95%;
+}
+/* line 34, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.col-logo {
+  width: 400px;
+  width: 25rem;
+  top: 40%;
+}
+/* line 37, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.col-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 38, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.nav-primary {
+  font-family: 'grotesque-medium';
+}
+/* line 39, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.nav-primary li {
+  margin: 0 4%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 40, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.nav-primary a {
+  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
+  display: inline-block;
+  color: #dddddd;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+/* line 42, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.nav-primary a:hover,
+.nav-primary a:focus {
+  color: #ffffff;
+}
+/* line 44, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.nav-primary a:active {
+  color: #ffffff;
+}
+/* line 47, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.masthead.above {
+  height: 112px;
+  height: 7rem;
+}
+/* line 48, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.masthead.above .col-logo {
+  width: 80px;
+  width: 5rem;
+  top: 50%;
+}
+/* line 50, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.masthead.above .nav-primary > li {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 51, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.masthead.above .nav-primary > li:nth-child(1) {
+  -webkit-transform: translateX(-2rem);
+  -moz-transform: translateX(-2rem);
+  -o-transform: translateX(-2rem);
+  -ms-transform: translateX(-2rem);
+  transform: translateX(-2rem);
+}
+/* line 52, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.masthead.above .nav-primary > li:nth-child(2) {
+  -webkit-transform: translateX(-4rem);
+  -moz-transform: translateX(-4rem);
+  -o-transform: translateX(-4rem);
+  -ms-transform: translateX(-4rem);
+  transform: translateX(-4rem);
+}
+/* line 53, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.masthead.above .nav-primary > li:nth-child(3) {
+  -webkit-transform: translateX(4rem);
+  -moz-transform: translateX(4rem);
+  -o-transform: translateX(4rem);
+  -ms-transform: translateX(4rem);
+  transform: translateX(4rem);
+}
+/* line 54, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.masthead.above .nav-primary > li:nth-child(4) {
+  -webkit-transform: translateX(2rem);
+  -moz-transform: translateX(2rem);
+  -o-transform: translateX(2rem);
+  -ms-transform: translateX(2rem);
+  transform: translateX(2rem);
+}
+/* # Social Links # */
+/* line 60, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.col-social {
+  top: 25%;
+}
+/* line 62, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.links-social li {
+  margin-right: 40px;
+  margin-right: 2.5rem;
+  text-align: center;
+}
+/* line 63, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.links-social li:last-child {
+  margin-right: 0;
+}
+/* line 65, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.links-social li a {
+  width: 31.2px;
+  width: 1.95rem;
+  display: block;
+  background: #ffffff;
+  color: #2ba6cb;
+}
+/* # Search Form # */
+/* line 71, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.search-primary {
+  width: 30%;
+  top: 30%;
+}
+/*============*/
+/* # Footer # */
+/*============*/
+/* line 76, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.primary-footer {
+  background: silver;
+}
+/* line 78, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.primary-footer .content-regions > * {
+  display: inline;
+  float: left;
+  width: 30.79710144927536%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 82, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.aux-footer {
+  background: black;
+  color: white;
+}
+/* line 83, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.aux-footer .col-meta {
+  display: inline;
+  float: left;
+  width: 22.463768115942027%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 84, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.aux-footer .col-nav {
+  display: inline;
+  float: left;
+  width: 72.46376811594203%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 88, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.aux-nav li {
+  padding: 0 1rem;
+}
+/* line 89, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\global.less */
+.aux-nav a {
+  color: white;
+}
+/*==========*/
+/* # Home # */
+/*==========*/
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\home.less */
+.hero figure {
+  height: 560px;
+  height: 35rem;
+  padding-top: 112px;
+  padding-top: 7rem;
+  background-image: url(../img/inferno-2.jpg);
+}
+/* line 8, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\home.less */
+.hero h1 {
+  padding: 48px 96px 32px 96px;
+  padding: 3rem 6rem 2rem 6rem;
+  border: 12px double #ffffff;
+  color: #ffffff;
+}
+@media only screen and (max-width: 320px) {
+  /* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\home.less */
+  .hero h1 {
+    border: 12px double #ffdc00;
+    color: #ffdc00;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 529px) {
+  /* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\home.less */
+  .hero h1 {
+    border: 12px double #ffdc00;
+    color: #ffdc00;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 949px) {
+  /* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\home.less */
+  .hero h1 {
+    border: 12px double #ff851b;
+    color: #ff851b;
+  }
+}
+@media only screen and (min-width: 1129px) {
+  /* line 20, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\home.less */
+  .hero h1 {
+    border: 12px double #ffffff;
+    color: #ffffff;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px) {
+  /* line 23, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\home.less */
+  .hero h1 {
+    border: 12px double #ff4136;
+    color: #ff4136;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  /* line 26, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\pages\home.less */
+  .hero h1 {
+    border: 12px double #ffffff;
+    color: #ffffff;
+  }
+}
+/*==============*/
+/* # Interior # */
+/*==============*/
+/*===========*/
+/* # Forms # */
+/*===========*/
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\form.less */
+::-webkit-input-placeholder {
+  color: #b2c2c0;
+  font-size: .875rem;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\form.less */
+:-moz-placeholder {
+  color: #b2c2c0;
+  font-size: .875rem;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\form.less */
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
+  width: 100%;
+}
+/* line 21, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\form.less */
+textarea {
+  resize: vertical;
+}
+/* line 24, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\form.less */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/* line 1, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
+.svg-graphic {
+  display: block;
+}
+/* line 4, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
+.col-logo svg:not(:root) {
+  overflow: hidden;
+}
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
+.polygon {
+  fill: rgba(255, 255, 255, 0);
+  stroke: white;
+  stroke-width: 1%;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
+.above .polygon {
+  -webkit-animation: fill 0.5s ease-in-out 1 forwards;
+  -moz-animation: fill 0.5s ease-in-out 1 forwards;
+  -o-animation: fill 0.5s ease-in-out 1 forwards;
+  animation: fill 0.5s ease-in-out 1 forwards;
+}
+/* line 1479, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lesshat.less */
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
+@-moz-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
+@-o-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
+@keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; };
+}
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
+.flame {
+  fill: transparent;
+}
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
+.above .flame {
+  fill: #ec7c0a;
+  -webkit-transition: all 0.4s 0.5s ease;
+  -moz-transition: all 0.4s 0.5s ease;
+  -o-transition: all 0.4s 0.5s ease;
+  transition: all 0.4s 0.5s ease;
+}
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
+.txt-logo {
+  font-family: 'grotesque-light';
+  fill: #ffffff;
+}
+/*====================*/
+/* # Image Styles # */
+/*====================*/
+/* line 4, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.bg-64 {
+  background-image: url(data:image/jpg;base64,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ICBkb3ViQG/gAAAAAAAAAAAAR3JuIGRvdWJAb+AAAAAAAAAAAABCbCAgZG91YkBv4AAAAAAAAAAAAEJyZFRVbnRGI1JsdAAAAAAAAAAAAAAAAEJsZCBVbnRGI1JsdAAAAAAAAAAAAAAAAFJzbHRVbnRGI1B4bEBSAAAAAAAAAAAACnZlY3RvckRhdGFib29sAQAAAABQZ1BzZW51bQAAAABQZ1BzAAAAAFBnUEMAAAAATGVmdFVudEYjUmx0AAAAAAAAAAAAAAAAVG9wIFVudEYjUmx0AAAAAAAAAAAAAAAAU2NsIFVudEYjUHJjQFkAAAAAAAAAAAAQY3JvcFdoZW5QcmludGluZ2Jvb2wAAAAADmNyb3BSZWN0Qm90dG9tbG9uZwAAAAAAAAAMY3JvcFJlY3RMZWZ0bG9uZwAAAAAAAAANY3JvcFJlY3RSaWdodGxvbmcAAAAAAAAAC2Nyb3BSZWN0VG9wbG9uZwAAAAAAOEJJTQPtAAAAAAAQAEgAAAABAAEASAAAAAEAAThCSU0EJgAAAAAADgAAAAAAAAAAAAA/gAAAOEJJTQPyAAAAAAAKAAD///////8AADhCSU0EDQAAAAAABAAAAB44QklNBBkAAAAAAAQAAAAeOEJJTQPzAAAAAAAJAAAAAAAAAAABADhCSU0nEAAAAAAACgABAAAAAAAAAAE4QklNA/UAAAAAAEgAL2ZmAAEAbGZmAAYAAAAAAAEAL2ZmAAEAoZmaAAYAAAAAAAEAMgAAAAEAWgAAAAYAAAAAAAEANQAAAAEALQAAAAYAAAAAAAE4QklNA/gAAAAAAHAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAOEJJTQQIAAAAAAAQAAAAAQAAAkAAAAJAAAAAADhCSU0EHgAAAAAABAAAAAA4QklNBBoAAAAAAvYAAAAIAAAAEAAAAAEAAAAAAABudWxsAAAAAwAAAAhiYXNlTmFtZVRFWFQAAAAFAFUAcwBlAHIAAAAAAAZib3VuZHNPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAAAAAAABMZWZ0bG9u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AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAGUAAAAEAAAAAEAAAAAAA5UYXJnZXRTZXR0aW5ncwAAAAkAAAAATXR0Q09iamMAAAABAAAAAAAKTmF0aXZlUXVhZAAAAAMAAAAAQmwgIGxvbmcAAAD/AAAAAEdybiBsb25nAAAA/wAAAABSZCAgbG9uZwAAAP8AAAAAT3B0bWJvb2wBAAAAAFFsdHlsb25nAAAAPAAAAApibHVyQW1vdW50ZG91Yj/1wo9gAAAAAAAAD2VtYmVkSUNDUHJvZmlsZWJvb2wAAAAACmZpbGVGb3JtYXRlbnVtAAAACkZpbGVGb3JtYXQAAAAASlBFRwAAAAxub01hdHRlQ29sb3Jib29sAAAAAAtwcm9ncmVzc2l2ZWJvb2wBAAAADHpvbmVkUXVhbGl0eU9iamMAAAABAAAAAAAJWm9uZWRJbmZvAAAABAAAAAljaGFubmVsSURsb25n/////wAAAA1lbXBoYXNpemVUZXh0Ym9vbAAAAAAQZW1waGFzaXplVmVjdG9yc2Jvb2wAAAAABWZsb29ybG9uZwAAAAA4QklND6EAAAAABoltc2V0AAAAEAAAAAEAAAAAAARudWxsAAAABAAAABZIVE1MQmFja2dyb3VuZFNldHRpbmdzT2JqYwAAAAEAAAAAAARudWxsAAAABgAAABNCYWNrZ3JvdW5kQ29sb3JCbHVlbG9uZwAAAP8AAAAUQmFja2dyb3VuZENvbG9yR3JlZW5sb25nAAAA/wAAABJCYWNrZ3JvdW5kQ29sb3JSZWRsb25nAAAA/wAAABRCYWNrZ3JvdW5kQ29sb3JTdGF0ZWxvbmcAAAABAAAAE0JhY2tncm91bmRJbWFnZVBhdGhURVhUAAAAAQAAAAAAFFVzZUltYWdlQXNCYWNrZ3JvdW5kYm9vbAAAAAAMSFRNTFNldHRpbmdzT2JqYwAAAAEAAAAAAARudWxsAAAAFgAAABVBbHdheXNBZGRBbHRBdHRyaWJ1dGVib29sAQAAAA1BdHRyaWJ1dGVDYXNlbG9uZwAAAAMAAAAMQ2xvc2VBbGxUYWdzYm9vbAAAAAAIRW5jb2Rpbmdsb25nAAAAAAAAABJGaWxlU2F2aW5nU2V0dGluZ3NPYmpjAAAAAQAAAAAABG51bGwAAAAKAAAADkNvcHlCYWNrZ3JvdW5kYm9vbAEAAAAZRHVwbGljYXRlRmlsZU5hbWVCZWhhdmlvcmxvbmcAAAABAAAAFkh0bWxGaWxlTmFtZUNvbXBvbmVudHNWbExzAAAABmxvbmcAAAACbG9uZwAAABhsb25nAAAAGGxvbmcAAAAYbG9uZwAAABhsb25nAAAAFgAAABJJbWFnZVN1YmZvbGRlck5hbWVURVhUAAAABwBpAG0AYQBnAGUAcwAAAAAAEU5hbWVDb21wYXRpYmlsaXR5T2JqYwAAAAEAAAAAAARudWxsAAAAAwAAAA1OYW1lQ29tcGF0TWFjYm9vbAAAAAAOTmFtZUNvbXBhdFVOSVhib29sAQAAABFOYW1lQ29tcGF0V2luZG93c2Jvb2wBAAAAE091dHB1dE11bHRpcGxlRmlsZXNib29sAAAAABhTYXZpbmdGaWxlTmFtZUNvbXBvbmVudHNWbExzAAAACWxvbmcAAAABbG9uZwAAABRsb25nAAAAAmxvbmcAAAATbG9uZwAAAAZsb25nAAAAGGxvbmcAAAAYbG9uZwAAABhsb25nAAAAFgAAABdTbGljZUZpbGVOYW1lQ29tcG9uZW50c1ZsTHMAAAAGbG9uZwAAAABsb25nAAAAE2xvbmcAAAAcbG9uZwAAABhsb25nAAAAGGxvbmcAAAAYAAAAEVVzZUltYWdlU3ViZm9sZGVyYm9vbAAAAAARVXNlTG9uZ0V4dGVuc2lvbnNib29sAAAAABBHb0xpdmVDb21wYXRpYmxlYm9vbAAAAAAQSW1hZ2VNYXBMb2NhdGlvbmxvbmcAAAACAAAADEltYWdlTWFwVHlwZWxvbmcAAAAAAAAAD0luY2x1ZGVDb21tZW50c2Jvb2wBAAAAEkluY2x1ZGVaZXJvTWFyZ2luc2Jvb2wBAAAABkluZGVudGxvbmf/////AAAAC0xpbmVFbmRpbmdzbG9uZwAAAAMAAAALT3V0cHV0WEhUTUxib29sAAAAABJRdW90ZUFsbEF0dHJpYnV0ZXNib29sAQAAABFTcGFjZXJzRW1wdHlDZWxsc2xvbmcAAAAAAAAAEVNwYWNlcnNIb3Jpem9udGFsbG9uZwAAAAQAAAAPU3BhY2Vyc1ZlcnRpY2FsbG9uZwAAAAQAAAAMU3R5bGVzRm9ybWF0bG9uZwAAAAAAAAANVERXaWR0aEhlaWdodGxvbmcAAAABAAAAB1RhZ0Nhc2Vsb25nAAAAAwAAAAZVc2VDU1Nib29sAAAAABRVc2VMb25nSFRNTEV4dGVuc2lvbmJvb2wBAAAAFk1ldGFkYXRhT3V0cHV0U2V0dGluZ3NPYmpjAAAAAQAAAAAABG51bGwAAAAIAAAAC0FkZEN1c3RvbUlSYm9vbAEAAAAHQWRkRVhJRmJvb2wBAAAABkFkZFhNUGJvb2wAAAAAE0FkZFhNUFNvdXJjZUZpbGVVUklib29sAAAAAAtDb2xvclBvbGljeWxvbmcAAAABAAAADk1ldGFkYXRhUG9saWN5bG9uZwAAAAMAAAAPV3JpdGVNaW5pbWFsWE1QYm9vbAEAAAAWV3JpdGVYTVBUb1NpZGVjYXJGaWxlc2Jvb2wAAAAAB1ZlcnNpb25sb25nAAAAAAA4QklND6IAAAAAAAhtczR3AAAAAjhCSU0PowAAAAABDG1hbmlJUkZSAAABADhCSU1BbkRzAAAA4AAAABAAAAABAAAAAAAAbnVsbAAAAAMAAAAAQUZTdGxvbmcAAAAAAAAAAEZySW5WbExzAAAAAU9iamMAAAABAAAAAAAAbnVsbAAAAAIAAAAARnJJRGxvbmcZ35OAAAAAAEZyR0Fkb3ViQD4AAAAAAAAAAAAARlN0c1ZsTHMAAAABT2JqYwAAAAEAAAAAAABudWxsAAAABAAAAABGc0lEbG9uZwAAAAAAAAAAQUZybWxvbmcAAAAAAAAAAEZzRnJWbExzAAAAAWxvbmcZ35OAAAAAAExDbnRsb25nAAAAAAAAOEJJTVJvbGwAAAAIAAAAAAAAAAA4QklND6QAAAAAABxtZnJpAAAAAgAAABAAAAABAAAAAAAAAAEAAAAAOEJJTQQGAAAAAAAHAAYBAQABAQD/4Q6naHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpEb2N1bWVudElEPSJFMTlFMjlBREExODczMDNBMDJCQzVDNkU1ODdDNTQ2NSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDN0U3NzRCRjE1MjA2ODExODIyQThDOTkzNkZGMkFBRiIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJFMTlFMjlBREExODczMDNBMDJCQzVDNkU1ODdDNTQ2NSIgZGM6Zm9ybWF0PSJpbWFnZS9qcGVnIiBwaG90b3Nob3A6TGVnYWN5SVBUQ0RpZ2VzdD0iQ0RDRkZBN0RBOEM3QkUwOTA1NzA3NkFFQUYwNUMzNEUiIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHhtcDpDcmVhdGVEYXRlPSIyMDEyLTEyLTExVDAzOjQyOjEyLTA2OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNC0wMS0xMFQyMToyNTo1OC0wNjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNC0wMS0xMFQyMToyNTo1OC0wNjowMCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6QzJFNzc0QkYxNTIwNjgxMTgyMkE4Qzk5MzZGRjJBQUYiIHN0RXZ0OndoZW49IjIwMTQtMDEtMTBUMTY6MzA6NTktMDY6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOkM3RTc3NEJGMTUyMDY4MTE4MjJBOEM5OTM2RkYyQUFGIiBzdEV2dDp3aGVuPSIyMDE0LTAxLTEwVDIxOjI1OjU4LTA2OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8cGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8cmRmOkJhZz4gPHJkZjpsaT42QTVEQzVEMUU2M0M3NkU3MzJBOTdFQzdDMzNDRDQ0QTwvcmRmOmxpPiA8cmRmOmxpPjdGNTRCQTRGQTU2NTg1MTgzNzVFRERBMUI0QTRBQTQ0PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDw/eHBhY2tldCBlbmQ9InciPz7/7gAhQWRvYmUAZEAAAAABAwAQAwIDBgAAAAAAAAAAAAAA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);
+}
+/* line 8, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.IE8 img {
+  width: auto;
+}
+/* line 12, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-rounded {
+  -webkit-border-radius: 0px.25em;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px.25em;
+  -moz-background-clip: padding;
+  border-radius: 0px.25em;
+  background-clip: padding-box;
+}
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-circle {
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-thumbnail {
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  display: inline-block;
+  padding: 4px 256px 256px 256px;
+  padding: 0.25rem 16rem 16rem 16rem;
+  padding: 4px;
+  padding: 0.25rem;
+}
+/* line 21, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-right {
+  margin: 0px 0px 16px 24px;
+  margin: 0rem 0rem 1rem 1.5rem;
+}
+/* line 22, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-left {
+  margin: 0px 24px 16px 0px;
+  margin: 0rem 1.5rem 1rem 0rem;
+}
+/* line 25, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-fx {
+  background: #f4f4f4;
+  padding: 4px 256px 256px 256px;
+  padding: 0.25rem 16rem 16rem 16rem;
+  padding: 4px;
+  padding: 0.25rem;
+}
+/* line 28, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-banner {
+  display: block;
+  float: none;
+  width: 100% !important;
+}
+/* line 29, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-featured {
+  position: relative;
+  margin-bottom: 1rem;
+}
+/* line 32, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\images.less */
+.img-cover {
+  -webkit-background-size: cover, 100%;
+  -moz-background-size: cover, 100%;
+  background-size: cover, 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* ============= */
+/*  # Buttons #  */
+/* ============= *//* line 5, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: white;
+  white-space: nowrap;
+  letter-spacing: 0px;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+  font-style: normal;
+  position: relative;
+}
+/* line 26, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  text-shadow: none;
+}
+/* Size */
+/* line 49, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn-sm {
+  padding: 4px 8px 4px 8px;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+/* line 50, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn-med {
+  padding: 8px 16px 8px 16px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+/* line 51, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn-lg {
+  padding: 12px 24px 12px 24px;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+}
+/* Background Colors */
+/* line 54, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn-red {
+  background-color: red;
+  border: 1px solid transparent;
+}
+/* line 55, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn-red:hover {
+  background-color: white;
+  color: #cc3333;
+  border: 1px solid #cc3333;
+}
+/* Cohesive Horizontal Button Unit w/ round ends */
+/* line 60, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn-group li:first-child a {
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px 0px 0px 5px;
+  background-clip: padding-box;
+}
+/* line 61, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn-group li:last-child a {
+  -webkit-border-radius: 0px 5px 5px 0px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -moz-background-clip: padding;
+  border-radius: 0px 5px 5px 0px;
+  background-clip: padding-box;
+}
+/* line 63, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\buttons.less */
+.btn-group a {
+  padding: .125rem 1.5rem;
+  background: silver;
+  color: white;
+}
+/*========*/
+/* Lists */
+/*========*/
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.lst li {
+  padding: 6.4px 0px 3.2px 0px;
+  padding: 0.4rem 0rem 0.2rem 0rem;
+  color: #2ba6cb;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.lst a {
+  color: inherit;
+  display: block;
+}
+/* line 12, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.lst-bdr li {
+  border-bottom: 1px solid silver;
+}
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.lst-bdr li:first-child {
+  border-top: none;
+}
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.lst-bdr li:last-child {
+  border-bottom: none;
+}
+/* line 20, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.spacers > li {
+  position: relative;
+}
+/* line 21, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.spacers > li:after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  z-index: 10;
+  background: black;
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+/* line 27, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.spacers > li:last-child:after {
+  display: none;
+}
+/* line 28, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lists.less */
+.spacers > li a {
+  display: inline-block;
+}
+/* line 3, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+a {
+  text-decoration: none;
+  color: #2ba6cb;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 4, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+a:hover {
+  color: #c09741;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+p a {
+  color: red;
+  text-decoration: none;
+  line-height: inherit;
+}
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+p a:hover {
+  color: red;
+  text-decoration: none;
+  border-bottom: 1px solid red;
+  cursor: pointer;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+p a:focus {
+  outline: thin dotted;
+}
+/* Show more pagination link */
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+.show-more {
+  margin: 1.5rem 0;
+  padding: 0.25rem 0 0;
+  background: white;
+  display: block;
+  font-family: 'BG-Light';
+  color: gray;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  border: 1px solid #e2e3e4;
+  border-bottom: 1px solid #e2e3e4;
+}
+/* line 20, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+.show-more:hover {
+  color: black;
+}
+/* Read More links*/
+/* line 26, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+.rm {
+  margin-top: 16px;
+  margin-top: 1rem;
+  display: block;
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
+}
+/* line 27, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+.rm:after {
+  content: " \00bb";
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+/* line 28, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\links.less */
+.rm:hover:after {
+  text-decoration: none;
+}
+/* ======================== */
+/*        Markup Patterns   */
+/* ======================== */
+/* Headings and Captions */
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\reuse.less */
+.mp-category {
+  margin: 0px 0px 8px 0px;
+  margin: 0rem 0rem 0.5rem 0rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
+  color: #666;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ddd;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\reuse.less */
+.mp-subtitle {
+  margin: 0px 0px 8px 0px;
+  margin: 0rem 0rem 0.5rem 0rem;
+  color: silver;
+}
+/* line 8, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\reuse.less */
+.mp-caption {
+  margin: 12px 0px 0px 0px;
+  margin: 0.75rem 0rem 0rem 0rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #999;
+}
+/* Meta Data */
+/* line 11, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\reuse.less */
+.mp-meta {
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-bottom: 0.25rem;
+  line-height: 1.4;
+  list-style-type: none;
+}
+/* line 12, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\reuse.less */
+.mp-meta li {
+  margin-right: 8px;
+  margin-right: 0.5rem;
+  padding-left: 8px;
+  padding-left: 0.5rem;
+  float: left;
+  font-size: 12px;
+  font-size: 0.75rem;
+  border-left: 1px solid #ccc;
+}
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\reuse.less */
+.mp-meta li:first-child {
+  padding-left: 0;
+  border: none;
+}
+/*======================*/
+/*  # Helper Classes #  */
+/*======================*/
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+}
+/* line 12, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+/* line 20, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/* line 26, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 38, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/* line 49, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.invisible {
+  visibility: hidden;
+}
+/* line 52, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.pull-right {
+  float: right !important;
+}
+/* line 53, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.pull-left {
+  float: left !important;
+}
+/* line 56, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.clear {
+  clear: both;
+}
+/* line 57, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.clear-r {
+  clear: right;
+}
+/* line 58, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.clear-l {
+  clear: left;
+}
+/* line 61, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+/* line 65, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.cf:after {
+  clear: both;
+}
+/*==================*/
+/*   Print styles   */
+/*==================*/
+@media print {
+  /* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+  
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  /* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  /* line 18, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  /* line 22, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+       * Don't show links for images, or javascript/internal links
+       */
+  /* line 30, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  /* line 36, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /* line 42, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  
+  }
+  /* line 46, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  /* line 51, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  /* line 59, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  /* line 66, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 2, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.test-grid {
+  background: #dddddd;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+/* line 3, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.test-grid li {
+  min-height: 3rem;
+  background: #aaaaaa;
+}
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.inline-3 > li {
+  display: inline;
+  float: left;
+  width: 30.79710144927536%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.inline-4 > li {
+  display: inline;
+  float: left;
+  width: 22.463768115942027%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.inline-5 > li {
+  display: inline;
+  float: left;
+  width: 17.463768115942027%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 8, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.inline-6 > li {
+  display: inline;
+  float: left;
+  width: 14.130434782608695%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.inline-7 > li {
+  display: inline;
+  float: left;
+  width: 11.74710144927536%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 11, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.hybrid-14 > li {
+  display: inline;
+  float: left;
+  width: 4.968944099378882%;
+  margin: 0 1.0869565217391304%;
+}
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.hyb-7 {
+  display: inline;
+  float: left;
+  width: 47.82608695652174%;
+  margin: 0 1.0869565217391304%;
+}
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.hyb-7 .nest-left {
+  display: block;
+  width: 102.53623188405795%;
+  margin: 0 -1.2681159420289856%;
+}
+/* line 71, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.hyb-7 .nest-left:before,
+.hyb-7 .nest-left:after {
+  content: "";
+  display: table;
+}
+/* line 75, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.hyb-7 .nest-left:after {
+  clear: both;
+}
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.hyb-7 .nest-left li {
+  display: inline;
+  float: left;
+  width: 30.79710144927536%;
+  margin: 0 1.2681159420289856%;
+  background: #848484;
+}
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.hyb-7 .nest-right {
+  display: block;
+  width: 102.17391304347827%;
+  margin: 0 -1.0869565217391304%;
+}
+/* line 71, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.hyb-7 .nest-right:before,
+.hyb-7 .nest-right:after {
+  content: "";
+  display: table;
+}
+/* line 75, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\helpers.less */
+.hyb-7 .nest-right:after {
+  clear: both;
+}
+/* line 18, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+.hyb-7 .nest-right li {
+  display: inline;
+  float: left;
+  width: 17.463768115942027%;
+  margin: 0 1.2681159420289856%;
+  background: #848484;
+}
+/* line 24, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+body:after {
+  background: red;
+  color: #ffffff;
+  content: "undefined";
+  left: 0;
+  -webkit-opacity: 80;
+  -moz-opacity: 80;
+  opacity: 80;
+  padding: .5em 1em;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  z-index: 1000;
+}
+@media only screen and (max-width: 320px) {
+  /* line 35, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+  body:after {
+    background: #ffdc00;
+    content: "mobile-sm";
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 529px) {
+  /* line 39, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+  body:after {
+    background: #ff851b;
+    content: "mobile";
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 949px) {
+  /* line 43, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+  body:after {
+    background: #b10dc9;
+    content: "tablet";
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px) {
+  /* line 47, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+  body:after {
+    background: #2ecc40;
+    content: "desktop";
+  }
+}
+@media only screen and (min-width: 1129px) {
+  /* line 51, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\testing.less */
+  body:after {
+    background: #0074d9;
+    content: "desktop-xl";
+  }
+}

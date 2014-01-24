@@ -53,7 +53,6 @@ BoagenGenerator.prototype.app = function app() {
   this.mkdir('app/img');
   this.mkdir('app/scripts');
   this.mkdir('app/styles');
-  this.mkdir('app/styles/css');
   this.mkdir('app/styles/less');
   this.mkdir('app/styles/less/pages');
   this.mkdir('app/fonts');
@@ -99,8 +98,8 @@ BoagenGenerator.prototype.base = function base() {
   this.copy('apple-touch-icon-precomposed.png', 'app/apple-touch-icon-precomposed.png');
   this.copy('ascii-words.txt', 'app/docs/ascii-words.txt');
   this.copy('helpful-links.txt', 'app/docs/helpful-links.txt');
-  this.copy('styles/css/master.css', 'app/styles/css/master.css');
-  this.copy('styles/css/fonts.css', 'app/styles/css/fonts.css');
+  this.copy('styles/master.css', 'app/styles/master.css');
+  this.copy('styles/fonts.css', 'app/styles/css/fonts.css');
   this.copy('scripts/jquery-11.1.0.min.js', 'app/scripts/jquery-11.1.0.min.js');
 };
 
