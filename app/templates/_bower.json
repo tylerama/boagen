@@ -1,11 +1,11 @@
 {
   "name": "<%= _.slugify(projectName) %>",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "dependencies": {
-  	"modernizr": "~2.6.2",<% if (gumby) { %>
+  	"modernizr": ">=2.6.2",<% if (gumby) { %>
     "gumby": "x",<% } %>
   	"jquery": "latest",
-    "jquery-1-10-2": "http://code.jquery.com/jquery-1-10-2.js"
+    "jquery-1-10-2": "http://code.jquery.com/jquery-1.10.2.min.js"
   },
   "devDependencies": {}
 }
