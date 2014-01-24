@@ -100,7 +100,7 @@ BoagenGenerator.prototype.base = function base() {
   this.copy('helpful-links.txt', 'app/docs/helpful-links.txt');
   this.copy('styles/master.css', 'app/styles/master.css');
   this.copy('styles/fonts.css', 'app/styles/css/fonts.css');
-  this.copy('scripts/jquery-11.1.0.min.js', 'app/scripts/jquery-11.1.0.min.js');
+  this.copy('scripts/jquery-1.11.0.min.js', 'app/scripts/jquery-1.11.0.min.js');
 };
 
 // BoagenGenerator.prototype.dist = function dist() {
