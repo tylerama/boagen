@@ -41,6 +41,7 @@ BoagenGenerator.prototype.askFor = function askFor() {
     this.projectName = props.projectName;
     this.gumby = props.gumby;
     this.browsersync = props.browsersync;
+    this.customFonts = props.customFonts;
 
     cb();
   }.bind(this));
@@ -52,9 +53,11 @@ BoagenGenerator.prototype.app = function app() {
   this.mkdir('app/img');
   this.mkdir('app/scripts');
   this.mkdir('app/styles');
+  this.mkdir('app/styles/css');
   this.mkdir('app/styles/less');
   this.mkdir('app/styles/less/pages');
   this.mkdir('app/fonts');
+  this.mkdir('app/docs');
 
   this.copy('_package.json', 'package.json');
   this.copy('bowerrc', '.bowerrc');
@@ -88,6 +91,17 @@ BoagenGenerator.prototype.lessFramework = function lessFramework() {
   this.copy('styles/less/pages/global.less', 'app/styles/less/pages/global.less');
   this.copy('styles/less/pages/home.less', 'app/styles/less/pages/home.less');
   this.copy('styles/less/pages/interior.less', 'app/styles/less/pages/interior.less');
+};
+
+BoagenGenerator.prototype.base = function base() {
+  this.copy('index.html', 'app/index.html');
+  this.copy('favicon.ico', 'app/favicon.ico');
+  this.copy('apple-touch-icon-precomposed.png', 'app/apple-touch-icon-precomposed.png');
+  this.copy('ascii-words.txt', 'app/docs/ascii-words.txt');
+  this.copy('helpful-links.txt', 'app/docs/helpful-links.txt');
+  this.copy('styles/css/master.css', 'app/styles/css/master.css');
+  this.copy('styles/css/fonts.css', 'app/styles/css/fonts.css');
+  this.copy('scripts/jquery-11.1.0.min.js', 'app/scripts/jquery-11.1.0.min.js');
 };
 
 // BoagenGenerator.prototype.dist = function dist() {

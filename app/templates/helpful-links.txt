@@ -1,0 +1,15 @@
+=====                                
+ SVG 
+=====
+++ Optimizing SVG for the Web ++
+http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc/
+http://petercollingridge.appspot.com/svg_optimiser
+
+++ list of presentation attributes in the SVG Specification ++
+http://www.w3.org/TR/SVG/attindex.html#PresentationAttributes
+
+++ Adobe: Styling SVG ++ 
+http://blogs.adobe.com/webplatform/2013/01/08/svg-styling/
+
+++ Animating SVG ++
+http://sarasoueidan.com/blog/animating-css-shapes/

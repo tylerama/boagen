@@ -1,0 +1,132 @@
+http://www.network-science.de/ascii/
+Use the Font:Roman to be consistent. Thank you very much.
+
+
+<!-- 
+,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,
+'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'
+-->
+
+<!-- 
+oooo                                  .o8                     
+`888                                 "888                     
+ 888 .oo.    .ooooo.   .oooo.    .oooo888   .ooooo.  oooo d8b 
+ 888P"Y88b  d88' `88b `P  )88b  d88' `888  d88' `88b `888""8P 
+ 888   888  888ooo888  .oP"888  888   888  888ooo888  888     
+ 888   888  888    .o d8(  888  888   888  888    .o  888     
+o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b 
+-->
+
+<!--
+oooo                                     
+`888                                     
+ 888 .oo.    .ooooo.  oooo d8b  .ooooo.  
+ 888P"Y88b  d88' `88b `888""8P d88' `88b 
+ 888   888  888ooo888  888     888   888 
+ 888   888  888    .o  888     888   888 
+o888o o888o `Y8bod8P' d888b    `Y8bod8P' 
+-->
+
+<!-- 
+                             o8o              
+                             `"'              
+ooo. .oo.  .oo.    .oooo.   oooo  ooo. .oo.   
+`888P"Y88bP"Y88b  `P  )88b  `888  `888P"Y88b  
+ 888   888   888   .oP"888   888   888   888  
+ 888   888   888  d8(  888   888   888   888  
+o888o o888o o888o `Y888""8o o888o o888o o888o 
+-->
+
+<!-- 
+          o8o        .o8             .o8                          
+          `"'       "888            "888                          
+ .oooo.o oooo   .oooo888   .ooooo.   888oooo.   .oooo.   oooo d8b 
+d88(  "8 `888  d88' `888  d88' `88b  d88' `88b `P  )88b  `888""8P 
+`"Y88b.   888  888   888  888ooo888  888   888  .oP"888   888     
+o.  )88b  888  888   888  888    .o  888   888 d8(  888   888     
+8""888P' o888o `Y8bod88P" `Y8bod8P'  `Y8bod8P' `Y888""8o d888b              
+ -->
+
+ <!-- 
+ .o88o.                         .                      
+ 888 `"                       .o8                      
+o888oo   .ooooo.   .ooooo.  .o888oo  .ooooo.  oooo d8b 
+ 888    d88' `88b d88' `88b   888   d88' `88b `888""8P 
+ 888    888   888 888   888   888   888ooo888  888     
+ 888    888   888 888   888   888 . 888    .o  888     
+o888o   `Y8bod8P' `Y8bod8P'   "888" `Y8bod8P' d888b    
+-->
+
+<!--
+  .oooo.     .o  
+ d8P'`Y8b  o888  
+888    888  888  
+888    888  888  
+888    888  888  
+`88b  d88'  888  
+ `Y8bd8P'  o888o 
+-->                 
+ 
+<!--
+  .oooo.     .oooo.   
+ d8P'`Y8b  .dP""Y88b  
+888    888       ]8P' 
+888    888     .d8P'  
+888    888   .dP'     
+`88b  d88' .oP     .o 
+ `Y8bd8P'  8888888888 
+-->
+
+<!--
+  .oooo.     .oooo.   
+ d8P'`Y8b  .dP""Y88b  
+888    888       ]8P' 
+888    888     <88b.  
+888    888      `88b. 
+`88b  d88' o.   .88P  
+ `Y8bd8P'  `8bd88P'   
+-->
+
+<!--
+  .oooo.         .o   
+ d8P'`Y8b      .d88   
+888    888   .d'888   
+888    888 .d'  888   
+888    888 88ooo888oo 
+`88b  d88'      888   
+ `Y8bd8P'      o888o  
+-->
+
+<!--
+  .oooo.     oooooooo 
+ d8P'`Y8b   dP""""""" 
+888    888 d88888b.   
+888    888     `Y88b  
+888    888       ]88  
+`88b  d88' o.   .88P  
+ `Y8bd8P'  `8bd88P'   
+-->
+
+<!--
+                             oooo         o8o                        
+                             `888         `"'                        
+ .oooo.   oooo d8b  .ooooo.   888 .oo.   oooo  oooo    ooo  .ooooo.  
+`P  )88b  `888""8P d88' `"Y8  888P"Y88b  `888   `88.  .8'  d88' `88b 
+ .oP"888   888     888        888   888   888    `88..8'   888ooo888 
+d8(  888   888     888   .o8  888   888   888     `888'    888    .o 
+`Y888""8o d888b    `Y8bod8P' o888o o888o o888o     `8'     `Y8bod8P' 
+-->
+
+<!--
+                     o8o        .o8  
+                     `"'       "888  
+ .oooooooo oooo d8b oooo   .oooo888  
+888' `88b  `888""8P `888  d88' `888  
+888   888   888      888  888   888  
+`88bod8P'   888      888  888   888  
+`8oooooo.  d888b    o888o `Y8bod88P" 
+d"     YD                            
+"Y88888P'                            
+-->
+
+                 
