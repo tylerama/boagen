@@ -2,7 +2,7 @@
 /* # Global Structural Classes # */
 /*===============================*/
 // Linear Elements // 
-// Linear Elements => Center (Don't close <li> to avoid gap between inline-block elements)
+// Linear Elements => Center (Be aware this will add 4px between inline items)
 .inline-center { text-align: center;
 	> * { display:inline-block; 
 		&:last-child { margin-right:0; padding-right:0; }
@@ -26,7 +26,6 @@
 	position: relative;
   	top: 50%;
 	.transform(translateY(-50%));
-	// Horizontal Centering
 	margin:0 auto;
 	display:table;
 }
@@ -98,16 +97,14 @@
 .pad-l-lg { padding-left:@global-padding-lg; }
 
 
-// Needed For Nesting Grids
-.row { .row(12) }
 // Common Structural Widths
 .col-full { .column(12); }
 .col-half { .column(6); }
 
 // Reserved for Primary Content Sections
 .col-content { .column(9); 
-	// Avoids Double Padding From Container
-	> *:last-child { border-bottom:none; padding-bottom: 0; }
+	> *:last-child { border-bottom:none; padding-bottom: 0; } // Avoids Double Padding From Container
+	.row { .row(9); } // Nesting grids
 }
 .col-sidebar { .column(3); }
 

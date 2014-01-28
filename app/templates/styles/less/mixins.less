@@ -9,11 +9,35 @@
 	width: ~"@{pxValue}px"; 
 	width: ~"@{remValue}rem";
 }
+.min-width(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  min-width: ~"@{pxValue}px"; 
+  min-width: ~"@{remValue}rem";
+}
+.max-width(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  max-width: ~"@{pxValue}px"; 
+  max-width: ~"@{remValue}rem";
+}
 .height(@sizeValue) {
 	@remValue: @sizeValue;
 	@pxValue: (@sizeValue * 16);
 	height: ~"@{pxValue}px"; 
 	height: ~"@{remValue}rem";
+}
+.min-height(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  min-height: ~"@{pxValue}px"; 
+  min-height: ~"@{remValue}rem";
+}
+.max-height(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 16);
+  max-height: ~"@{pxValue}px"; 
+  max-height: ~"@{remValue}rem";
 }
 
 // Margin

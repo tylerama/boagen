@@ -5,19 +5,18 @@
 // Library
 @import "lesshat";
 
-//Grid
+// Semantic Grid
 @import "grid";
-@import "image-grid";
 
 // Variables & Mixins
 @import "variables";
 @import "mixins";
 
-// @font-face | Custom & Icon Fonts
-@import "../css/fonts.css";
-
 // Reset
 @import "normalize";
+
+// @font-face | Custom & Icon Fonts
+@import "fonts";
 
 // Typography
 @import "typography";
@@ -25,18 +24,18 @@
 // Structural Classes => Grid | Global Margin/Padding
 @import "scaffolding";
 
-// Styled Classes & Elements
-@import "classes";
-@import "elements";
-@import "colors";
-@import "shapes";
-
 // Universal Styles => Header | Footer
 @import "pages/global";
 
 // Page Styles
 @import "pages/home";
 @import "pages/interior";
+
+// Styled Classes, Elements, Colors, and um... Shapes
+@import "classes";
+@import "elements";
+@import "colors";
+@import "shapes";
 
 // Form Styles
 @import "form";
@@ -50,8 +49,15 @@
 @import "lists";
 @import "links";
 
-// Reuseable Mark-Up Patterns
+// Image/Thumbnail Grids
+@import "image-grid";
+
+// Reuseable Mark-Up Patterns => Media | Navigation-soon | Pagination-soon |  
 @import "reuse.less";
+
+//CSS Libraries
+//@import "animate";
+//@import "hover";
 
 // Helper Classes => Clearfix | Image Replacement | Floats | Clears | Hide Stuff
 @import "helpers";
@@ -59,5 +65,5 @@
 // Print Styles
 @import "print";
 
-// Test Page => Remove for production
+// Test Page => Remove for Production
 @import "testing";

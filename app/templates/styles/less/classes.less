@@ -9,30 +9,44 @@
 // Transition classes
 .flux { .transition(all 0.5s ease-in-out); }
 
+// fx => Open & Close
+.fx-open-close { .width(1.5); .height(.25); display:block; 
+                background:@white; position: relative; 
+    &:before,
+    &:after { 
+        content: "";  width:inherit; height: inherit; 
+        display:block; position: absolute; .transition(all 0.3s ease 0s);
+    }
+    &:before { .top(.5);  background: @white; }
+    &:after { .bottom(.5);  background: @white; }
+}
+.active {
+    .fx-open-close { background: transparent;
+        &:before { .top(0); .rotate(45deg); transition:all 0.3s ease 0s; }
+        &:after {  .bottom(0);  .rotate(-45deg);  transition:all 0.3s ease 0s;}
+    }
+}
+
 // Borders
-.bdr { border:1px solid darken(@silver, 10%); }
-.bdr-tb { border-top:1px solid @silver; border-bottom:1px solid @silver; } 
-.bdr-lr { border-left:1px solid @silver; border-right:1px solid @silver; }
-.bdr-t { border-top:1px solid @silver; }
-.bdr-b { border-bottom:1px solid @silver; }
-.bdr-l { border-left:1px solid @silver;  }
-.bdr-r { border-right:1px solid @silver; }
+.bdr { border:@border-width @border-style @border-color; }
+.bdr-tb { border-top:@border-width @border-style @border-color; border-bottom:@border-width @border-style @border-color; } 
+.bdr-lr { border-left:@border-width @border-style @border-color; border-right:@border-width @border-style @border-color; }
+.bdr-t { border-top:@border-width @border-style @border-color; }
+.bdr-b { border-bottom:@border-width @border-style @border-color; }
+.bdr-l { border-left:@border-width @border-style @border-color;  }
+.bdr-r { border-right:@border-width @border-style @border-color; }
 
 // Call Out Section
 .panel {
 	padding:1.5rem;
-    background: #F2F2F2;
+    background: lighten(@silver, 15%);
     border:1px solid #D9D9D9;
 }
 
 // Needed for gumby.parallax.js
-.parallax {
-  background-attachment: fixed !important;
-}
+.parallax { background-attachment: fixed !important; }
 .oldie, .ie9 {
-	.parallax {
-		background-attachment: static !important;
-	}
+	.parallax { background-attachment: static !important; }
 }
 
 // Pilgrim Alert

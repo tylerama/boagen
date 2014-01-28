@@ -11,10 +11,8 @@ img { width:100%; max-width: 100%; height: auto; vertical-align: middle; }
 // Images Styles
 .img-rounded { .border-radius(.25em); }
 .img-circle { .border-radius(50%); }
-.img-thumbnail { background-color: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    display: inline-block;
-    .padding(.25); 
+.img-thumbnail { .padding(.25); display: inline-block;
+    background-color: @white; border: 1px solid @silver;
 }
 
 // Give my floated img some space Yo! 
@@ -22,7 +20,7 @@ img { width:100%; max-width: 100%; height: auto; vertical-align: middle; }
 .img-left { .margin(0, 1.5, 1, 0); }
 
 // Special effects Son 
-.img-fx { background:@lter-gray; .padding(.25); }
+.img-fx {  }
 
 // Reuse
 .img-banner { display: block; float: none; width: 100% !important; }

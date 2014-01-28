@@ -1,15 +1,23 @@
 /*========*/
 /* Lists */
 /*========*/
-// Basic w/ Links 
-.lst {
-	li { .padding(.4, 0, .2, 0); color:@primary-color; } 
-	a {  display:block; color:inherit; display:block; }
+// Basic vertical List w/ links 
+.lst-vert {
+	li { color:@color-secondary; font-size: 90%; } 
+	a { .padding(.4, 0, .4, 0);  display:block; color:inherit; }
+}
+// Basic Horizontal List w/ links 
+.lst-hori { 
+	li { color:@color-secondary; position: relative; 
+		&:first-child a { padding-left: 0; }
+		&:last-child a { padding-right: 0; }
+	}
+	a { .padding(0, 1.5, 0, 1.5);  display:block; color:inherit; }
 }
 
 // Add a Border to Top or Bottom of li's
 .lst-bdr { 
-	li { border-bottom: 1px solid silver;
+	li { border-bottom: 1px solid @silver;
 		&:first-child { border-top:none }
 		&:last-child { border-bottom:none }
 	} 
