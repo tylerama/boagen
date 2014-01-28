@@ -3,7 +3,13 @@
   "version": "0.0.0",
   "dependencies": {
   	"modernizr": ">=2.6.2",<% if (gumby) { %>
-    "gumby": "https://raw.github.com/GumbyFramework/Gumby/master/js/libs/gumby.min.js", <% } %>
+    "gumby": "https://raw.github.com/GumbyFramework/Gumby/master/js/libs/gumby.min.js", <% } if (gumbyExtensions) { %>
+	"gumby-InView": "https://raw.github.com/GumbyFramework/InView/master/gumby.inview.js",
+	"gumby-ResponsiveComments": "https://raw.github.com/GumbyFramework/ResponsiveComments/master/gumby.comments.js",
+	"gumby-Parallax": "https://raw.github.com/GumbyFramework/Parallax/master/gumby.parallax.js",
+	"gumby-ResponsiveImages": "https://raw.github.com/GumbyFramework/ResponsiveImages/master/gumby.images.js",
+	"gumby-Shuffle": "https://raw.github.com/GumbyFramework/Shuffle/master/gumby.shuffle.js",
+	"gumby-FitText": "https://raw.github.com/GumbyFramework/FitText/master/gumby.fittext.js", <% } %>
   	"jquery": "latest"
   },
   "devDependencies": {}

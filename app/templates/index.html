@@ -1014,7 +1014,7 @@ o888o   `Y8bod8P' `Y8bod8P'   "888" `Y8bod8P' d888b
     <script>
     if(!window.jQuery) {
     if(!oldieCheck) {
-      document.write('<script src="scripts/vendor/jquery.min.js"><\/script>');
+      document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>');
     } else {
       document.write('<script src="scripts/vendor/jquery-1.11.1.min.js"><\/script>');
     }
@@ -1024,6 +1024,14 @@ o888o   `Y8bod8P' `Y8bod8P'   "888" `Y8bod8P' d888b
     <!-- bower:js -->
     <% if (gumby) { %>
     <script src="bower_components/gumby/index.js"></script>
+    <% } %>
+    <% if (gumbyExtensions) { %>
+    <script src="bower_components/gumby-InView/index.js"></script>
+    <script src="bower_components/gumby-ResponsiveComments/index.js"></script>
+    <script src="bower_components/gumby-Parallax/index.js"></script>
+    <script src="bower_components/gumby-ResponsiveImages/index.js"></script>
+    <script src="bower_components/gumby-Shuffle/index.js"></script>
+    <script src="bower_components/gumby-FitText/index.js"></script>
     <% } %>
     <!-- endbower -->
     <!-- endbuild -->
