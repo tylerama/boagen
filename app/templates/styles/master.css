@@ -1,4 +1,4 @@
-@import "../css/fonts.css";
+@import "../styles/fonts.css";
 /*=====================*/
 /*   Master of Pages   */
 /*=====================*/
@@ -1779,7 +1779,7 @@ fieldset {
 }
 /* line 1479, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lesshat.less */
 lesshat-selector {
-  -lh-property: 0; } 
+  -lh-property: 0; }
 @-webkit-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
 @-moz-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
 @-o-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
@@ -2239,7 +2239,7 @@ p a:focus {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
-  
+
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -2275,7 +2275,7 @@ p a:focus {
   thead {
     display: table-header-group;
     /* h5bp.com/t */
-  
+
   }
   /* line 46, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\print.less */
   tr,

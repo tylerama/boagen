@@ -35,18 +35,12 @@ BoagenGenerator.prototype.askFor = function askFor() {
     name: 'gumbyExtensions',
     message: 'Would you like to include Gumby Extensions (InView, ResponsiveComments, Parallax, ResponsiveImages, Shuffle, FitText)?',
     default: false
-  }, {
-    type: 'confirm',
-    name: 'browsersync',
-    message: 'Would you like to include browsersync?',
-    default: true
   }];
 
   this.prompt(prompts, function (props) {
     this.projectName = props.projectName;
     this.gumby = props.gumby;
     this.gumbyExtensions = props.gumbyExtensions;
-    this.browsersync = props.browsersync;
     this.customFonts = props.customFonts;
 
     cb();
