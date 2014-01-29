@@ -14,7 +14,6 @@
 
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/master.css">
-        <link rel="stylesheet" href="styles/fonts.css">
         <!-- endbuild -->
 
         <!-- modernizr -->
@@ -26,9 +25,7 @@
                 'section summary template time video'
             };
         </script>
-        <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -45,42 +42,55 @@ oooo                                  .o8
 o888o o888o `Y8bod8P' `Y888""8o `Y8bod88P" `Y8bod8P' d888b
 -->
 
-<header class="masthead pad-tb gbl-width bg-bluxr bg-64 img-cover masthead-fx flux cf" role="banner">
-    <div class="col-logo vh-align CF flux">
+<header class="masthead bg-64 img-cover cf" role="banner">
+    <section class="reveal pad-tb-sm flux">
+        <div class="col-social vh-align">
+            <ul class="links-social inline-center">
+                <li>
+                    <a href="" class="shape-hex"><i class="icon-facebook"></i></a>
+                <li>
+                    <a href="" class="shape-hex"><i class="icon-twitter"></i></a>
+                <li>
+                    <a href="" class="shape-hex"><i class="icon-linkedin"></i></a>
+            </ul>
+        </div>
 
-        <svg version="1.1" class="svg-graphic"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="100%"
-            height="100%"
-            viewBox="0 0 204 236.333"
-            enable-background="new 0 0 204 236.333"
-            xml:space="preserve">
+        <fieldset class="search-primary vh-align" role="search">
+            <input type="search" name="" id="">
+            <input type="submit" value="submit">
+        </fieldset>
+    </section>
 
-            <polygon class="polygon" points="2.667,60.493 101.667,2.927 200.667,60.493 200.667,175.625 101.667,233.19 2.667,175.625 "/>
+<!--
+,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,68b.   ,
+'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'
+-->
 
-            <g>
-                <text class="txt-logo"  transform="matrix(1 0 0 1 19.7852 127.6221)" fill="#FFFFFF" font-family="sans-serif" font-size="32.2163"> prometheus</text>
+    <section class="gbl-width">
 
-                <path class="flame" d="M144.9,130.224c-14.604-31.633-5.183-41.779-5.086-41.883c0.162-0.166,0.188-0.426,0.062-0.629c-0.137-0.193-0.386-0.27-0.604-0.184c-0.213,0.088-20.538,8.559-17.979,27.33c-5.578-5.01-31.619-30.725-15.689-60.963c0.101-0.182,0.071-0.416-0.077-0.568c-0.143-0.158-0.37-0.207-0.559-0.123c-0.346,0.143-8.467,3.607-14.944,12.387c-5.975,8.082-11.527,22.375-4.046,44.496c2.721,10.406-2.41,18.842-5.162,22.426c0.675-2.473,1.527-6.65,1.385-11.457c-0.218-7.029-2.756-16.734-13.583-23.01c-0.168-0.096-0.386-0.09-0.543,0.031c-0.167,0.121-0.239,0.32-0.193,0.518c0.041,0.188,4.091,18.67-3.015,27.223c-6.137,7.375-12.146,20.217-8.894,32.115c2.726,9.943,11.244,17.537,25.319,22.557c3.609,1.111,7.061,1.955,10.877,2.672c0.249,0.049,0.492-0.104,0.568-0.34c0.077-0.25-0.045-0.514-0.274-0.621c-7.229-3.131-14.685-9.658-9.142-22.918c5.274-11.43,4.33-17.322,3.274-19.846c2.726,1.537,8.142,5.521,6.792,12.531c-0.035,0.203,0.056,0.416,0.239,0.523s0.406,0.092,0.568-0.041c0.173-0.131,16.457-13.531,9.057-29.947c3.648,2.102,13.318,9.461,7.613,26.348c-1.898,7.26,3.273,12.482,3.492,12.701c0.172,0.168,0.431,0.193,0.629,0.061c0.193-0.121,0.275-0.375,0.188-0.598c-0.167-0.453-4.025-10.844,4.345-16.584c-0.442,2.664-1.142,9.27,1.853,12.869c2.69,3.236,5.289,8.547,4.497,13.734c-0.559,3.648-2.715,6.73-6.437,9.137c-0.212,0.146-0.289,0.406-0.182,0.639c0.106,0.229,0.37,0.336,0.613,0.26c9.188-3.041,21.238-9.076,26.491-20.594C150.235,151.989,149.743,141.812,144.9,130.224z"/>
-            </g>
-        </svg>
-    </div> <!-- END col -->
+        <a href="#" class="toggle cf" gumby-trigger=".reveal">
+            <div class="fx-open-close flux"></div>
+        </a>
 
-    <div class="col-social vh-align">
-        <ul class="links-social inline-center">
-            <li>
-                <a href="" class="shape-hex"><i class="icon-facebook"></i></a>
-            <li>
-                <a href="" class="shape-hex"><i class="icon-twitter"></i></a>
-            <li>
-                <a href="" class="shape-hex"><i class="icon-linkedin"></i></a>
-        </ul>
-    </div>
+        <div class="col-logo pad-tb-sm">
+            <svg version="1.1" class="svg-graphic"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="100%"
+                height="100%"
+                viewBox="0 0 204 236.333"
+                enable-background="new 0 0 204 236.333"
+                xml:space="preserve">
 
-    <fieldset class="search-primary vh-align" role="search">
-        <input type="search" name="" id="">
-        <input type="submit" value="submit">
-    </fieldset>
+                <polygon class="polygon" points="2.667,60.493 101.667,2.927 200.667,60.493 200.667,175.625 101.667,233.19 2.667,175.625 "/>
+
+                <g>
+                    <text class="txt-logo"  transform="matrix(1 0 0 1 19.7852 127.6221)" fill="#FFFFFF" font-family="sans-serif" font-size="32.2163"> prometheus</text>
+
+                    <path class="flame" d="M144.9,130.224c-14.604-31.633-5.183-41.779-5.086-41.883c0.162-0.166,0.188-0.426,0.062-0.629c-0.137-0.193-0.386-0.27-0.604-0.184c-0.213,0.088-20.538,8.559-17.979,27.33c-5.578-5.01-31.619-30.725-15.689-60.963c0.101-0.182,0.071-0.416-0.077-0.568c-0.143-0.158-0.37-0.207-0.559-0.123c-0.346,0.143-8.467,3.607-14.944,12.387c-5.975,8.082-11.527,22.375-4.046,44.496c2.721,10.406-2.41,18.842-5.162,22.426c0.675-2.473,1.527-6.65,1.385-11.457c-0.218-7.029-2.756-16.734-13.583-23.01c-0.168-0.096-0.386-0.09-0.543,0.031c-0.167,0.121-0.239,0.32-0.193,0.518c0.041,0.188,4.091,18.67-3.015,27.223c-6.137,7.375-12.146,20.217-8.894,32.115c2.726,9.943,11.244,17.537,25.319,22.557c3.609,1.111,7.061,1.955,10.877,2.672c0.249,0.049,0.492-0.104,0.568-0.34c0.077-0.25-0.045-0.514-0.274-0.621c-7.229-3.131-14.685-9.658-9.142-22.918c5.274-11.43,4.33-17.322,3.274-19.846c2.726,1.537,8.142,5.521,6.792,12.531c-0.035,0.203,0.056,0.416,0.239,0.523s0.406,0.092,0.568-0.041c0.173-0.131,16.457-13.531,9.057-29.947c3.648,2.102,13.318,9.461,7.613,26.348c-1.898,7.26,3.273,12.482,3.492,12.701c0.172,0.168,0.431,0.193,0.629,0.061c0.193-0.121,0.275-0.375,0.188-0.598c-0.167-0.453-4.025-10.844,4.345-16.584c-0.442,2.664-1.142,9.27,1.853,12.869c2.69,3.236,5.289,8.547,4.497,13.734c-0.559,3.648-2.715,6.73-6.437,9.137c-0.212,0.146-0.289,0.406-0.182,0.639c0.106,0.229,0.37,0.336,0.613,0.26c9.188-3.041,21.238-9.076,26.491-20.594C150.235,151.989,149.743,141.812,144.9,130.224z"/>
+                </g>
+            </svg>
+        </div> <!-- END col-logo -->
+    </section>
 
     <nav class="col-nav" role="navigation">
         <ul class="nav-primary inline-center">
@@ -101,10 +111,7 @@ oooo
  888   888  888    .o  888     888   888
 o888o o888o `Y8bod8P' d888b    `Y8bod8P'
 -->
-<section class="hero inview lower-ceiling"
-    gumby-classname="active|below|above"
-    gumby-offset="300|672"
-    gumby-target=".masthead|main|.polygon">
+<section class="hero">
 
     <figure class="img-cover parallax" gumby-parallax=".5">
 
@@ -124,12 +131,11 @@ o888o o888o o888o `Y888""8o o888o o888o o888o
 
 <main class="main gbl-width pad-t-lg pad-b cf" role="main">
 
-    <header class="col-full mar-b bdr-b cf"
-         >
+    <header class="col-full mar-b bdr-b cf">
 
         <h1 class="pull-left">Markup Patterns <small>Archive</small></h1>
 
-        <ul class="inline-right btn-group spacers cf" gumby-fixed="250" gumby-pin="#some-element">
+        <ul class="inline-right lst-hori spacers cf" gumby-fixed="250" gumby-pin="#some-element">
             <li><a href="">sub-nav-1</a></li>
             <li><a href="">sub-nav-2</a></li>
             <li><a href="">sub-nav-3</a></li>
@@ -206,7 +212,7 @@ o888o o888o o888o `Y888""8o o888o o888o o888o
         -->
         <div class="pad-tb cf row">
         <!-- 3-up Banner image -->
-        <article class="mp-archive col-4"  typeof="Article">
+        <article class="mp-archive col-nest-9 "  typeof="Article">
             <figure class="img-featured">
                 <a href="#" class="img-thumbnail">
                     <img src="http://placehold.it/350x100&text=[img]" alt="sample image" property="thumbnailUrl">
@@ -241,7 +247,7 @@ o888o o888o o888o `Y888""8o o888o o888o o888o
         '   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'
         -->
 
-        <article class="mp-archive col-4"  typeof="Article">
+        <article class="mp-archive col-nest-9"  typeof="Article">
             <figure class="img-featured">
                 <a href="#" class="img-thumbnail">
                     <img src="http://placehold.it/350x100&text=[img]" alt="sample image" property="thumbnailUrl">
@@ -276,7 +282,7 @@ o888o o888o o888o `Y888""8o o888o o888o o888o
         '   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'
         -->
 
-        <article class="mp-archive col-4"  typeof="Article">
+        <article class="mp-archive col-nest-9"  typeof="Article">
             <figure class="img-featured">
                 <a href="#" class="img-thumbnail">
                     <img src="http://placehold.it/350x100&text=[img]" alt="sample image" property="thumbnailUrl">
@@ -316,9 +322,9 @@ o888o o888o o888o `Y888""8o o888o o888o o888o
         `88b  d88' o.   .88P
          `Y8bd8P'  `8bd88P'
         -->
-        <div class="pad-tb row cf">
+        <div class="pad-tb row cf"`>
         <!-- 3-up Image Left -->
-        <article class="mp-archive col-4" typeof="Article">
+        <article class="mp-archive col-nest-9" typeof="Article">
             <h5 class="mp-category" property="genre">Category</h5>
 
             <figure style="width:75px;" class="img-feat pull-left img-left">
@@ -352,7 +358,7 @@ o888o o888o o888o `Y888""8o o888o o888o o888o
         '   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'
         -->
 
-        <article class="mp-archive col-4" typeof="Article">
+        <article class="mp-archive col-nest-9" typeof="Article">
             <h5 class="mp-category" property="genre">Category</h5>
 
             <figure style="width:75px;" class="img-feat pull-left img-left">
@@ -386,7 +392,7 @@ o888o o888o o888o `Y888""8o o888o o888o o888o
         '   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'   `Y89'
         -->
 
-        <article class="mp-archive col-4" typeof="Article">
+        <article class="mp-archive col-nest-9" typeof="Article">
             <h5 class="mp-category" property="genre">Category</h5>
 
             <figure style="width:75px;" class="img-feat pull-left img-left">
@@ -427,7 +433,7 @@ o888o o888o o888o `Y888""8o o888o o888o o888o
         `88b  d88'      888
          `Y8bd8P'      o888o
         -->
-        <div class="pad-t row cf">
+        <div class="pad-t cf">
         <!-- Media List Image Left -->
         <article class="mp-archive pad-b cf" typeof="Article">
             <h5 class="mp-category" property="genre">Category</h5>
@@ -554,7 +560,7 @@ o.  )88b  888  888   888  888    .o  888   888 d8(  888   888
             <input type="submit" value="submit">
         </fieldset>
 
-        <ul class="lst txt-upp mar-tb lst-bdr">
+        <ul class="lst-vert txt-upp mar-tb lst-bdr">
             <li><a href="">news</a></li>
             <li><a href="">code</a></li>
             <li><a href="">design</a></li>
@@ -567,8 +573,8 @@ o.  )88b  888  888   888  888    .o  888   888 d8(  888   888
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolor. Lorem ipsum dolor sit amet ipsum dolor sit.</p>
 
-            <div class="link-rm">
-                <a href="#" class="">Read More</a>
+            <div>
+                <a href="#" class="rm">Read More</a>
             </div>
         </div>
     </aside><!-- END col-sidebar -->
@@ -604,10 +610,10 @@ o.  )88b  888  888   888  888    .o  888   888 d8(  888   888
             </header>
         </div>
 
-        <section class="col-content cf">
-        <div class="pad-t row cf">
-        <!-- Media Detail -->
 
+        <section class="col-content">
+        <div class="pad-t cf">
+        <!-- Media Detail -->
 
         <article class="mp-detail pad-tb cf" typeof="Article">
             <h5 class="mp-category" property="genre">Category</h5>
@@ -639,7 +645,7 @@ o.  )88b  888  888   888  888    .o  888   888 d8(  888   888
 
                 <p>Vel te dolor eirmod accumsan, nam rebum harum in. Ex quo delenit nominati concludaturque, veniam dictas senserit duo cu. Maiorum volumus interesset mel at, sed eu nihil laoreet. Dico laoreet ei eos. Per impedit reformidans referrentur eu, stet vide qualisque ut quo, reque facilisi dissentias per eu. Sea ei vero eripuit, his ullum accusam salutandi ex. Ad eum quod magna convenire, laudem omittantur sea at. Laudem deseruisse honestatis sea ei, sanctus molestie his cu.</p>
 
-                <ul class="lst">
+                <ul class="lst-vert">
                     <li>Quis egestas tristique odio</li>
                     <li>Est adipiscing nulla bibendum</li>
                     <li>Dolor eu feugiat rutrum</li>
@@ -698,7 +704,7 @@ o.  )88b  888  888   888  888    .o  888   888 d8(  888   888
 
                 <p>Vel te dolor eirmod accumsan, nam rebum harum in. Ex quo delenit nominati concludaturque, veniam dictas senserit duo cu. Maiorum volumus interesset mel at, sed eu nihil laoreet.</p>
 
-                <ul class="lst">
+                <ul class="lst-vert">
                     <li>Quis egestas tristique odio</li>
                     <li>Est adipiscing nulla bibendum</li>
                     <li>Dolor eu feugiat rutrum</li>
@@ -740,7 +746,7 @@ o.  )88b  888  888   888  888    .o  888   888 d8(  888   888
             <input type="submit" value="submit">
         </fieldset>
 
-        <ul class="lst txt-upp mar-tb lst-bdr">
+        <ul class="lst-vert txt-upp mar-tb lst-bdr">
             <li><a href="">news</a></li>
             <li><a href="">code</a></li>
             <li><a href="">design</a></li>
@@ -812,13 +818,13 @@ d"     YD
         <li class="col-6"></li>
     </ul>
 
-    <ul class="test-grid inline-3  cf">
+    <ul class="test-grid inline-3 cf">
         <li></li>
         <li></li>
         <li></li>
     </ul>
 
-    <ul class="test-grid inline-4  cf">
+    <ul class="test-grid inline-4 cf">
         <li></li>
         <li></li>
         <li></li>
@@ -834,8 +840,8 @@ d"     YD
         <li></li>
     </ul>
 
-<h2 class="txt-center">da phuque</h2>
-    <ul class="test-grid hybrid-14  cf">
+<h2 class="txt-center">14 columns in a 12 column grid.</h2>
+    <ul class="test-grid inline-14 cf">
         <li></li>
         <li></li>
         <li></li>
@@ -852,24 +858,48 @@ d"     YD
         <li></li>
     </ul>
 
-    <ul class="test-grid clear cf">
-        <li class="hyb-7">
-            <ul class="nest-left">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </li>
-        <li class="hyb-7">
-            <ul class="nest-right">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </li>
+    <h2 class="txt-center">Turn 12 columns into 14 columns</h2>
+    <div class="">
+    <ul class="test-grid hybrid-14 cf">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ul>
+    </div>
+
+
+<h2 class="txt-center">Nested grids</h2>
+
+        <ul class="test-grid nest-example cf">
+            <li class="col-6">
+                <ul class="left"> <!-- nesting into a 12 column grid via the .nest class -->
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li class="col-6">
+                <ul class="right"> <!-- I asigned nest-right a  -->
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+
 </main>
 
 <!--
@@ -979,11 +1009,11 @@ o888o   `Y8bod8P' `Y8bod8P'   "888" `Y8bod8P' d888b
 
         <!-- Start Auxilliary Footer Content -->
         <div class="aux-footer mar-t gbl-width cf">
-            <div class="col-meta">
+            <div class="col-3">
                 <small>© Copyright no one at all.</small>
             </div>
 
-            <div class="col-nav">
+            <div class="col-9">
                 <ul class="aux-nav inline-right spacers cf">
                     <li><a href="">nav-1</a></li>
                     <li><a href="">nav-2</a></li>
@@ -1004,22 +1034,23 @@ o888o   `Y8bod8P' `Y8bod8P'   "888" `Y8bod8P' d888b
     <!-- Grab Google CDN's jQuery, fall back to local if offline -->
     <!-- 2.0 for modern browsers, 1.11 for .oldie -->
     <script>
-    var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-    if(!oldieCheck) {
-    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-    } else {
-    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"><\/script>');
-    }
+        var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+        if(!oldieCheck) {
+        document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+        } else {
+        document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"><\/script>');
+        }
     </script>
     <script>
-    if(!window.jQuery) {
-    if(!oldieCheck) {
-      document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>');
-    } else {
-      document.write('<script src="scripts/vendor/jquery-1.11.1.min.js"><\/script>');
-    }
-    }
+        if(!window.jQuery) {
+            if(!oldieCheck) {
+             document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>');
+            } else {
+            document.write('<script src="scripts/vendor/jquery-1.11.1.min.js"><\/script>');
+            }
+        }
     </script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <% if (gumby) { %>
@@ -1039,7 +1070,16 @@ o888o   `Y8bod8P' `Y8bod8P'   "888" `Y8bod8P' d888b
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
-    <!-- Google Analytics -->
+    <!-- Adds a Baseline Grid Overlay
+    http://keyes.ie/things/baseliner/
+    -->
+    <script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js"></script>
+        <script>
+            window.onload = function() {
+                baseliner = new Baseliner(8);
+            }
+        </script>
+
     <!-- Change UA-XXXXX-X to be your site's ID -->
     <!--<script>
     window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
@@ -1047,7 +1087,6 @@ o888o   `Y8bod8P' `Y8bod8P'   "888" `Y8bod8P' d888b
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
     </script>-->
-
     <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
     <!--[if lt IE 7 ]>
