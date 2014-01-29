@@ -10,49 +10,23 @@
 // http://typecast.com/blog/a-more-modern-scale-for-web-typography
 
 
-/* Base Font => 16px */
-body { font: normal 100%; font-size: 1em; line-height: 1.5; font-size-adjust: auto; }
+// Base Line Grid & Base Type
+h1 { .margin(0, 0, .5, 0); padding:0; .font-size(2.5);  line-height:1.1; }
 
-/* Base line grid & Base Type */
-h1 { margin:0 0 .5rem 0; padding:0; 
-  font-size:2.5rem;  
-  line-height:1.1;
-  font-family: 'grotesque-light'; text-transform: uppercase; 
-}
-h2 { margin:0 0 .5rem 0; padding:0; 
-  font-size:1.3rem; 
-  line-height:1.1;
-  font-family: 'grotesque-light'; text-transform: uppercase; 
-}
-h3 { margin:0 0 .5rem 0; padding:0;
-  font-size:1.25rem;
-  line-height:1.1;
-  font-family: 'grotesque-light'; 
-}
-h4 { margin:0 0 1rem 0; padding:0;
-  font-size:1.125rem;
-  line-height:1.1;
-  font-family: 'grotesque-light';  
-}
-h5 { margin:0; padding:0;
-  font-size:.875rem;
-  line-height:1.1;
-  font-family: 'grotesque-light'; text-transform: uppercase; 
-}
-h6 { margin:0; padding:0;
-  font-size:.875rem;
-  line-height:1.1;
-  font-family: 'grotesque-light'; 
-}
+h2 { .margin(0, 0, .5, 0); padding:0; .font-size(1.75); line-height:1.1; }
 
-/* Turn on ligatures, as well as discretionary ligatures */
-h1, h2, h3, h4, h5, h6 {  text-rendering: optimizeLegibility;
-   -moz-font-feature-settings: "liga=1, dlig=1";
-    -ms-font-feature-settings: "liga", "dlig";
--webkit-font-feature-settings: "liga", "dlig";
-     -o-font-feature-settings: "liga", "dlig";
-        font-feature-settings: "liga", "dlig";
- }
+h3 { .margin(0, 0, .5, 0); padding:0; .font-size(1.25); line-height:1.1; }
+
+h4 { .margin(0, 0, 1, 0); padding:0;.font-size(1.12); line-height:1.1; }
+
+h5 { .margin(0); padding:0; .font-size(1.3); line-height:1.1; }
+
+h6 { .margin(0); padding:0; .font-size(1.25); line-height:1.1; }
+
+
+h1, h2, h3, h4, h5, h6 { color:@color-primary; font-family: Medula; font-weight: 300;
+  letter-spacing: .5px; text-transform: capitalize; 
+}
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
   font-weight: inherit !important; text-decoration: inherit; color: inherit; 
@@ -62,21 +36,28 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   color: #6F6F6F; font-size: 60%; line-height: 0; 
 }
 
-
+/* Turn on ligatures, as well as discretionary ligatures */
+h1, h2, h3, h4, h5, h6 {  text-rendering: optimizeLegibility;
+   -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+-webkit-font-feature-settings: "liga", "dlig";
+     -o-font-feature-settings: "liga", "dlig";
+        font-feature-settings: "liga", "dlig";
+}
 
 // Paragraphs
-p { margin:1.5rem 0; 
-  font-size:.875rem; // 14px
-  line-height:1.5rem ; // 24px
+p { .margin(1.5, 0, 1.5, 0); 
+  .font-size(.875); // 14px
+  line-height:1.5 ; // 24px
  
  -webkit-hyphens: auto;
     -moz-hyphens: auto;
          hyphens: auto;
-/* For definite cross browser hyphens support */
+// For definite cross browser hyphens support
 -ms-word-break: break-all;
     word-break: break-all;
 
-/* Non standard for webkit*/
+// Non standard for webkit
    word-break: break-word;
 
     -webkit-hyphens: auto;
@@ -91,9 +72,13 @@ p:first-of-type { margin-top:0; }
 p:last-of-type { margin-bottom:0; }
 
 
-// Font Family
-.serif { font-family:Georgia, Times New Roman, serif; }
-.sans { font-family:Helvetica, Arial, sans-serif; }
+// Custom Font Family
+.serif { font-family: Lato, serif; }
+.sans-serif { font-family: Medula, sans-serif; }
+
+// Font Stacks
+//.stack-helvetica { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+//.stack-georgia { font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;}
 
 // Text Alignment
 .txt-justify { text-align: justify; }

@@ -5,22 +5,22 @@
 // Customize the background color of selected text to match your design.
 ::-moz-selection,
 ::selection {    
-	text-shadow: none;
+	text-shadow: none; 
 }
-::-moz-selection { background: #b3d4fc; }
-::selection { background: #b3d4fc; }
+::-moz-selection { background: darken(@color-primary, 10%); }
+::selection { background: darken(@color-primary, 10%); }
 
 
 // Blockquotes
-blockquote { margin: 0 1rem 1rem 1rem; border-left: 3px solid #eee; 
-	p { margin-left: 1rem; padding-top: .25rem;
-		text-align: left !important; 
-	  	font-size: 1rem; font-weight: bold; 
-	 	line-height: 1.5rem; color: #999; font-style: italic; 
+blockquote { .margin(0, 1, 1, 1,); border-left: 3px solid @color-secondary; 
+	p { .margin-left(1); .padding-top(.25);
+		
+	  	.font-size(1); font-weight: bold; 
+	 	.line-height(1.5); color: @gray; font-style: italic; 
 	}
 	p:before, 
 	blockquote p:after { 
-		font-size: 24px; font-size: 2.5rem; 
+		.font-size(24); .font-size(2.5); 
 		vertical-align: middle; 
 	}
 	blockquote p:before { content: "\201C\0020"; }

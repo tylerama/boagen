@@ -4,38 +4,36 @@
               ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
               ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
               ~"only screen and (min-device-pixel-ratio: 1.5)";
-@mobile-sm:   ~"only screen and (max-width: 320px)";
-@mobile:      ~"only screen and (min-width: 321px) and (max-width: 529px)";
-@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
-@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
-@desktop-lg:  ~"only screen and (min-width: 1129px)"; 
+@mobile-sm:   ~"only screen and (max-width: 20em)"; // 320px
+@mobile:      ~"only screen and (min-width: 20.0625em) and (max-width: 33.0625em)"; // 321px & 529px
+@tablet:      ~"only screen and (min-width: 33.125em) and (max-width: 59.3125em)"; // 530px & 949px
+@desktop:     ~"only screen and (min-width: 59.375em) and (max-width: 70.5em)"; // 950px & 1128px
+@desktop-lg:  ~"only screen and (min-width: 70.5625em)"; // 1129px
 
 
-// Site colors
-// -------------------------
-@bg-color-lt: 		#ffffff;
-@bg-color-dk: 		gray;
+// Primary Color Scheme
+@color-primary: 		#f38630; 	// Orange
+@color-secondary: 		#3899b9; 	// Blue
+@color-tertiary: 		red; 		// Name
+@color-quaternary:  	red;		// Name
 
-@primary-color: 	#2BA6CB;
-@auxiliary-color: 	green;
+// Primary Highlights
+@color-highlight-lt:   	#e0e4cc; 	// Light Blue
+@color-highlight-dk:   	#a7dbd8; 	// Off White
 
-@txt-color: 		#252525;
-@txt-color-str:		#090909;
+// Alerts
+@color-warning:			#d4230f;
+@color-success:			green;
 
-@color-pri: 		#2BA6CB;
-@color-sec:			#090909;
-@color-ter:			#090909;
-@color-qua:			#090909;
+// Links
+@color-link: 			@color-secondary;
+@color-link-lt: 		red;
+@color-link-dk: 		red;
 
-@accent-pri: 		#2d9681;
-@accent-aux:		#f8a34b;
-
-@warning:			#d4230f;
-
-
-@lter-gray: 		#f4f4f4;
-
-
+// Text
+@color-text: 			red;
+@color-text-lt: 		red;
+@color-text-dk: 		red;
 
 
 // COLOR VARIABLES
@@ -63,18 +61,20 @@
 @gray:   #aaa;
 @black:  #111;
 
-
-
-// Global Margin & Padding
-// -------------------------
+// Global Margin
 @global-margin-sm:	1.25em;
 @global-margin:		2em;
 @global-margin-lg:	3em;
 
+// Global Padding
 @global-padding-sm:	1em;
 @global-padding:	2em;
 @global-padding-lg:	3em;
 
+// Border Styles
+@border-color:   		@silver;
+@border-width:   		1px;
+@border-style:     		solid;
 
 // Typography
 // -------------------------
