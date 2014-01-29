@@ -94,13 +94,33 @@ BoagenGenerator.prototype.lessFramework = function lessFramework() {
 
 BoagenGenerator.prototype.base = function base() {
   this.copy('index.html', 'app/index.html');
+  this.copy('kitchen-sink.html', 'app/kitchen-sink.html');
   this.copy('favicon.ico', 'app/favicon.ico');
   this.copy('apple-touch-icon-precomposed.png', 'app/apple-touch-icon-precomposed.png');
   this.copy('ascii-words.txt', 'app/docs/ascii-words.txt');
   this.copy('helpful-links.txt', 'app/docs/helpful-links.txt');
   this.copy('styles/master.css', 'app/styles/master.css');
-  this.copy('styles/fonts.css', 'app/styles/fonts.css');
   this.copy('scripts/jquery-1.11.0.min.js', 'app/scripts/jquery-1.11.0.min.js');
+};
+
+// Doing this separately just because it's a lot and annoying
+BoagenGenerator.prototype.fonts = function fonts() {
+  this.copy('fonts/icon-font.eot', 'app/fonts/icon-font.eot');
+  this.copy('fonts/icon-font.svg', 'app/fonts/icon-font.svg');
+  this.copy('fonts/icon-font.ttf', 'app/fonts/icon-font.ttf');
+  this.copy('fonts/icon-font.woff', 'app/fonts/icon-font.woff');
+  this.copy('fonts/Lato-Italic.eot', 'app/fonts/Lato-Italic.eot');
+  this.copy('fonts/Lato-Italic.svg', 'app/fonts/Lato-Italic.svg');
+  this.copy('fonts/Lato-Italic.ttf', 'app/fonts/Lato-Italic.ttf');
+  this.copy('fonts/Lato-Italic.woff', 'app/fonts/Lato-Italic.woff');
+  this.copy('fonts/Lato-Regular.eot', 'app/fonts/Lato-Regular.eot');
+  this.copy('fonts/Lato-Regular.svg', 'app/fonts/Lato-Regular.svg');
+  this.copy('fonts/Lato-Regular.ttf', 'app/fonts/Lato-Regular.ttf');
+  this.copy('fonts/Lato-Regular.woff', 'app/fonts/Lato-Regular.woff');
+  this.copy('fonts/MedulaOne-Regular.eot', 'app/fonts/MedulaOne-Regular.eot');
+  this.copy('fonts/MedulaOne-Regular.svg', 'app/fonts/MedulaOne-Regular.svg');
+  this.copy('fonts/MedulaOne-Regular.ttf', 'app/fonts/MedulaOne-Regular.ttf');
+  this.copy('fonts/MedulaOne-Regular.woff', 'app/fonts/MedulaOne-Regular.woff');
 };
 
 // BoagenGenerator.prototype.dist = function dist() {
