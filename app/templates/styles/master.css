@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 @import "../styles/fonts.css";
-=======
->>>>>>> a104b8c4b6829ef02c049e7f68030c32e17c2ba6
 /*=====================*/
 /*   Master of Pages   */
 /*=====================*/
@@ -431,14 +428,14 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* 
- .o88o.                           .   
- 888 `"                         .o8   
-o888oo   .ooooo.  ooo. .oo.   .o888oo 
- 888    d88' `88b `888P"Y88b    888   
- 888    888   888  888   888    888   
- 888    888   888  888   888    888 . 
-o888o   `Y8bod8P' o888o o888o   "888" 
+/*
+ .o88o.                           .
+ 888 `"                         .o8
+o888oo   .ooooo.  ooo. .oo.   .o888oo
+ 888    d88' `88b `888P"Y88b    888
+ 888    888   888  888   888    888
+ 888    888   888  888   888    888 .
+o888o   `Y8bod8P' o888o o888o   "888"
 */@font-face {
   font-family: 'Lato';
   src: url('../fonts/Lato-Italic.eot');
@@ -471,14 +468,14 @@ o888o   `Y8bod8P' o888o o888o   "888"
   font-style: normal;/* IE9 Compat Modes */
   /* Legacy iOS */
 }
-/* 
- o8o                                      .o88o.                           .   
- `"'                                      888 `"                         .o8   
-oooo   .ooooo.   .ooooo.  ooo. .oo.      o888oo   .ooooo.  ooo. .oo.   .o888oo 
-`888  d88' `"Y8 d88' `88b `888P"Y88b      888    d88' `88b `888P"Y88b    888   
- 888  888       888   888  888   888      888    888   888  888   888    888   
- 888  888   .o8 888   888  888   888      888    888   888  888   888    888 . 
-o888o `Y8bod8P' `Y8bod8P' o888o o888o    o888o   `Y8bod8P' o888o o888o   "888" 
+/*
+ o8o                                      .o88o.                           .
+ `"'                                      888 `"                         .o8
+oooo   .ooooo.   .ooooo.  ooo. .oo.      o888oo   .ooooo.  ooo. .oo.   .o888oo
+`888  d88' `"Y8 d88' `88b `888P"Y88b      888    d88' `88b `888P"Y88b    888
+ 888  888       888   888  888   888      888    888   888  888   888    888
+ 888  888   .o8 888   888  888   888      888    888   888  888   888    888 .
+o888o `Y8bod8P' `Y8bod8P' o888o o888o    o888o   `Y8bod8P' o888o o888o   "888"
 */
 @font-face {
   font-family: 'icon-font';
@@ -1205,7 +1202,7 @@ body {
 }
 /* line 1479, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lesshat.less */
 lesshat-selector {
-  -lh-property: 0; } 
+  -lh-property: 0; }
 @-webkit-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
 @-moz-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
 @-o-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
@@ -1925,7 +1922,6 @@ fieldset {
 .svg-graphic {
   display: block;
 }
-<<<<<<< HEAD
 /* line 4, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
 .col-logo svg:not(:root) {
   overflow: hidden;
@@ -1968,8 +1964,6 @@ lesshat-selector {
   font-family: 'grotesque-light';
   fill: #ffffff;
 }
-=======
->>>>>>> a104b8c4b6829ef02c049e7f68030c32e17c2ba6
 /*====================*/
 /* # Image Styles # */
 /*====================*/
