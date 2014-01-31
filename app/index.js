@@ -138,7 +138,7 @@ BoagenGenerator.prototype.fonts = function fonts() {
 // };
 
 BoagenGenerator.prototype.gruntfile = function gruntfile() {
-  this.template('Gruntfile.js');
+  this.copy('Gruntfile.js', 'Gruntfile.js');
 };
 
 BoagenGenerator.prototype.projectfiles = function projectfiles() {
