@@ -10,13 +10,14 @@
 */
 
 (function () {
+	'use strict';
 	var page1 = {
 		someFunction: function () {
 			console.log('This function does stuff');
 		}
 	};
 
-	document.addEventListener('DOMLoaded', function () {
+	document.addEventListener('DOMContentLoaded', function () {
 		page1.someFunction();
-	});
+	}, false);
 })();

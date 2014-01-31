@@ -85,6 +85,7 @@ BoagenGenerator.prototype.lessFramework = function lessFramework() {
   this.copy('styles/less/grid.less', 'app/styles/less/grid.less');
   this.copy('styles/less/normalize.less', 'app/styles/less/normalize.less');
   this.copy('styles/less/form.less', 'app/styles/less/form.less');
+  this.copy('styles/less/fonts.less', 'app/styles/less/fonts.less');
   this.copy('styles/less/print.less', 'app/styles/less/print.less');
   this.copy('styles/less/pages/global.less', 'app/styles/less/pages/global.less');
   this.copy('styles/less/pages/home.less', 'app/styles/less/pages/home.less');
@@ -101,6 +102,8 @@ BoagenGenerator.prototype.base = function base() {
   this.copy('styles/master.css', 'app/styles/master.css');
   this.copy('scripts/main.js', 'app/scripts/main.js');
   this.copy('scripts/jquery-1.11.0.min.js', 'app/scripts/jquery-1.11.0.min.js');
+  this.copy('img/inferno-2.jpg', 'app/img/inferno-2.jpg');
+  this.copy('img/subtle_grunge.png', 'app/img/subtle_grunge.png');
 };
 
 // Doing this separately just because it's a lot and annoying
