@@ -86,7 +86,6 @@ BoagenGenerator.prototype.lessFramework = function lessFramework() {
   this.copy('styles/less/normalize.less', 'app/styles/less/normalize.less');
   this.copy('styles/less/form.less', 'app/styles/less/form.less');
   this.copy('styles/less/print.less', 'app/styles/less/print.less');
-  this.copy('styles/less/lesshat.less', 'app/styles/less/lesshat.less');
   this.copy('styles/less/pages/global.less', 'app/styles/less/pages/global.less');
   this.copy('styles/less/pages/home.less', 'app/styles/less/pages/home.less');
   this.copy('styles/less/pages/interior.less', 'app/styles/less/pages/interior.less');
