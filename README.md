@@ -1,4 +1,4 @@
-# boagen [![Build Status](https://secure.travis-ci.org/tylerama/generator-boagen.png?branch=master)](https://travis-ci.org/tylerama/boagen)
+# boagen [![Build Status](https://travis-ci.org/tylerama/boagen.png?branch=master)](https://travis-ci.org/tylerama/boagen)
 
 A generator for [Yeoman](http://yeoman.io).
 
