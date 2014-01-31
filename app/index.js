@@ -100,6 +100,7 @@ BoagenGenerator.prototype.base = function base() {
   this.copy('ascii-words.txt', 'app/docs/ascii-words.txt');
   this.copy('helpful-links.txt', 'app/docs/helpful-links.txt');
   this.copy('styles/master.css', 'app/styles/master.css');
+  this.copy('scripts/main.js', 'app/scripts/main.js');
   this.copy('scripts/jquery-1.11.0.min.js', 'app/scripts/jquery-1.11.0.min.js');
 };
 
