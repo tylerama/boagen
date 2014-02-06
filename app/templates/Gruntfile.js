@@ -43,8 +43,10 @@ module.exports = function (grunt) {
             },
             less: {
                 files: ['<%= yeoman.app %>/styles/less/{,*/}*.less'],
-                // tasks: ['less', 'autoprefixer', 'copy:styles']
-                tasks: ['less']
+                tasks: ['less', 'copy:styles'],
+                options: {
+                    livereload: true
+                }
             },
             livereload: {
                 options: {
@@ -139,12 +141,12 @@ module.exports = function (grunt) {
             options: {
                 paths: ['<%= yeoman.app %>/styles/less'],
                 sourceMap: true,
-                sourceMapFilename: './styles/master.css.map',
-                sourceRoothPath: './styles'
+                sourceMapFilename: '<%= yeoman.app %>/styles/master.css.map'
+              //  sourceRoothPath: './styles'
             },
             files: {
                 src: '<%= yeoman.app %>/styles/less/master.less',
-                dest: '<%= yeoman.app %>/.tmp/styles/master.css'
+                dest: '<%= yeoman.app %>/styles/master.css'
             }
         },
 
@@ -177,6 +179,7 @@ module.exports = function (grunt) {
                 files: {
                     src: [
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
+                        '!<%= yeoman.dist %>/scripts/jquery-1.11.0.min.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
                         '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
@@ -209,9 +212,9 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.app %>/images',
+                    cwd: '<%= yeoman.app %>/img',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= yeoman.dist %>/images'
+                    dest: '<%= yeoman.dist %>/img'
                 }]
             }
         },
@@ -219,9 +222,9 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.app %>/images',
+                    cwd: '<%= yeoman.app %>/img',
                     src: '{,*/}*.svg',
-                    dest: '<%= yeoman.dist %>/images'
+                    dest: '<%= yeoman.dist %>/img'
                 }]
             }
         },
@@ -285,7 +288,9 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*'
+                        'styles/fonts/{,*/}*.*',
+                        'bower_components/jquery/jquery.min.js',
+                        'scripts/jquery-1.11.0.min.js'
                     ]
                 }]
             },
@@ -315,13 +320,14 @@ module.exports = function (grunt) {
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
-                'copy:styles',
-                'less'
+                'less',
+                'copy:styles'
             ],
             test: [
                 'copy:styles'
             ],
             dist: [
+                'less',
                 'copy:styles',
                 'imagemin',
                 'svgmin'
@@ -334,19 +340,17 @@ module.exports = function (grunt) {
         if (target === 'dist') {
             return grunt.task.run(['build', 'connect:dist:keepalive']);
         }
-
         grunt.task.run([
+            // Cleans out app/.tmp folder
             'clean:server',
+            // Compiles less files for the first time
             'concurrent:server',
-            // 'autoprefixer',
+            // Starts livereload
             'connect:livereload',
+            // Watches files for changes
             'watch'
         ]);
-    });
-
-    grunt.registerTask('server', function () {
-        grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-        grunt.task.run(['serve']);
+        grunt.log.subhead('Server is started, remember to type ctrl + c to stop');
     });
 
     grunt.registerTask('test', function(target) {
@@ -354,7 +358,6 @@ module.exports = function (grunt) {
             grunt.task.run([
                 'clean:server',
                 'concurrent:test',
-                // 'autoprefixer',
             ]);
         }
 
@@ -365,18 +368,28 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('build', [
+        // Empty out the dist folder for a fresh build
         'clean:dist',
+        // Checks JavaScript for badness
+        'jshint',
+        // Create settings/tasks from html file for concatenation/minification
         'useminPrepare',
+        // Tasks to minify images, svg, and compile LESS styles to app/.tmp/styles
         'concurrent:dist',
-        'less',
-        // 'autoprefixer',
+        // Concatenates css and js files from index into a .tmp folder
         'concat',
+        // Minifies css into dist/styles
         'cssmin',
+        // Uglifies js into dist/scripts
         'uglify',
+        // Copies files from app into dist
         'copy:dist',
+        // Generates a custom modernizr file using only tests that are referenced
         'modernizr',
+        // Renames css and js files to avoid browser caching
         'rev',
-        'usemin'
+        // Minifies HTML, replaces css and js src with the renamed one from above
+       'usemin'
     ]);
 
     grunt.registerTask('default', [
