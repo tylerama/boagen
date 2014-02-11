@@ -98,5 +98,9 @@ p:last-of-type { margin-bottom:0; }
 .column-2 { .column-count(2); }
 .column-3 { .column-count(3); }
 
-
-
+// Use Correct Smart Quotes
+// <q>I couldn’t believe it when she said <q>there’s no milk left</q>, so I just walked out of the door.</q>
+q { quotes: "\201C" "\201D" "\2018" "\2019";
+  &:before { content: open-quote; }
+  &:after { content: no-close-quote; }
+}

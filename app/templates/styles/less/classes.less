@@ -48,6 +48,17 @@
 .oldie, .ie9 {
 	.parallax { background-attachment: static !important; }
 }
+// Needed for gumby.fixed.js
+.fixed { position: fixed; 
+    &.pinned { position: absolute; }
+}
+.unfixed { }
+
+// Lead In Intro Sentence 
+.lead-in::first-line { text-transform: uppercase; color:lighten(@color-text, 10%); }
+//  .some-class { 
+//      p:first-of-type::first-line { text-transform: uppercase;  color:lighten(@color-text, 10%); }
+//   }
 
 // Pilgrim Alert
 .browsehappy {

@@ -1,18 +1,24 @@
-/*========*/
-/* Lists */
-/*========*/
-// Basic vertical List w/ links 
+/*=========*/
+/*  Lists  */
+/*=========*/
+// Basic Vertical List w/ links 
 .lst-vert {
 	li { color:@color-secondary; font-size: 90%; } 
 	a { .padding(.4, 0, .4, 0);  display:block; color:inherit; }
 }
+
 // Basic Horizontal List w/ links 
-.lst-hori { 
+.lst-hori {
 	li { color:@color-secondary; position: relative; 
 		&:first-child a { padding-left: 0; }
 		&:last-child a { padding-right: 0; }
 	}
 	a { .padding(0, 1.5, 0, 1.5);  display:block; color:inherit; }
+}
+
+// Basic Vertical List no links
+.lst-basic { color:@color-secondary; font-size: 90%; 
+	li { .padding(.2, 0, .2, 0); }
 }
 
 // Add a Border to Top or Bottom of li's

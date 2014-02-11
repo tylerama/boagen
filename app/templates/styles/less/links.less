@@ -1,8 +1,11 @@
-
-
+/*=========*/
+/*  Links  */
+/*=========*/
+// All Links
 a { text-decoration: none; color:@color-link; .transition(color .3s ease-in-out); 
 	&:hover { color:@gold; }
 }
+// All Links in a Paragraph
 p {
 	a { color:@color-secondary; text-decoration: none; line-height: inherit; 
 		&:visited {  }
@@ -10,18 +13,6 @@ p {
 		&:focus { outline: thin dotted;} 
 	} 
 }
-
-
-// Show more pagination link
-.pagination { 
-	margin:1.5rem 0; padding: 0.25rem 0 0; background:white; display:block; font-family:'BG-Light';
-	color:gray; text-transform: uppercase; text-align: center; letter-spacing: 1px; font-size:1.25rem;
-	border: 1px solid #e2e3e4; border-bottom: 1px solid #e2e3e4;
-	&:hover {
-		color:black;
-	}
-} 
-
 // Read More links
 .rm { .margin-top(1); display: block; .font-size(.75); .margin-bottom(.25);
 	&:after { content: " \00bb"; .font-size(.875); }

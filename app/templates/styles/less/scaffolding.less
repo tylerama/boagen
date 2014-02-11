@@ -3,24 +3,28 @@
 /*===============================*/
 // Linear Elements // 
 // Linear Elements => Center (Be aware this will add 4px between inline items)
+// To avoid this specify no font size on the group and 1rem on the floated content
 .inline-center { text-align: center;
 	> * { display:inline-block; 
 		&:last-child { margin-right:0; padding-right:0; }
 		&:first-child { margin-left:0; padding-left:0; }
 	}
 }
+
 // Linear Elements => Right (Don't forget to clearfix)
 .inline-right { float:right;
 	> * { float:left; 
 		&:last-child { margin-right:0; padding-right:0; }
 	}
 }
+
 // Linear Elements => Left (Don't forget to clearfix)
 .inline-left { float:left;
 	> * { float:left; 
 		&:first-child { margin-left:0; padding-left:0; }
 	}
 }
+
 // Vertical / Horizontal Align Anything
 .vh-align { 
 	position: relative;
@@ -37,10 +41,15 @@
 	.transform(translateY(-50%));
 }
 
+// Middle Align Elements 
+.m-align { display: table; width: 100%;
+	> * { display: table-cell; vertical-align: middle; }
+}
+
 // Global Margins
 .mar { margin:@global-margin; }
-.mar { margin:@global-margin; }
-.mar { margin:@global-margin; }
+.mar-sm { margin:@global-margin-sm; }
+.mar-lg { margin:@global-margin-lg; }
 
 .mar-tb { margin-top:@global-margin; margin-bottom:@global-margin; } 
 .mar-tb-sm { margin-top:@global-margin-sm; margin-bottom:@global-margin-sm; } 
@@ -69,8 +78,8 @@
 
 // Global Padding
 .pad { padding:@global-padding; }
-.pad-sm { padding:@global-padding; }
-.pad-lg { padding:@global-padding; }
+.pad-sm { padding:@global-padding-sm; }
+.pad-lg { padding:@global-padding-lg; }
 
 .pad-tb { padding-top:@global-padding; padding-bottom:@global-padding; }
 .pad-tb-sm { padding-top:@global-padding-sm; padding-bottom:@global-padding-sm; }
@@ -96,17 +105,10 @@
 .pad-l-sm { padding-left:@global-padding-sm; }
 .pad-l-lg { padding-left:@global-padding-lg; }
 
-
 // Common Structural Widths
 .col-full { .column(12); }
 .col-half { .column(6); }
-
-// Reserved for Primary Content Sections
-.col-content { .column(9); 
-	> *:last-child { border-bottom:none; padding-bottom: 0; } // Avoids Double Padding From Container
-	.row { .row(9); } // Nesting grids
-}
-.col-sidebar { .column(3); }
+.col-third { .column(4); }
 
 // The Entire Grid
 .col-1 { .column(1); }
@@ -121,5 +123,20 @@
 .col-10 { .column(10); }
 .col-11 { .column(11); }
 .col-12 { .column(12); }
+
+
+.col-main { .column(9); 
+	.nest { .row(9); 
+		> li { .column(3,9); }
+	}
+}
+
+
+// Reserved for Primary Content Sections
+.col-content { .column(6, 9); 
+	> *:last-child { border-bottom:none; padding-bottom: 0; } // Avoids Double Padding From Container
+}
+.col-sidebar { .column(3,9); }
+
 
 

@@ -12,15 +12,15 @@
 
 
 body { font: normal 100%; font-size: 1em; line-height: 1.5; 
-		font-family: Lato, sans-serif; color:lighten(@black, 30%); font-size-adjust: auto;
+		font-family: Lato, sans-serif; color:@color-text; font-size-adjust: auto;
 		background: url(../img/subtle_grunge.png); 
 }
 
 // Center Yourself! 
-.gbl-width { padding-left:12%; padding-right:12%; position:relative; }
+.gbl-width { padding-left:12%; padding-right:12%; }
 
 // Padding to Account for a Fixed Header
-//.lower-ceiling { .margin-top(7); }
+.lower-ceiling { .margin-top(7); }
 
 /*============*/
 /* # Header # */
@@ -28,12 +28,13 @@ body { font: normal 100%; font-size: 1em; line-height: 1.5;
 .masthead { background:@silver; .box-shadow(0 1px 10px rgba(20,20,20,0.5)); overflow: hidden; position: relative;
 	.toggle { .padding(1); position: absolute; right:0; display:block; }
 	.reveal { background:rgba(0,0,0, 0.3); height:0; padding:0; overflow: hidden;
-		&.active { .height(20); .padding(1, 0, 1, 0) }
+		&.active { .height(20); .padding(1, 0, 1, 0); }
 	}
 }
 
 // logo 
 .col-logo { .width(5); .height(7.5); margin:0 auto; position: relative;}
+
 // Logo => Polygon
 .polygon { fill:rgba(255,255,255, 1); stroke:white; stroke-width:1%; }
 .polygon{ .animation(fill .5s ease-in-out 1 forwards); }

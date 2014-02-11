@@ -1,4 +1,12 @@
 // Shapes
+
+// Basic Shapes
+.pill   { .border-radius(2em); }
+.round  { .border-radius(.5em); }
+.square { .border-radius(.025em); }
+.circle { .border-radius(50%); }
+
+// Hexagon => Using Triangles
 .shape-hex { .height(1); background:inherit; position:relative; .filter(drop-shadow(0 2px 5px rgba(0,0,0,1)));
     &:after,
     &:before { 
@@ -9,19 +17,29 @@
     &:before {  bottom: 100%; border-bottom: 12px solid @white; } 
     &:after {  top: 100%; border-top: 12px solid @white; }
 } 
+// Hexagon => Using Calc & Wrapper
+// .shape-hex-wrap { width: 3em; height:3em; margin: 20px;
+//     position: relative; display: inline-block; text-align: center;
+// }
+// .shape-hex { width: calc(100% * 0.57735); height: 100%; display: inline-block;
+//     &:before,
+//     &:after {
+//         content: ''; 
+//         width: inherit; height: inherit;
+//         background-color: inherit;
+//         position: absolute;
+//         top: 0; right: calc((100% / 2) - ((100% * 0.57735) / 2));
+//     }
+//     &:before { transform: rotateZ(60deg); }
+//     &:after { transform: rotateZ(-60deg); }
+// }
 
 // Triangles
 .shape-tri { width: 0; height: 0; border:5px solid transparent; 
 	/*  up - down   */
-	&.up { border-bottom:8px solid #666; }
-	&.down { border-top: 8px solid #666; }
+	&.up { border-bottom:8px solid @orange; }
+	&.down { border-top: 8px solid @orange; }
 	/*  left - right   */
-	&.left { border-right:8px solid #666; }
-	&.right { border-left:8px solid #666; }
+	&.left { border-right:8px solid @orange; }
+	&.right { border-left:8px solid @orange; }
 }
-
-/* Basic Shape  */
-.pill   { .border-radius(2em); }
-.round  { .border-radius(.5em); }
-.square { .border-radius(.025em); }
-.circle { .border-radius(50%); }

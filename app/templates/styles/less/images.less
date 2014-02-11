@@ -9,22 +9,25 @@ img { width:100%; max-width: 100%; height: auto; vertical-align: middle; }
 .IE8 img { width: auto; } // For ie 8
 
 // Images Styles
-.img-rounded { .border-radius(.25em); }
+.img-round { .border-radius(.25em); }
 .img-circle { .border-radius(50%); }
-.img-thumbnail { .padding(.25); display: inline-block;
-    background-color: @white; border: 1px solid @silver;
-}
+.img-thumb { .padding(.25); display: inline-block;background-color: @white; border: 1px solid @silver; }
 
-// Give my floated img some space Yo! 
+// Give My floated img's Some Space Yo! 
 .img-right { .margin(0, 0, 1, 1.5); }
 .img-left { .margin(0, 1.5, 1, 0); }
 
-// Special effects Son 
+// Special Effects Son 
 .img-fx {  }
 
 // Reuse
 .img-banner { display: block; float: none; width: 100% !important; }
 .img-featured { position: relative; margin-bottom:1rem;  }
+
+// Image Thumbnail Sizes
+.img-sm { .width(5) } 	// 75px
+.img-med { .width(7); } // 112px
+.img-lg { .width(8); } 	// 128px
 
 // Full Bleed Background Images
 .img-cover { .background-size(cover, 100%); 

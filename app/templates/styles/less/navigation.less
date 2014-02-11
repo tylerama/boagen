@@ -1,0 +1,49 @@
+/*=========================*/
+/*  Auxliliary Navigation  */
+/*=========================*/
+// Basic Vertical Navigation 
+.nav-hori {
+	li { color:@color-secondary; position: relative; 
+		&:first-child a { padding-left: 0; }
+		&:last-child a { padding-right: 0; }
+	}
+	a { .padding(0, 1.5, 0, 1.5);  display:block; color:inherit; }
+}
+
+// Basic Horizontal Navigation 
+.nav-vert { 
+	li { color:@color-secondary; font-size: 90%;  background: lighten(@silver, 5%); 
+		&:first-child { border-top:none }
+		&:last-child { border-bottom:none }
+	} 
+	a { .padding(.4);  display:block; color:inherit; }
+}
+
+// Add a Border to Top or Bottom of li's
+.nav-bdr { 
+	li { border-bottom: 1px solid @silver; border-left: 3px solid lighten(@silver, 5%);
+		&:first-child { border-top:none }
+		&:last-child { border-bottom:none }
+	} 
+}
+
+// Fixed/Sticky Nav => Column
+.nav-fixed { min-height:1px; display: block;
+	.fixed { width:17%; }
+	.active { background: @silver; border-left-color: @color-primary; 
+			a { .padding-left(1); }
+		}  
+
+}
+
+// Fixed/Sticky Nav => Row
+//.nav-fixed {  }
+
+
+// Pagination
+// .pagination {
+// 	li {  }
+// 	a {  }
+// }
+
+

@@ -422,19 +422,21 @@ table {
    Box Model
    ======================= */
 /* line 431, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\normalize.less */
-* {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/*
- .o88o.                           .
- 888 `"                         .o8
-o888oo   .ooooo.  ooo. .oo.   .o888oo
- 888    d88' `88b `888P"Y88b    888
- 888    888   888  888   888    888
- 888    888   888  888   888    888 .
-o888o   `Y8bod8P' o888o o888o   "888"
+/* 
+ .o88o.                           .   
+ 888 `"                         .o8   
+o888oo   .ooooo.  ooo. .oo.   .o888oo 
+ 888    d88' `88b `888P"Y88b    888   
+ 888    888   888  888   888    888   
+ 888    888   888  888   888    888 . 
+o888o   `Y8bod8P' o888o o888o   "888" 
 */@font-face {
   font-family: 'Lato';
   src: url('../fonts/Lato-Italic.eot');
@@ -467,14 +469,14 @@ o888o   `Y8bod8P' o888o o888o   "888"
   font-style: normal;/* IE9 Compat Modes */
   /* Legacy iOS */
 }
-/*
- o8o                                      .o88o.                           .
- `"'                                      888 `"                         .o8
-oooo   .ooooo.   .ooooo.  ooo. .oo.      o888oo   .ooooo.  ooo. .oo.   .o888oo
-`888  d88' `"Y8 d88' `88b `888P"Y88b      888    d88' `88b `888P"Y88b    888
- 888  888       888   888  888   888      888    888   888  888   888    888
- 888  888   .o8 888   888  888   888      888    888   888  888   888    888 .
-o888o `Y8bod8P' `Y8bod8P' o888o o888o    o888o   `Y8bod8P' o888o o888o   "888"
+/* 
+ o8o                                      .o88o.                           .   
+ `"'                                      888 `"                         .o8   
+oooo   .ooooo.   .ooooo.  ooo. .oo.      o888oo   .ooooo.  ooo. .oo.   .o888oo 
+`888  d88' `"Y8 d88' `88b `888P"Y88b      888    d88' `88b `888P"Y88b    888   
+ 888  888       888   888  888   888      888    888   888  888   888    888   
+ 888  888   .o8 888   888  888   888      888    888   888  888   888    888 . 
+o888o `Y8bod8P' `Y8bod8P' o888o o888o    o888o   `Y8bod8P' o888o o888o   "888" 
 */
 @font-face {
   font-family: 'icon-font';
@@ -740,54 +742,66 @@ p:last-of-type {
   -moz-column-count: 3;
   column-count: 3;
 }
+/* line 103, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\typography.less */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/* line 104, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\typography.less */
+q:before {
+  content: open-quote;
+}
+/* line 105, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\typography.less */
+q:after {
+  content: no-close-quote;
+}
 /*===============================*/
 /* # Global Structural Classes # */
 /*===============================*/
-/* line 6, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-center {
   text-align: center;
 }
-/* line 7, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 8, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-center > * {
   display: inline-block;
 }
-/* line 8, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-center > *:last-child {
   margin-right: 0;
   padding-right: 0;
 }
-/* line 9, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-center > *:first-child {
   margin-left: 0;
   padding-left: 0;
 }
-/* line 13, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-right {
   float: right;
 }
-/* line 14, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-right > * {
   float: left;
 }
-/* line 15, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-right > *:last-child {
   margin-right: 0;
   padding-right: 0;
 }
-/* line 19, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 22, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-left {
   float: left;
 }
-/* line 20, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 23, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-left > * {
   float: left;
 }
-/* line 21, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 24, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .inline-left > *:first-child {
   margin-left: 0;
   padding-left: 0;
 }
-/* line 25, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 29, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .vh-align {
   position: relative;
   top: 50%;
@@ -799,7 +813,7 @@ p:last-of-type {
   margin: 0 auto;
   display: table;
 }
-/* line 34, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 38, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .v-align {
   position: relative;
   top: 50%;
@@ -809,318 +823,349 @@ p:last-of-type {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 41, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
-.mar {
-  margin: 2em;
-}
-/* line 42, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
-.mar {
-  margin: 2em;
-}
-/* line 43, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
-.mar {
-  margin: 2em;
-}
 /* line 45, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.m-align {
+  display: table;
+  width: 100%;
+}
+/* line 46, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.m-align > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 50, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.mar {
+  margin: 2em;
+}
+/* line 51, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.mar-sm {
+  margin: 1.25em;
+}
+/* line 52, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.mar-lg {
+  margin: 3em;
+}
+/* line 54, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-tb {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-/* line 46, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 55, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-tb-sm {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
 }
-/* line 47, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 56, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-tb-lg {
   margin-top: 3em;
   margin-bottom: 3em;
 }
-/* line 49, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 58, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-lr {
   margin-left: 2em;
   margin-right: 2em;
 }
-/* line 50, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 59, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-lr-sm {
   margin-left: 1.25em;
   margin-right: 1.25em;
 }
-/* line 51, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 60, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-lr-lg {
   margin-left: 3em;
   margin-right: 3em;
 }
-/* line 53, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 62, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-t {
   margin-top: 2em;
 }
-/* line 54, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 63, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-t-sm {
   margin-top: 1.25em;
 }
-/* line 55, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 64, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-t-lg {
   margin-top: 3em;
 }
-/* line 57, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 66, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-r {
   margin-right: 2em;
 }
-/* line 58, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 67, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-r-sm {
   margin-right: 1.25em;
 }
-/* line 59, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 68, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-r-lg {
   margin-right: 3em;
 }
-/* line 61, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 70, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-b {
   margin-bottom: 2em;
 }
-/* line 62, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 71, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-b-sm {
   margin-bottom: 1.25em;
 }
-/* line 63, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 72, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-b-lg {
   margin-bottom: 3em;
 }
-/* line 65, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 74, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-l {
   margin-left: 2em;
 }
-/* line 66, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 75, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-l-sm {
   margin-left: 1.25em;
 }
-/* line 67, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 76, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .mar-l-lg {
   margin-left: 3em;
 }
-/* line 71, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 80, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad {
   padding: 2em;
 }
-/* line 72, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 81, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-sm {
-  padding: 2em;
+  padding: 1em;
 }
-/* line 73, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 82, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-lg {
-  padding: 2em;
+  padding: 3em;
 }
-/* line 75, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 84, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-tb {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-/* line 76, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 85, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-tb-sm {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-/* line 77, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 86, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-tb-lg {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 79, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 88, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-lr {
   padding-left: 2em;
   padding-right: 2em;
 }
-/* line 80, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 89, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-lr-sm {
   padding-left: 1em;
   padding-right: 1em;
 }
-/* line 81, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 90, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-lr-lg {
   padding-left: 3em;
   padding-right: 3em;
 }
-/* line 83, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 92, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-t {
   padding-top: 2em;
 }
-/* line 84, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 93, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-t-sm {
   padding-top: 1em;
 }
-/* line 85, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 94, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-t-lg {
   padding-top: 3em;
 }
-/* line 87, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 96, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-r {
   padding-right: 2em;
 }
-/* line 88, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 97, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-r-sm {
   padding-right: 1em;
 }
-/* line 89, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 98, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-r-lg {
   padding-right: 3em;
 }
-/* line 91, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 100, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-b {
   padding-bottom: 2em;
 }
-/* line 92, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 101, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-b-sm {
   padding-bottom: 1em;
 }
-/* line 93, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 102, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-b-lg {
   padding-bottom: 3em;
 }
-/* line 95, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 104, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-l {
   padding-left: 2em;
 }
-/* line 96, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 105, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-l-sm {
   padding-left: 1em;
 }
-/* line 97, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 106, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .pad-l-lg {
   padding-left: 3em;
 }
-/* line 101, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 109, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-full {
   display: inline;
   float: left;
   width: 97.46376811594203%;
   margin: 0 1.2681159420289856%;
 }
-/* line 102, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 110, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-half {
   display: inline;
   float: left;
   width: 47.46376811594203%;
   margin: 0 1.2681159420289856%;
 }
-/* line 105, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
-.col-content {
+/* line 111, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.col-third {
   display: inline;
   float: left;
-  width: 72.46376811594203%;
+  width: 30.79710144927536%;
   margin: 0 1.2681159420289856%;
 }
-/* line 106, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
-.col-content > *:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-/* line 107, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
-.col-content .row {
-  display: block;
-  width: 103.38164251207729%;
-  margin: 0 -1.6908212560386473%;
-}
-/* line 70, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\helpers.less */
-.col-content .row:before,
-.col-content .row:after {
-  content: "";
-  display: table;
-}
-/* line 74, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\helpers.less */
-.col-content .row:after {
-  clear: both;
-}
-/* line 109, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
-.col-sidebar {
-  display: inline;
-  float: left;
-  width: 22.463768115942027%;
-  margin: 0 1.2681159420289856%;
-}
-/* line 112, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 114, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-1 {
   display: inline;
   float: left;
   width: 5.797101449275362%;
   margin: 0 1.2681159420289856%;
 }
-/* line 113, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 115, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-2 {
   display: inline;
   float: left;
   width: 14.130434782608695%;
   margin: 0 1.2681159420289856%;
 }
-/* line 114, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 116, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-3 {
   display: inline;
   float: left;
   width: 22.463768115942027%;
   margin: 0 1.2681159420289856%;
 }
-/* line 115, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 117, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-4 {
   display: inline;
   float: left;
   width: 30.79710144927536%;
   margin: 0 1.2681159420289856%;
 }
-/* line 116, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 118, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-5 {
   display: inline;
   float: left;
   width: 39.130434782608695%;
   margin: 0 1.2681159420289856%;
 }
-/* line 117, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 119, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-6 {
   display: inline;
   float: left;
   width: 47.46376811594203%;
   margin: 0 1.2681159420289856%;
 }
-/* line 118, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 120, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-7 {
   display: inline;
   float: left;
   width: 55.79710144927537%;
   margin: 0 1.2681159420289856%;
 }
-/* line 119, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 121, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-8 {
   display: inline;
   float: left;
   width: 64.13043478260869%;
   margin: 0 1.2681159420289856%;
 }
-/* line 120, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 122, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-9 {
   display: inline;
   float: left;
   width: 72.46376811594203%;
   margin: 0 1.2681159420289856%;
 }
-/* line 121, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 123, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-10 {
   display: inline;
   float: left;
   width: 80.79710144927536%;
   margin: 0 1.2681159420289856%;
 }
-/* line 122, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 124, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-11 {
   display: inline;
   float: left;
   width: 89.13043478260869%;
   margin: 0 1.2681159420289856%;
 }
-/* line 123, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+/* line 125, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
 .col-12 {
   display: inline;
   float: left;
   width: 97.46376811594203%;
   margin: 0 1.2681159420289856%;
+}
+/* line 128, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.col-main {
+  display: inline;
+  float: left;
+  width: 72.46376811594203%;
+  margin: 0 1.2681159420289856%;
+}
+/* line 129, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.col-main .nest {
+  display: block;
+  width: 103.38164251207729%;
+  margin: 0 -1.6908212560386473%;
+}
+/* line 70, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\helpers.less */
+.col-main .nest:before,
+.col-main .nest:after {
+  content: "";
+  display: table;
+}
+/* line 74, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\helpers.less */
+.col-main .nest:after {
+  clear: both;
+}
+/* line 130, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.col-main .nest > li {
+  display: inline;
+  float: left;
+  width: 29.951690821256037%;
+  margin: 0 1.6908212560386473%;
+}
+/* line 136, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.col-content {
+  display: inline;
+  float: left;
+  width: 63.28502415458937%;
+  margin: 0 1.6908212560386473%;
+}
+/* line 137, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.col-content > *:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+/* line 139, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\scaffolding.less */
+.col-sidebar {
+  display: inline;
+  float: left;
+  width: 29.951690821256037%;
+  margin: 0 1.6908212560386473%;
 }
 /*============*/
 /* # Global # */
@@ -1139,7 +1184,11 @@ body {
 .gbl-width {
   padding-left: 12%;
   padding-right: 12%;
-  position: relative;
+}
+/* line 23, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+.lower-ceiling {
+  margin-top: 112px;
+  margin-top: 7rem;
 }
 /*============*/
 /* # Header # */
@@ -1186,13 +1235,13 @@ body {
   margin: 0 auto;
   position: relative;
 }
-/* line 38, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 39, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .polygon {
   fill: #ffffff;
   stroke: white;
   stroke-width: 1%;
 }
-/* line 39, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 40, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .polygon {
   -webkit-animation: fill 0.5s ease-in-out 1 forwards;
   -moz-animation: fill 0.5s ease-in-out 1 forwards;
@@ -1201,13 +1250,13 @@ body {
 }
 /* line 1479, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lesshat.less */
 lesshat-selector {
-  -lh-property: 0; }
+  -lh-property: 0; } 
 @-webkit-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
 @-moz-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
 @-o-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
 @keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; };
 }
-/* line 42, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 43, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .flame {
   fill: #ec7c0a;
   -webkit-transition: all 0.4s 0.5s ease;
@@ -1215,23 +1264,23 @@ lesshat-selector {
   -o-transition: all 0.4s 0.5s ease;
   transition: all 0.4s 0.5s ease;
 }
-/* line 43, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 44, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .above .flame {
   fill: transparent;
 }
-/* line 44, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 45, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .txt-logo {
   font-family: 'Medula';
   fill: #ffffff;
 }
-/* line 47, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 48, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .col-nav {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 }
-/* line 48, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 49, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary {
   font-family: Medula;
   font-size: 28px;
@@ -1239,7 +1288,7 @@ lesshat-selector {
   letter-spacing: .5px;
   text-shadow: 1px 1px 1px #ff4136;
 }
-/* line 49, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 50, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary li {
   margin: 0 4%;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1247,7 +1296,7 @@ lesshat-selector {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 50, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 51, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary li:nth-child(1) {
   -webkit-transform: translateX(-2rem);
   -moz-transform: translateX(-2rem);
@@ -1255,7 +1304,7 @@ lesshat-selector {
   -ms-transform: translateX(-2rem);
   transform: translateX(-2rem);
 }
-/* line 51, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 52, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary li:nth-child(2) {
   -webkit-transform: translateX(-4rem);
   -moz-transform: translateX(-4rem);
@@ -1263,7 +1312,7 @@ lesshat-selector {
   -ms-transform: translateX(-4rem);
   transform: translateX(-4rem);
 }
-/* line 52, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 53, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary li:nth-child(3) {
   -webkit-transform: translateX(4rem);
   -moz-transform: translateX(4rem);
@@ -1271,7 +1320,7 @@ lesshat-selector {
   -ms-transform: translateX(4rem);
   transform: translateX(4rem);
 }
-/* line 53, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 54, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary li:nth-child(4) {
   -webkit-transform: translateX(2rem);
   -moz-transform: translateX(2rem);
@@ -1279,38 +1328,38 @@ lesshat-selector {
   -ms-transform: translateX(2rem);
   transform: translateX(2rem);
 }
-/* line 55, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 56, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary a {
   padding-bottom: 40px;
   padding-bottom: 2.5rem;
   display: inline-block;
   color: #dddddd;
 }
-/* line 56, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 57, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary a:hover,
 .nav-primary a:focus {
   color: #ffffff;
 }
-/* line 58, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 59, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .nav-primary a:active {
   color: #ffffff;
 }
 /* # Social Links # */
-/* line 63, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 64, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .col-social {
   top: 25%;
 }
-/* line 65, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 66, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .links-social li {
   margin-right: 40px;
   margin-right: 2.5rem;
   text-align: center;
 }
-/* line 66, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 67, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .links-social li:last-child {
   margin-right: 0;
 }
-/* line 68, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 69, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .links-social li a {
   width: 31.2px;
   width: 1.95rem;
@@ -1319,7 +1368,7 @@ lesshat-selector {
   color: #f38630;
 }
 /* # Search Form # */
-/* line 74, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 75, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .search-primary {
   width: 30%;
   top: 30%;
@@ -1327,43 +1376,121 @@ lesshat-selector {
 /*============*/
 /* # Footer # */
 /*============*/
-/* line 80, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 81, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .primary-footer {
   background: #dddddd;
 }
-/* line 82, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 83, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .primary-footer .content-regions > * {
   display: inline;
   float: left;
   width: 30.79710144927536%;
   margin: 0 1.2681159420289856%;
 }
-/* line 86, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 87, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .aux-footer {
   background: #111111;
   color: #ffffff;
 }
-/* line 87, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 88, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .aux-footer .col-legal {
   display: inline;
   float: left;
   width: 22.463768115942027%;
   margin: 0 1.2681159420289856%;
 }
-/* line 88, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 89, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .aux-footer .col-nav {
   display: inline;
   float: left;
   width: 72.46376811594203%;
   margin: 0 1.2681159420289856%;
 }
-/* line 92, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 93, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .aux-nav li {
   padding: 0 1rem;
 }
-/* line 93, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
+/* line 94, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\global.less */
 .aux-nav a {
   color: #ffffff;
+}
+/*=========================*/
+/*  Auxliliary Navigation  */
+/*=========================*/
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-hori li {
+  color: #3899b9;
+  position: relative;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-hori li:first-child a {
+  padding-left: 0;
+}
+/* line 8, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-hori li:last-child a {
+  padding-right: 0;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-hori a {
+  padding: 0px 24px 0px 24px;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  display: block;
+  color: inherit;
+}
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-vert li {
+  color: #3899b9;
+  font-size: 90%;
+  background: #eaeaea;
+}
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-vert li:first-child {
+  border-top: none;
+}
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-vert li:last-child {
+  border-bottom: none;
+}
+/* line 19, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-vert a {
+  padding: 6.4px 256px 256px 256px;
+  padding: 0.4rem 16rem 16rem 16rem;
+  padding: 6.4px;
+  padding: 0.4rem;
+  display: block;
+  color: inherit;
+}
+/* line 24, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-bdr li {
+  border-bottom: 1px solid #dddddd;
+  border-left: 3px solid #eaeaea;
+}
+/* line 25, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-bdr li:first-child {
+  border-top: none;
+}
+/* line 26, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-bdr li:last-child {
+  border-bottom: none;
+}
+/* line 31, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-fixed {
+  min-height: 1px;
+  display: block;
+}
+/* line 32, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-fixed .fixed {
+  width: 17%;
+}
+/* line 33, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-fixed .active {
+  background: #dddddd;
+  border-left-color: #f38630;
+}
+/* line 34, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\navigation.less */
+.nav-fixed .active a {
+  padding-left: 16px;
+  padding-left: 1rem;
 }
 /*==========*/
 /* # Home # */
@@ -1374,61 +1501,57 @@ lesshat-selector {
   height: 25rem;
   background-image: url(../img/inferno-2.jpg);
 }
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
+.hero .title {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
 /* line 8, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
-.hero h1 {
-  padding: 48px 96px 32px 96px;
-  padding: 3rem 6rem 2rem 6rem;
+.hero .title h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  color: inherit;
+}
+/* line 11, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
+.hero .dbl-bdr {
+  padding: 16px 48px 16px 48px;
+  padding: 1rem 3rem 1rem 3rem;
   border: 12px double #ffffff;
   color: #ffffff;
 }
 @media only screen and (max-width: 20em) {
-  /* line 10, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
-  .hero h1 {
-    border: 12px double #ffdc00;
+  /* line 12, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
+  .hero .dbl-bdr {
+    border: 12px double #2ecc40;
     color: #2ecc40;
   }
 }
 @media only screen and (min-width: 20.0625em) and (max-width: 33.0625em) {
-  /* line 13, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
-  .hero h1 {
+  /* line 15, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
+  .hero .dbl-bdr {
     border: 12px double #ffdc00;
     color: #ffdc00;
   }
 }
 @media only screen and (min-width: 33.125em) and (max-width: 59.3125em) {
-  /* line 16, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
-  .hero h1 {
+  /* line 18, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
+  .hero .dbl-bdr {
     border: 12px double #ff851b;
     color: #ff851b;
   }
 }
 @media only screen and (min-width: 59.375em) and (max-width: 70.5em) {
-  /* line 19, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
-  .hero h1 {
+  /* line 21, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
+  .hero .dbl-bdr {
     border: 12px double #ff4136;
     color: #ff4136;
   }
 }
 @media only screen and (min-width: 70.5625em) {
-  /* line 22, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
-  .hero h1 {
+  /* line 24, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
+  .hero .dbl-bdr {
     border: 12px double #ffffff;
     color: #ffffff;
   }
-}
-@media only screen and (min-width: 59.375em) and (max-width: 70.5em), only screen and (min-width: 70.5625em) {
-  /* line 25, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
-  .hero h1 {
-    border: 12px double #ffffff;
-    color: #ffffff;
-  }
-}
-/* line 30, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\pages\home.less */
-.col-nest-9 {
-  display: inline;
-  float: left;
-  width: 29.951690821256037%;
-  margin: 0 1.6908212560386473%;
 }
 /*==============*/
 /* # Interior # */
@@ -1561,7 +1684,20 @@ lesshat-selector {
 .ie9 .parallax {
   background-attachment: static !important;
 }
+/* line 52, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\classes.less */
+.fixed {
+  position: fixed;
+}
 /* line 53, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\classes.less */
+.fixed.pinned {
+  position: absolute;
+}
+/* line 58, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\classes.less */
+.lead-in::first-line {
+  text-transform: uppercase;
+  color: #777777;
+}
+/* line 64, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\classes.less */
 .browsehappy {
   margin: 2.95em 0 0 0;
   background: #ccc;
@@ -1789,7 +1925,43 @@ video {
 .black {
   color: #111111;
 }
-/* line 2, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 4, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+.pill {
+  -webkit-border-radius: 2em;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2em;
+  -moz-background-clip: padding;
+  border-radius: 2em;
+  background-clip: padding-box;
+}
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+.round {
+  -webkit-border-radius: 0px.5em;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px.5em;
+  -moz-background-clip: padding;
+  border-radius: 0px.5em;
+  background-clip: padding-box;
+}
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+.square {
+  -webkit-border-radius: 0px.025em;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0px.025em;
+  -moz-background-clip: padding;
+  border-radius: 0px.025em;
+  background-clip: padding-box;
+}
+/* line 7, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+.circle {
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-hex {
   height: 16px;
   height: 1rem;
@@ -1800,7 +1972,7 @@ video {
   -ms-filter: drop-shadow(0 2px 5px #000000);
   filter: drop-shadow(0 2px 5px #000000);
 }
-/* line 3, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 11, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-hex:after,
 .shape-hex:before {
   content: "";
@@ -1811,17 +1983,17 @@ video {
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
 }
-/* line 9, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-hex:before {
   bottom: 100%;
   border-bottom: 12px solid #ffffff;
 }
-/* line 10, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 18, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-hex:after {
   top: 100%;
   border-top: 12px solid #ffffff;
 }
-/* line 14, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 38, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-tri {
   width: 0;
   height: 0;
@@ -1831,58 +2003,21 @@ video {
   /*  left - right   */
 
 }
-/* line 16, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 40, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-tri.up {
-  border-bottom: 8px solid #666;
+  border-bottom: 8px solid #ff851b;
 }
-/* line 17, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 41, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-tri.down {
-  border-top: 8px solid #666;
+  border-top: 8px solid #ff851b;
 }
-/* line 19, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 43, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-tri.left {
-  border-right: 8px solid #666;
+  border-right: 8px solid #ff851b;
 }
-/* line 20, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
+/* line 44, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
 .shape-tri.right {
-  border-left: 8px solid #666;
-}
-/* Basic Shape  */
-/* line 24, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
-.pill {
-  -webkit-border-radius: 2em;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 2em;
-  -moz-background-clip: padding;
-  border-radius: 2em;
-  background-clip: padding-box;
-}
-/* line 25, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
-.round {
-  -webkit-border-radius: 0px.5em;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 0px.5em;
-  -moz-background-clip: padding;
-  border-radius: 0px.5em;
-  background-clip: padding-box;
-}
-/* line 26, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
-.square {
-  -webkit-border-radius: 0px.025em;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 0px.025em;
-  -moz-background-clip: padding;
-  border-radius: 0px.025em;
-  background-clip: padding-box;
-}
-/* line 27, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\shapes.less */
-.circle {
-  -webkit-border-radius: 50%;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 50%;
-  -moz-background-clip: padding;
-  border-radius: 50%;
-  background-clip: padding-box;
+  border-left: 8px solid #ff851b;
 }
 /*===========*/
 /* # Forms # */
@@ -1921,47 +2056,35 @@ fieldset {
 .svg-graphic {
   display: block;
 }
-/* line 4, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
-.col-logo svg:not(:root) {
-  overflow: hidden;
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\svg.less */
+.i-fb {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22204px%22%0D%0A%09%20height%3D%22236.333px%22%20viewBox%3D%220%200%20204%20236.333%22%20enable-background%3D%22new%200%200%20204%20236.333%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%20id%3D%22Layer_1%22%3E%0D%0A%09%3Cpolygon%20fill%3D%22%23FFFFFF%22%20points%3D%222.667%2C60.493%20101.667%2C2.927%20200.667%2C60.493%20200.667%2C175.625%20101.667%2C233.19%202.667%2C175.625%20%09%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_2%22%3E%0D%0A%09%3Cpath%20fill%3D%22%23E87200%22%20d%3D%22M114.739%2C82.867H132.4V61h-17.661c-14.61%2C0-26.49%2C12.875-26.49%2C28.699v11.028H70.587v21.94H88.25v53.114%0D%0A%09%09h22.067v-53.118h22.075v-21.94h-22.075V89.482c0-3.79%2C2.336-6.615%2C4.418-6.615H114.739z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_3%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M76.458%2C101.618v61.573H55.954v-61.573H76.458z%20M77.763%2C82.603%0D%0A%09%09c0.042%2C3.024-1.004%2C5.553-3.138%2C7.581c-2.134%2C2.028-4.941%2C3.045-8.42%2C3.045H66.08c-3.396%2C0-6.13-1.017-8.201-3.045%0D%0A%09%09c-2.071-2.028-3.107-4.557-3.107-7.581c0-3.064%2C1.067-5.603%2C3.201-7.614c2.134-2.008%2C4.92-3.014%2C8.357-3.014%0D%0A%09%09c3.439%2C0.003%2C6.193%2C1.006%2C8.264%2C3.014C76.666%2C76.996%2C77.723%2C79.531%2C77.763%2C82.603z%20M150.215%2C127.897v35.294h-20.442v-32.933%0D%0A%09%09c0-4.35-0.843-7.754-2.518-10.221c-1.675-2.467-4.298-3.7-7.859-3.7c-2.609%2C0-4.798%2C0.713-6.558%2C2.144%0D%0A%09%09c-1.76%2C1.431-3.072%2C3.201-3.942%2C5.314c-0.455%2C1.244-0.686%2C2.922-0.686%2C5.029v34.359H87.77c0.083-16.527%2C0.126-29.926%2C0.126-40.201%0D%0A%09%09s-0.021-16.404-0.063-18.389l-0.063-2.983h20.44v8.943h-0.123c0.829-1.325%2C1.679-2.48%2C2.548-3.479%0D%0A%09%09c0.87-0.992%2C2.039-2.073%2C3.507-3.231c1.475-1.159%2C3.275-2.062%2C5.41-2.702c2.134-0.646%2C4.505-0.965%2C7.115-0.965%0D%0A%09%09c7.084%2C0%2C12.779%2C2.352%2C17.088%2C7.055c4.305%2C4.702%2C6.459%2C11.587%2C6.459%2C20.659V127.897z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_4%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M175.379%2C113.576c-5.167%2C0.889-12.686-0.039-16.662-1.689%0D%0A%09%09c8.283-0.687%2C13.867-4.441%2C16.016-9.543c-2.971%2C1.82-12.226%2C3.839-17.336%2C1.91c-0.253-1.197-0.536-2.336-0.809-3.373%0D%0A%09%09c-3.885-14.304-17.221-25.836-31.174-24.441c1.12-0.446%2C2.268-0.867%2C3.417-1.255c1.522-0.551%2C10.537-2.037%2C9.125-5.209%0D%0A%09%09c-1.182-2.791-12.211%2C2.104-14.289%2C2.761c2.737-1.025%2C7.26-2.791%2C7.756-5.943c-4.196%2C0.572-8.311%2C2.567-11.493%2C5.438%0D%0A%09%09c1.138-1.243%2C2.019-2.735%2C2.209-4.357c-11.196%2C7.163-17.752%2C21.584-23.023%2C35.577c-4.155-4.026-7.854-7.202-11.146-8.979%0D%0A%09%09c-9.271-4.946-20.349-10.139-37.729-16.604c-0.534%2C5.753%2C2.837%2C13.422%2C12.558%2C18.519c-2.091-0.287-5.953%2C0.345-9.025%2C1.082%0D%0A%09%09c1.245%2C6.612%2C5.335%2C12.047%2C16.458%2C14.675c-5.077%2C0.312-7.702%2C1.487-10.079%2C3.976c2.314%2C4.594%2C7.958%2C9.986%2C18.097%2C8.886%0D%0A%09%09c-11.291%2C4.877-4.601%2C13.882%2C4.6%2C12.557c-15.666%2C16.196-40.376%2C14.996-54.57%2C1.454c37.034%2C50.525%2C117.546%2C29.873%2C129.551-18.775%0D%0A%09%09c9.01%2C0.039%2C14.285-3.144%2C17.547-6.652V113.576z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_5%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M139.996%2C105.491c0-14.809-5.261-27.476-15.787-38.002%0D%0A%09%09c-10.52-10.526-23.194-15.794-38.005-15.794c-14.812%2C0-27.479%2C5.268-38.006%2C15.794c-10.527%2C10.526-15.79%2C23.193-15.79%2C38.002%0D%0A%09%09c0%2C14.815%2C5.263%2C27.481%2C15.79%2C38.008c10.526%2C10.528%2C23.194%2C15.794%2C38.006%2C15.794c14.811%2C0%2C27.485-5.266%2C38.005-15.794%0D%0A%09%09C134.735%2C132.973%2C139.996%2C120.307%2C139.996%2C105.491z%20M201.481%2C205.398c0%2C4.169-1.518%2C7.77-4.564%2C10.803%0D%0A%09%09c-3.047%2C3.049-6.646%2C4.571-10.809%2C4.571c-4.321%2C0-7.919-1.522-10.809-4.571l-41.187-41.062%0D%0A%09%09c-14.322%2C9.922-30.293%2C14.887-47.908%2C14.887c-11.449%2C0-22.396-2.219-32.841-6.659c-10.444-4.445-19.45-10.454-27.019-18.02%0D%0A%09%09c-7.568-7.562-13.571-16.573-18.013-27.015c-4.446-10.448-6.665-21.395-6.665-32.841c0-11.453%2C2.219-22.398%2C6.665-32.848%0D%0A%09%09c4.442-10.44%2C10.445-19.45%2C18.013-27.015c7.569-7.566%2C16.575-13.573%2C27.019-18.021c10.445-4.438%2C21.392-6.657%2C32.841-6.657%0D%0A%09%09c11.449%2C0%2C22.402%2C2.219%2C32.844%2C6.657c10.44%2C4.448%2C19.45%2C10.455%2C27.015%2C18.021c7.565%2C7.564%2C13.573%2C16.574%2C18.02%2C27.015%0D%0A%09%09c4.439%2C10.449%2C6.658%2C21.395%2C6.658%2C32.848c0%2C17.612-4.964%2C33.583-14.88%2C47.905l41.187%2C41.187c2.956%2C2.968%2C4.439%2C6.567%2C4.439%2C10.81%0D%0A%09%09L201.481%2C205.398z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+  background-repeat: no-repeat;
 }
-/* line 9, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
-.polygon {
-  fill: rgba(255, 255, 255, 0);
-  stroke: white;
-  stroke-width: 1%;
+/* line 9, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\svg.less */
+.i-fb:hover {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22204px%22%0D%0A%09%20height%3D%22236.333px%22%20viewBox%3D%220%200%20204%20236.333%22%20enable-background%3D%22new%200%200%20204%20236.333%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%20id%3D%22Layer_1%22%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpolygon%20fill%3D%22%23E87200%22%20points%3D%221.667%2C60.493%20100.667%2C2.927%20199.667%2C60.493%20199.667%2C175.625%20100.667%2C233.19%201.667%2C175.625%20%09%09%22/%3E%0D%0A%09%3C/g%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_2%22%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M114.739%2C82.867H132.4V61h-17.661c-14.61%2C0-26.49%2C12.875-26.49%2C28.699v11.028H70.587v21.94H88.25v53.114%0D%0A%09%09h22.067v-53.118h22.075v-21.94h-22.075V89.482c0-3.79%2C2.336-6.615%2C4.418-6.615H114.739z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_3%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23FFFFFF%22%20d%3D%22M76.458%2C101.618v61.573H55.954v-61.573H76.458z%20M77.763%2C82.603%0D%0A%09%09c0.042%2C3.024-1.004%2C5.553-3.138%2C7.581c-2.134%2C2.028-4.941%2C3.045-8.42%2C3.045H66.08c-3.396%2C0-6.13-1.017-8.201-3.045%0D%0A%09%09c-2.071-2.028-3.107-4.557-3.107-7.581c0-3.064%2C1.067-5.603%2C3.201-7.614c2.134-2.008%2C4.92-3.014%2C8.357-3.014%0D%0A%09%09c3.439%2C0.003%2C6.193%2C1.006%2C8.264%2C3.014C76.666%2C76.996%2C77.723%2C79.531%2C77.763%2C82.603z%20M150.215%2C127.897v35.294h-20.442v-32.933%0D%0A%09%09c0-4.35-0.843-7.754-2.518-10.221c-1.675-2.467-4.298-3.7-7.859-3.7c-2.609%2C0-4.798%2C0.713-6.558%2C2.144%0D%0A%09%09c-1.76%2C1.431-3.072%2C3.201-3.942%2C5.314c-0.455%2C1.244-0.686%2C2.922-0.686%2C5.029v34.359H87.77c0.083-16.527%2C0.126-29.926%2C0.126-40.201%0D%0A%09%09s-0.021-16.404-0.063-18.389l-0.063-2.983h20.44v8.943h-0.123c0.829-1.325%2C1.679-2.48%2C2.548-3.479%0D%0A%09%09c0.87-0.992%2C2.039-2.073%2C3.507-3.231c1.475-1.159%2C3.275-2.062%2C5.41-2.702c2.134-0.646%2C4.505-0.965%2C7.115-0.965%0D%0A%09%09c7.084%2C0%2C12.779%2C2.352%2C17.088%2C7.055c4.305%2C4.702%2C6.459%2C11.587%2C6.459%2C20.659V127.897z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_4%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M175.379%2C113.576c-5.167%2C0.889-12.686-0.039-16.662-1.689%0D%0A%09%09c8.283-0.687%2C13.867-4.441%2C16.016-9.543c-2.971%2C1.82-12.226%2C3.839-17.336%2C1.91c-0.253-1.197-0.536-2.336-0.809-3.373%0D%0A%09%09c-3.885-14.304-17.221-25.836-31.174-24.441c1.12-0.446%2C2.268-0.867%2C3.417-1.255c1.522-0.551%2C10.537-2.037%2C9.125-5.209%0D%0A%09%09c-1.182-2.791-12.211%2C2.104-14.289%2C2.761c2.737-1.025%2C7.26-2.791%2C7.756-5.943c-4.196%2C0.572-8.311%2C2.567-11.493%2C5.438%0D%0A%09%09c1.138-1.243%2C2.019-2.735%2C2.209-4.357c-11.196%2C7.163-17.752%2C21.584-23.023%2C35.577c-4.155-4.026-7.854-7.202-11.146-8.979%0D%0A%09%09c-9.271-4.946-20.349-10.139-37.729-16.604c-0.534%2C5.753%2C2.837%2C13.422%2C12.558%2C18.519c-2.091-0.287-5.953%2C0.345-9.025%2C1.082%0D%0A%09%09c1.245%2C6.612%2C5.335%2C12.047%2C16.458%2C14.675c-5.077%2C0.312-7.702%2C1.487-10.079%2C3.976c2.314%2C4.594%2C7.958%2C9.986%2C18.097%2C8.886%0D%0A%09%09c-11.291%2C4.877-4.601%2C13.882%2C4.6%2C12.557c-15.666%2C16.196-40.376%2C14.996-54.57%2C1.454c37.034%2C50.525%2C117.546%2C29.873%2C129.551-18.775%0D%0A%09%09c9.01%2C0.039%2C14.285-3.144%2C17.547-6.652V113.576z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_5%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M139.996%2C105.491c0-14.809-5.261-27.476-15.787-38.002%0D%0A%09%09c-10.52-10.526-23.194-15.794-38.005-15.794c-14.812%2C0-27.479%2C5.268-38.006%2C15.794c-10.527%2C10.526-15.79%2C23.193-15.79%2C38.002%0D%0A%09%09c0%2C14.815%2C5.263%2C27.481%2C15.79%2C38.008c10.526%2C10.528%2C23.194%2C15.794%2C38.006%2C15.794c14.811%2C0%2C27.485-5.266%2C38.005-15.794%0D%0A%09%09C134.735%2C132.973%2C139.996%2C120.307%2C139.996%2C105.491z%20M201.481%2C205.398c0%2C4.169-1.518%2C7.77-4.564%2C10.803%0D%0A%09%09c-3.047%2C3.049-6.646%2C4.571-10.809%2C4.571c-4.321%2C0-7.919-1.522-10.809-4.571l-41.187-41.062%0D%0A%09%09c-14.322%2C9.922-30.293%2C14.887-47.908%2C14.887c-11.449%2C0-22.396-2.219-32.841-6.659c-10.444-4.445-19.45-10.454-27.019-18.02%0D%0A%09%09c-7.568-7.562-13.571-16.573-18.013-27.015c-4.446-10.448-6.665-21.395-6.665-32.841c0-11.453%2C2.219-22.398%2C6.665-32.848%0D%0A%09%09c4.442-10.44%2C10.445-19.45%2C18.013-27.015c7.569-7.566%2C16.575-13.573%2C27.019-18.021c10.445-4.438%2C21.392-6.657%2C32.841-6.657%0D%0A%09%09c11.449%2C0%2C22.402%2C2.219%2C32.844%2C6.657c10.44%2C4.448%2C19.45%2C10.455%2C27.015%2C18.021c7.565%2C7.564%2C13.573%2C16.574%2C18.02%2C27.015%0D%0A%09%09c4.439%2C10.449%2C6.658%2C21.395%2C6.658%2C32.848c0%2C17.612-4.964%2C33.583-14.88%2C47.905l41.187%2C41.187c2.956%2C2.968%2C4.439%2C6.567%2C4.439%2C10.81%0D%0A%09%09L201.481%2C205.398z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+  background-repeat: no-repeat;
 }
-/* line 10, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
-.above .polygon {
-  -webkit-animation: fill 0.5s ease-in-out 1 forwards;
-  -moz-animation: fill 0.5s ease-in-out 1 forwards;
-  -o-animation: fill 0.5s ease-in-out 1 forwards;
-  animation: fill 0.5s ease-in-out 1 forwards;
+/* line 15, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\svg.less */
+.i-tw {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22204px%22%0D%0A%09%20height%3D%22236.333px%22%20viewBox%3D%220%200%20204%20236.333%22%20enable-background%3D%22new%200%200%20204%20236.333%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%20id%3D%22Layer_1%22%3E%0D%0A%09%3Cpolygon%20fill%3D%22%23FFFFFF%22%20points%3D%222.667%2C60.493%20101.667%2C2.927%20200.667%2C60.493%20200.667%2C175.625%20101.667%2C233.19%202.667%2C175.625%20%09%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_2%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M114.739%2C82.867H132.4V61h-17.661c-14.61%2C0-26.49%2C12.875-26.49%2C28.699v11.028H70.587%0D%0A%09%09v21.94H88.25v53.114h22.067v-53.118h22.075v-21.94h-22.075V89.482c0-3.79%2C2.336-6.615%2C4.418-6.615H114.739z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_3%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M76.458%2C101.618v61.573H55.954v-61.573H76.458z%20M77.763%2C82.603%0D%0A%09%09c0.042%2C3.024-1.004%2C5.553-3.138%2C7.581c-2.134%2C2.028-4.941%2C3.045-8.42%2C3.045H66.08c-3.396%2C0-6.13-1.017-8.201-3.045%0D%0A%09%09c-2.071-2.028-3.107-4.557-3.107-7.581c0-3.064%2C1.067-5.603%2C3.201-7.614c2.134-2.008%2C4.92-3.014%2C8.357-3.014%0D%0A%09%09c3.439%2C0.003%2C6.193%2C1.006%2C8.264%2C3.014C76.666%2C76.996%2C77.723%2C79.531%2C77.763%2C82.603z%20M150.215%2C127.897v35.294h-20.442v-32.933%0D%0A%09%09c0-4.35-0.843-7.754-2.518-10.221c-1.675-2.467-4.298-3.7-7.859-3.7c-2.609%2C0-4.798%2C0.713-6.558%2C2.144%0D%0A%09%09c-1.76%2C1.431-3.072%2C3.201-3.942%2C5.314c-0.455%2C1.244-0.686%2C2.922-0.686%2C5.029v34.359H87.77c0.083-16.527%2C0.126-29.926%2C0.126-40.201%0D%0A%09%09s-0.021-16.404-0.063-18.389l-0.063-2.983h20.44v8.943h-0.123c0.829-1.325%2C1.679-2.48%2C2.548-3.479%0D%0A%09%09c0.87-0.992%2C2.039-2.073%2C3.507-3.231c1.475-1.159%2C3.275-2.062%2C5.41-2.702c2.134-0.646%2C4.505-0.965%2C7.115-0.965%0D%0A%09%09c7.084%2C0%2C12.779%2C2.352%2C17.088%2C7.055c4.305%2C4.702%2C6.459%2C11.587%2C6.459%2C20.659V127.897z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_4%22%3E%0D%0A%09%3Cpath%20fill%3D%22%23E87200%22%20d%3D%22M175.379%2C113.576c-5.167%2C0.889-12.686-0.039-16.662-1.689c8.283-0.687%2C13.867-4.441%2C16.016-9.543%0D%0A%09%09c-2.971%2C1.82-12.226%2C3.839-17.336%2C1.91c-0.253-1.197-0.536-2.336-0.809-3.373c-3.885-14.304-17.221-25.836-31.174-24.441%0D%0A%09%09c1.12-0.446%2C2.268-0.867%2C3.417-1.255c1.522-0.551%2C10.537-2.037%2C9.125-5.209c-1.182-2.791-12.211%2C2.104-14.289%2C2.761%0D%0A%09%09c2.737-1.025%2C7.26-2.791%2C7.756-5.943c-4.196%2C0.572-8.311%2C2.567-11.493%2C5.438c1.138-1.243%2C2.019-2.735%2C2.209-4.357%0D%0A%09%09c-11.196%2C7.163-17.752%2C21.584-23.023%2C35.577c-4.155-4.026-7.854-7.202-11.146-8.979c-9.271-4.946-20.349-10.139-37.729-16.604%0D%0A%09%09c-0.534%2C5.753%2C2.837%2C13.422%2C12.558%2C18.519c-2.091-0.287-5.953%2C0.345-9.025%2C1.082c1.245%2C6.612%2C5.335%2C12.047%2C16.458%2C14.675%0D%0A%09%09c-5.077%2C0.312-7.702%2C1.487-10.079%2C3.976c2.314%2C4.594%2C7.958%2C9.986%2C18.097%2C8.886c-11.291%2C4.877-4.601%2C13.882%2C4.6%2C12.557%0D%0A%09%09c-15.666%2C16.196-40.376%2C14.996-54.57%2C1.454c37.034%2C50.525%2C117.546%2C29.873%2C129.551-18.775c9.01%2C0.039%2C14.285-3.144%2C17.547-6.652%0D%0A%09%09V113.576z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_5%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M139.996%2C105.491c0-14.809-5.261-27.476-15.787-38.002%0D%0A%09%09c-10.52-10.526-23.194-15.794-38.005-15.794c-14.812%2C0-27.479%2C5.268-38.006%2C15.794c-10.527%2C10.526-15.79%2C23.193-15.79%2C38.002%0D%0A%09%09c0%2C14.815%2C5.263%2C27.481%2C15.79%2C38.008c10.526%2C10.528%2C23.194%2C15.794%2C38.006%2C15.794c14.811%2C0%2C27.485-5.266%2C38.005-15.794%0D%0A%09%09C134.735%2C132.973%2C139.996%2C120.307%2C139.996%2C105.491z%20M201.481%2C205.398c0%2C4.169-1.518%2C7.77-4.564%2C10.803%0D%0A%09%09c-3.047%2C3.049-6.646%2C4.571-10.809%2C4.571c-4.321%2C0-7.919-1.522-10.809-4.571l-41.187-41.062%0D%0A%09%09c-14.322%2C9.922-30.293%2C14.887-47.908%2C14.887c-11.449%2C0-22.396-2.219-32.841-6.659c-10.444-4.445-19.45-10.454-27.019-18.02%0D%0A%09%09c-7.568-7.562-13.571-16.573-18.013-27.015c-4.446-10.448-6.665-21.395-6.665-32.841c0-11.453%2C2.219-22.398%2C6.665-32.848%0D%0A%09%09c4.442-10.44%2C10.445-19.45%2C18.013-27.015c7.569-7.566%2C16.575-13.573%2C27.019-18.021c10.445-4.438%2C21.392-6.657%2C32.841-6.657%0D%0A%09%09c11.449%2C0%2C22.402%2C2.219%2C32.844%2C6.657c10.44%2C4.448%2C19.45%2C10.455%2C27.015%2C18.021c7.565%2C7.564%2C13.573%2C16.574%2C18.02%2C27.015%0D%0A%09%09c4.439%2C10.449%2C6.658%2C21.395%2C6.658%2C32.848c0%2C17.612-4.964%2C33.583-14.88%2C47.905l41.187%2C41.187c2.956%2C2.968%2C4.439%2C6.567%2C4.439%2C10.81%0D%0A%09%09L201.481%2C205.398z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+  background-repeat: no-repeat;
 }
-/* line 1479, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\lesshat.less */
-lesshat-selector {
-  -lh-property: 0; }
-@-webkit-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
-@-moz-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
-@-o-keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; }}
-@keyframes fill{ 0%{ fill: transparent; } 100% { fill: white; };
+/* line 19, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\svg.less */
+.i-tw:hover {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22204px%22%0D%0A%09%20height%3D%22236.333px%22%20viewBox%3D%220%200%20204%20236.333%22%20enable-background%3D%22new%200%200%20204%20236.333%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%20id%3D%22Layer_1%22%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpolygon%20fill%3D%22%23E87200%22%20points%3D%221.667%2C60.493%20100.667%2C2.927%20199.667%2C60.493%20199.667%2C175.625%20100.667%2C233.19%201.667%2C175.625%20%09%09%22/%3E%0D%0A%09%3C/g%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_2%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23FFFFFF%22%20d%3D%22M114.739%2C82.867H132.4V61h-17.661c-14.61%2C0-26.49%2C12.875-26.49%2C28.699v11.028H70.587%0D%0A%09%09v21.94H88.25v53.114h22.067v-53.118h22.075v-21.94h-22.075V89.482c0-3.79%2C2.336-6.615%2C4.418-6.615H114.739z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_3%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23FFFFFF%22%20d%3D%22M76.458%2C101.618v61.573H55.954v-61.573H76.458z%20M77.763%2C82.603%0D%0A%09%09c0.042%2C3.024-1.004%2C5.553-3.138%2C7.581c-2.134%2C2.028-4.941%2C3.045-8.42%2C3.045H66.08c-3.396%2C0-6.13-1.017-8.201-3.045%0D%0A%09%09c-2.071-2.028-3.107-4.557-3.107-7.581c0-3.064%2C1.067-5.603%2C3.201-7.614c2.134-2.008%2C4.92-3.014%2C8.357-3.014%0D%0A%09%09c3.439%2C0.003%2C6.193%2C1.006%2C8.264%2C3.014C76.666%2C76.996%2C77.723%2C79.531%2C77.763%2C82.603z%20M150.215%2C127.897v35.294h-20.442v-32.933%0D%0A%09%09c0-4.35-0.843-7.754-2.518-10.221c-1.675-2.467-4.298-3.7-7.859-3.7c-2.609%2C0-4.798%2C0.713-6.558%2C2.144%0D%0A%09%09c-1.76%2C1.431-3.072%2C3.201-3.942%2C5.314c-0.455%2C1.244-0.686%2C2.922-0.686%2C5.029v34.359H87.77c0.083-16.527%2C0.126-29.926%2C0.126-40.201%0D%0A%09%09s-0.021-16.404-0.063-18.389l-0.063-2.983h20.44v8.943h-0.123c0.829-1.325%2C1.679-2.48%2C2.548-3.479%0D%0A%09%09c0.87-0.992%2C2.039-2.073%2C3.507-3.231c1.475-1.159%2C3.275-2.062%2C5.41-2.702c2.134-0.646%2C4.505-0.965%2C7.115-0.965%0D%0A%09%09c7.084%2C0%2C12.779%2C2.352%2C17.088%2C7.055c4.305%2C4.702%2C6.459%2C11.587%2C6.459%2C20.659V127.897z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_4%22%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M175.379%2C113.576c-5.167%2C0.889-12.686-0.039-16.662-1.689c8.283-0.687%2C13.867-4.441%2C16.016-9.543%0D%0A%09%09c-2.971%2C1.82-12.226%2C3.839-17.336%2C1.91c-0.253-1.197-0.536-2.336-0.809-3.373c-3.885-14.304-17.221-25.836-31.174-24.441%0D%0A%09%09c1.12-0.446%2C2.268-0.867%2C3.417-1.255c1.522-0.551%2C10.537-2.037%2C9.125-5.209c-1.182-2.791-12.211%2C2.104-14.289%2C2.761%0D%0A%09%09c2.737-1.025%2C7.26-2.791%2C7.756-5.943c-4.196%2C0.572-8.311%2C2.567-11.493%2C5.438c1.138-1.243%2C2.019-2.735%2C2.209-4.357%0D%0A%09%09c-11.196%2C7.163-17.752%2C21.584-23.023%2C35.577c-4.155-4.026-7.854-7.202-11.146-8.979c-9.271-4.946-20.349-10.139-37.729-16.604%0D%0A%09%09c-0.534%2C5.753%2C2.837%2C13.422%2C12.558%2C18.519c-2.091-0.287-5.953%2C0.345-9.025%2C1.082c1.245%2C6.612%2C5.335%2C12.047%2C16.458%2C14.675%0D%0A%09%09c-5.077%2C0.312-7.702%2C1.487-10.079%2C3.976c2.314%2C4.594%2C7.958%2C9.986%2C18.097%2C8.886c-11.291%2C4.877-4.601%2C13.882%2C4.6%2C12.557%0D%0A%09%09c-15.666%2C16.196-40.376%2C14.996-54.57%2C1.454c37.034%2C50.525%2C117.546%2C29.873%2C129.551-18.775c9.01%2C0.039%2C14.285-3.144%2C17.547-6.652%0D%0A%09%09V113.576z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_5%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M139.996%2C105.491c0-14.809-5.261-27.476-15.787-38.002%0D%0A%09%09c-10.52-10.526-23.194-15.794-38.005-15.794c-14.812%2C0-27.479%2C5.268-38.006%2C15.794c-10.527%2C10.526-15.79%2C23.193-15.79%2C38.002%0D%0A%09%09c0%2C14.815%2C5.263%2C27.481%2C15.79%2C38.008c10.526%2C10.528%2C23.194%2C15.794%2C38.006%2C15.794c14.811%2C0%2C27.485-5.266%2C38.005-15.794%0D%0A%09%09C134.735%2C132.973%2C139.996%2C120.307%2C139.996%2C105.491z%20M201.481%2C205.398c0%2C4.169-1.518%2C7.77-4.564%2C10.803%0D%0A%09%09c-3.047%2C3.049-6.646%2C4.571-10.809%2C4.571c-4.321%2C0-7.919-1.522-10.809-4.571l-41.187-41.062%0D%0A%09%09c-14.322%2C9.922-30.293%2C14.887-47.908%2C14.887c-11.449%2C0-22.396-2.219-32.841-6.659c-10.444-4.445-19.45-10.454-27.019-18.02%0D%0A%09%09c-7.568-7.562-13.571-16.573-18.013-27.015c-4.446-10.448-6.665-21.395-6.665-32.841c0-11.453%2C2.219-22.398%2C6.665-32.848%0D%0A%09%09c4.442-10.44%2C10.445-19.45%2C18.013-27.015c7.569-7.566%2C16.575-13.573%2C27.019-18.021c10.445-4.438%2C21.392-6.657%2C32.841-6.657%0D%0A%09%09c11.449%2C0%2C22.402%2C2.219%2C32.844%2C6.657c10.44%2C4.448%2C19.45%2C10.455%2C27.015%2C18.021c7.565%2C7.564%2C13.573%2C16.574%2C18.02%2C27.015%0D%0A%09%09c4.439%2C10.449%2C6.658%2C21.395%2C6.658%2C32.848c0%2C17.612-4.964%2C33.583-14.88%2C47.905l41.187%2C41.187c2.956%2C2.968%2C4.439%2C6.567%2C4.439%2C10.81%0D%0A%09%09L201.481%2C205.398z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+  background-repeat: no-repeat;
 }
-/* line 14, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
-.flame {
-  fill: transparent;
+/* line 25, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\svg.less */
+.i-li {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22204px%22%0D%0A%09%20height%3D%22236.333px%22%20viewBox%3D%220%200%20204%20236.333%22%20enable-background%3D%22new%200%200%20204%20236.333%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%20id%3D%22Layer_1%22%3E%0D%0A%09%3Cpolygon%20fill%3D%22%23FFFFFF%22%20points%3D%222.667%2C60.493%20101.667%2C2.927%20200.667%2C60.493%20200.667%2C175.625%20101.667%2C233.19%202.667%2C175.625%20%09%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_2%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M114.739%2C82.867H132.4V61h-17.661c-14.61%2C0-26.49%2C12.875-26.49%2C28.699v11.028H70.587%0D%0A%09%09v21.94H88.25v53.114h22.067v-53.118h22.075v-21.94h-22.075V89.482c0-3.79%2C2.336-6.615%2C4.418-6.615H114.739z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_3%22%3E%0D%0A%09%3Cpath%20fill%3D%22%23E87200%22%20d%3D%22M76.458%2C101.618v61.573H55.954v-61.573H76.458z%20M77.763%2C82.603c0.042%2C3.024-1.004%2C5.553-3.138%2C7.581%0D%0A%09%09c-2.134%2C2.028-4.941%2C3.045-8.42%2C3.045H66.08c-3.396%2C0-6.13-1.017-8.201-3.045c-2.071-2.028-3.107-4.557-3.107-7.581%0D%0A%09%09c0-3.064%2C1.067-5.603%2C3.201-7.614c2.134-2.008%2C4.92-3.014%2C8.357-3.014c3.439%2C0.003%2C6.193%2C1.006%2C8.264%2C3.014%0D%0A%09%09C76.666%2C76.996%2C77.723%2C79.531%2C77.763%2C82.603z%20M150.215%2C127.897v35.294h-20.442v-32.933c0-4.35-0.843-7.754-2.518-10.221%0D%0A%09%09c-1.675-2.467-4.298-3.7-7.859-3.7c-2.609%2C0-4.798%2C0.713-6.558%2C2.144c-1.76%2C1.431-3.072%2C3.201-3.942%2C5.314%0D%0A%09%09c-0.455%2C1.244-0.686%2C2.922-0.686%2C5.029v34.359H87.77c0.083-16.527%2C0.126-29.926%2C0.126-40.201s-0.021-16.404-0.063-18.389%0D%0A%09%09l-0.063-2.983h20.44v8.943h-0.123c0.829-1.325%2C1.679-2.48%2C2.548-3.479c0.87-0.992%2C2.039-2.073%2C3.507-3.231%0D%0A%09%09c1.475-1.159%2C3.275-2.062%2C5.41-2.702c2.134-0.646%2C4.505-0.965%2C7.115-0.965c7.084%2C0%2C12.779%2C2.352%2C17.088%2C7.055%0D%0A%09%09c4.305%2C4.702%2C6.459%2C11.587%2C6.459%2C20.659V127.897z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_4%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M175.379%2C113.576c-5.167%2C0.889-12.686-0.039-16.662-1.689%0D%0A%09%09c8.283-0.687%2C13.867-4.441%2C16.016-9.543c-2.971%2C1.82-12.226%2C3.839-17.336%2C1.91c-0.253-1.197-0.536-2.336-0.809-3.373%0D%0A%09%09c-3.885-14.304-17.221-25.836-31.174-24.441c1.12-0.446%2C2.268-0.867%2C3.417-1.255c1.522-0.551%2C10.537-2.037%2C9.125-5.209%0D%0A%09%09c-1.182-2.791-12.211%2C2.104-14.289%2C2.761c2.737-1.025%2C7.26-2.791%2C7.756-5.943c-4.196%2C0.572-8.311%2C2.567-11.493%2C5.438%0D%0A%09%09c1.138-1.243%2C2.019-2.735%2C2.209-4.357c-11.196%2C7.163-17.752%2C21.584-23.023%2C35.577c-4.155-4.026-7.854-7.202-11.146-8.979%0D%0A%09%09c-9.271-4.946-20.349-10.139-37.729-16.604c-0.534%2C5.753%2C2.837%2C13.422%2C12.558%2C18.519c-2.091-0.287-5.953%2C0.345-9.025%2C1.082%0D%0A%09%09c1.245%2C6.612%2C5.335%2C12.047%2C16.458%2C14.675c-5.077%2C0.312-7.702%2C1.487-10.079%2C3.976c2.314%2C4.594%2C7.958%2C9.986%2C18.097%2C8.886%0D%0A%09%09c-11.291%2C4.877-4.601%2C13.882%2C4.6%2C12.557c-15.666%2C16.196-40.376%2C14.996-54.57%2C1.454c37.034%2C50.525%2C117.546%2C29.873%2C129.551-18.775%0D%0A%09%09c9.01%2C0.039%2C14.285-3.144%2C17.547-6.652V113.576z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_5%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M139.996%2C105.491c0-14.809-5.261-27.476-15.787-38.002%0D%0A%09%09c-10.52-10.526-23.194-15.794-38.005-15.794c-14.812%2C0-27.479%2C5.268-38.006%2C15.794c-10.527%2C10.526-15.79%2C23.193-15.79%2C38.002%0D%0A%09%09c0%2C14.815%2C5.263%2C27.481%2C15.79%2C38.008c10.526%2C10.528%2C23.194%2C15.794%2C38.006%2C15.794c14.811%2C0%2C27.485-5.266%2C38.005-15.794%0D%0A%09%09C134.735%2C132.973%2C139.996%2C120.307%2C139.996%2C105.491z%20M201.481%2C205.398c0%2C4.169-1.518%2C7.77-4.564%2C10.803%0D%0A%09%09c-3.047%2C3.049-6.646%2C4.571-10.809%2C4.571c-4.321%2C0-7.919-1.522-10.809-4.571l-41.187-41.062%0D%0A%09%09c-14.322%2C9.922-30.293%2C14.887-47.908%2C14.887c-11.449%2C0-22.396-2.219-32.841-6.659c-10.444-4.445-19.45-10.454-27.019-18.02%0D%0A%09%09c-7.568-7.562-13.571-16.573-18.013-27.015c-4.446-10.448-6.665-21.395-6.665-32.841c0-11.453%2C2.219-22.398%2C6.665-32.848%0D%0A%09%09c4.442-10.44%2C10.445-19.45%2C18.013-27.015c7.569-7.566%2C16.575-13.573%2C27.019-18.021c10.445-4.438%2C21.392-6.657%2C32.841-6.657%0D%0A%09%09c11.449%2C0%2C22.402%2C2.219%2C32.844%2C6.657c10.44%2C4.448%2C19.45%2C10.455%2C27.015%2C18.021c7.565%2C7.564%2C13.573%2C16.574%2C18.02%2C27.015%0D%0A%09%09c4.439%2C10.449%2C6.658%2C21.395%2C6.658%2C32.848c0%2C17.612-4.964%2C33.583-14.88%2C47.905l41.187%2C41.187c2.956%2C2.968%2C4.439%2C6.567%2C4.439%2C10.81%0D%0A%09%09L201.481%2C205.398z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+  background-repeat: no-repeat;
 }
-/* line 15, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
-.above .flame {
-  fill: #ec7c0a;
-  -webkit-transition: all 0.4s 0.5s ease;
-  -moz-transition: all 0.4s 0.5s ease;
-  -o-transition: all 0.4s 0.5s ease;
-  transition: all 0.4s 0.5s ease;
-}
-/* line 16, C:\Users\todd\Desktop\Markup Patterns\mp-site\less\svg.less */
-.txt-logo {
-  font-family: 'grotesque-light';
-  fill: #ffffff;
+/* line 29, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\svg.less */
+.i-li:hover {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22204px%22%0D%0A%09%20height%3D%22236.333px%22%20viewBox%3D%220%200%20204%20236.333%22%20enable-background%3D%22new%200%200%20204%20236.333%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%20id%3D%22Layer_1%22%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpolygon%20fill%3D%22%23E87200%22%20points%3D%221.667%2C60.493%20100.667%2C2.927%20199.667%2C60.493%20199.667%2C175.625%20100.667%2C233.19%201.667%2C175.625%20%09%09%22/%3E%0D%0A%09%3C/g%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_2%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23FFFFFF%22%20d%3D%22M114.739%2C82.867H132.4V61h-17.661c-14.61%2C0-26.49%2C12.875-26.49%2C28.699v11.028H70.587%0D%0A%09%09v21.94H88.25v53.114h22.067v-53.118h22.075v-21.94h-22.075V89.482c0-3.79%2C2.336-6.615%2C4.418-6.615H114.739z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_3%22%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M76.458%2C101.618v61.573H55.954v-61.573H76.458z%20M77.763%2C82.603c0.042%2C3.024-1.004%2C5.553-3.138%2C7.581%0D%0A%09%09c-2.134%2C2.028-4.941%2C3.045-8.42%2C3.045H66.08c-3.396%2C0-6.13-1.017-8.201-3.045c-2.071-2.028-3.107-4.557-3.107-7.581%0D%0A%09%09c0-3.064%2C1.067-5.603%2C3.201-7.614c2.134-2.008%2C4.92-3.014%2C8.357-3.014c3.439%2C0.003%2C6.193%2C1.006%2C8.264%2C3.014%0D%0A%09%09C76.666%2C76.996%2C77.723%2C79.531%2C77.763%2C82.603z%20M150.215%2C127.897v35.294h-20.442v-32.933c0-4.35-0.843-7.754-2.518-10.221%0D%0A%09%09c-1.675-2.467-4.298-3.7-7.859-3.7c-2.609%2C0-4.798%2C0.713-6.558%2C2.144c-1.76%2C1.431-3.072%2C3.201-3.942%2C5.314%0D%0A%09%09c-0.455%2C1.244-0.686%2C2.922-0.686%2C5.029v34.359H87.77c0.083-16.527%2C0.126-29.926%2C0.126-40.201s-0.021-16.404-0.063-18.389%0D%0A%09%09l-0.063-2.983h20.44v8.943h-0.123c0.829-1.325%2C1.679-2.48%2C2.548-3.479c0.87-0.992%2C2.039-2.073%2C3.507-3.231%0D%0A%09%09c1.475-1.159%2C3.275-2.062%2C5.41-2.702c2.134-0.646%2C4.505-0.965%2C7.115-0.965c7.084%2C0%2C12.779%2C2.352%2C17.088%2C7.055%0D%0A%09%09c4.305%2C4.702%2C6.459%2C11.587%2C6.459%2C20.659V127.897z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_4%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M175.379%2C113.576c-5.167%2C0.889-12.686-0.039-16.662-1.689%0D%0A%09%09c8.283-0.687%2C13.867-4.441%2C16.016-9.543c-2.971%2C1.82-12.226%2C3.839-17.336%2C1.91c-0.253-1.197-0.536-2.336-0.809-3.373%0D%0A%09%09c-3.885-14.304-17.221-25.836-31.174-24.441c1.12-0.446%2C2.268-0.867%2C3.417-1.255c1.522-0.551%2C10.537-2.037%2C9.125-5.209%0D%0A%09%09c-1.182-2.791-12.211%2C2.104-14.289%2C2.761c2.737-1.025%2C7.26-2.791%2C7.756-5.943c-4.196%2C0.572-8.311%2C2.567-11.493%2C5.438%0D%0A%09%09c1.138-1.243%2C2.019-2.735%2C2.209-4.357c-11.196%2C7.163-17.752%2C21.584-23.023%2C35.577c-4.155-4.026-7.854-7.202-11.146-8.979%0D%0A%09%09c-9.271-4.946-20.349-10.139-37.729-16.604c-0.534%2C5.753%2C2.837%2C13.422%2C12.558%2C18.519c-2.091-0.287-5.953%2C0.345-9.025%2C1.082%0D%0A%09%09c1.245%2C6.612%2C5.335%2C12.047%2C16.458%2C14.675c-5.077%2C0.312-7.702%2C1.487-10.079%2C3.976c2.314%2C4.594%2C7.958%2C9.986%2C18.097%2C8.886%0D%0A%09%09c-11.291%2C4.877-4.601%2C13.882%2C4.6%2C12.557c-15.666%2C16.196-40.376%2C14.996-54.57%2C1.454c37.034%2C50.525%2C117.546%2C29.873%2C129.551-18.775%0D%0A%09%09c9.01%2C0.039%2C14.285-3.144%2C17.547-6.652V113.576z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_5%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20display%3D%22inline%22%20fill%3D%22%23E87200%22%20d%3D%22M139.996%2C105.491c0-14.809-5.261-27.476-15.787-38.002%0D%0A%09%09c-10.52-10.526-23.194-15.794-38.005-15.794c-14.812%2C0-27.479%2C5.268-38.006%2C15.794c-10.527%2C10.526-15.79%2C23.193-15.79%2C38.002%0D%0A%09%09c0%2C14.815%2C5.263%2C27.481%2C15.79%2C38.008c10.526%2C10.528%2C23.194%2C15.794%2C38.006%2C15.794c14.811%2C0%2C27.485-5.266%2C38.005-15.794%0D%0A%09%09C134.735%2C132.973%2C139.996%2C120.307%2C139.996%2C105.491z%20M201.481%2C205.398c0%2C4.169-1.518%2C7.77-4.564%2C10.803%0D%0A%09%09c-3.047%2C3.049-6.646%2C4.571-10.809%2C4.571c-4.321%2C0-7.919-1.522-10.809-4.571l-41.187-41.062%0D%0A%09%09c-14.322%2C9.922-30.293%2C14.887-47.908%2C14.887c-11.449%2C0-22.396-2.219-32.841-6.659c-10.444-4.445-19.45-10.454-27.019-18.02%0D%0A%09%09c-7.568-7.562-13.571-16.573-18.013-27.015c-4.446-10.448-6.665-21.395-6.665-32.841c0-11.453%2C2.219-22.398%2C6.665-32.848%0D%0A%09%09c4.442-10.44%2C10.445-19.45%2C18.013-27.015c7.569-7.566%2C16.575-13.573%2C27.019-18.021c10.445-4.438%2C21.392-6.657%2C32.841-6.657%0D%0A%09%09c11.449%2C0%2C22.402%2C2.219%2C32.844%2C6.657c10.44%2C4.448%2C19.45%2C10.455%2C27.015%2C18.021c7.565%2C7.564%2C13.573%2C16.574%2C18.02%2C27.015%0D%0A%09%09c4.439%2C10.449%2C6.658%2C21.395%2C6.658%2C32.848c0%2C17.612-4.964%2C33.583-14.88%2C47.905l41.187%2C41.187c2.956%2C2.968%2C4.439%2C6.567%2C4.439%2C10.81%0D%0A%09%09L201.481%2C205.398z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+  background-repeat: no-repeat;
 }
 /*====================*/
 /* # Image Styles # */
@@ -1982,7 +2105,7 @@ img {
   width: auto;
 }
 /* line 12, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
-.img-rounded {
+.img-round {
   -webkit-border-radius: 0px.25em;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 0px.25em;
@@ -2000,7 +2123,7 @@ img {
   background-clip: padding-box;
 }
 /* line 14, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
-.img-thumbnail {
+.img-thumb {
   padding: 4px 256px 256px 256px;
   padding: 0.25rem 16rem 16rem 16rem;
   padding: 4px;
@@ -2009,28 +2132,43 @@ img {
   background-color: #ffffff;
   border: 1px solid #dddddd;
 }
-/* line 19, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
 .img-right {
   margin: 0px 0px 16px 24px;
   margin: 0rem 0rem 1rem 1.5rem;
 }
-/* line 20, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
+/* line 18, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
 .img-left {
   margin: 0px 24px 16px 0px;
   margin: 0rem 1.5rem 1rem 0rem;
 }
-/* line 26, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
+/* line 24, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
 .img-banner {
   display: block;
   float: none;
   width: 100% !important;
 }
-/* line 27, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
+/* line 25, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
 .img-featured {
   position: relative;
   margin-bottom: 1rem;
 }
+/* line 28, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
+.img-sm {
+  width: 80px;
+  width: 5rem;
+}
+/* line 29, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
+.img-med {
+  width: 112px;
+  width: 7rem;
+}
 /* line 30, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
+.img-lg {
+  width: 128px;
+  width: 8rem;
+}
+/* line 33, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\images.less */
 .img-cover {
   -webkit-background-size: cover, 100%;
   -moz-background-size: cover, 100%;
@@ -2126,9 +2264,9 @@ input[type="button"]:focus {
   background: silver;
   color: white;
 }
-/*========*/
-/* Lists */
-/*========*/
+/*=========*/
+/*  Lists  */
+/*=========*/
 /* line 6, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .lst-vert li {
   color: #3899b9;
@@ -2141,20 +2279,20 @@ input[type="button"]:focus {
   display: block;
   color: inherit;
 }
-/* line 11, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 12, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .lst-hori li {
   color: #3899b9;
   position: relative;
 }
-/* line 12, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .lst-hori li:first-child a {
   padding-left: 0;
 }
-/* line 13, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 14, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .lst-hori li:last-child a {
   padding-right: 0;
 }
-/* line 15, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 16, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .lst-hori a {
   padding: 0px 24px 0px 24px;
   padding: 0rem 1.5rem 0rem 1.5rem;
@@ -2162,22 +2300,32 @@ input[type="button"]:focus {
   color: inherit;
 }
 /* line 20, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+.lst-basic {
+  color: #3899b9;
+  font-size: 90%;
+}
+/* line 21, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+.lst-basic li {
+  padding: 3.2px 0px 3.2px 0px;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+}
+/* line 26, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .lst-bdr li {
   border-bottom: 1px solid #dddddd;
 }
-/* line 21, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 27, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .lst-bdr li:first-child {
   border-top: none;
 }
-/* line 22, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 28, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .lst-bdr li:last-child {
   border-bottom: none;
 }
-/* line 28, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 34, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .spacers > li {
   position: relative;
 }
-/* line 29, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 35, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .spacers > li:after {
   content: "";
   width: 4px;
@@ -2195,15 +2343,18 @@ input[type="button"]:focus {
   border-radius: 50%;
   background-clip: padding-box;
 }
-/* line 35, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 41, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .spacers > li:last-child:after {
   display: none;
 }
-/* line 36, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
+/* line 42, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\lists.less */
 .spacers > li a {
   display: inline-block;
 }
-/* line 3, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
+/*=========*/
+/*  Links  */
+/*=========*/
+/* line 5, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
 a {
   text-decoration: none;
   color: #3899b9;
@@ -2212,47 +2363,28 @@ a {
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-/* line 4, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
+/* line 6, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
 a:hover {
   color: #c09741;
 }
-/* line 7, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
+/* line 10, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
 p a {
   color: #3899b9;
   text-decoration: none;
   line-height: inherit;
 }
-/* line 9, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
+/* line 12, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
 p a:hover {
   color: #3899b9;
   text-decoration: none;
   border-bottom: 1px solid #3899b9;
   cursor: pointer;
 }
-/* line 10, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
+/* line 13, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
 p a:focus {
   outline: thin dotted;
 }
-/* line 16, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
-.pagination {
-  margin: 1.5rem 0;
-  padding: 0.25rem 0 0;
-  background: white;
-  display: block;
-  font-family: 'BG-Light';
-  color: gray;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 1.25rem;
-  border: 1px solid #e2e3e4;
-  border-bottom: 1px solid #e2e3e4;
-}
-/* line 20, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
-.pagination:hover {
-  color: black;
-}
-/* line 26, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
 .rm {
   margin-top: 16px;
   margin-top: 1rem;
@@ -2262,7 +2394,7 @@ p a:focus {
   margin-bottom: 4px;
   margin-bottom: 0.25rem;
 }
-/* line 27, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
+/* line 18, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\links.less */
 .rm:after {
   content: " \00bb";
   font-size: 14px;
@@ -2334,7 +2466,7 @@ p a:focus {
   margin-bottom: 0;
 }
 /* ======================== */
-/*        Markup Patterns   */
+/*      Markup Patterns     */
 /* ======================== */
 /* Headings and Captions */
 /* line 5, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\reuse.less */
@@ -2393,7 +2525,7 @@ p a:focus {
   padding-left: 0;
   border: none;
 }
-/* line 18, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\reuse.less */
+/* line 17, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\reuse.less */
 .mp-content {
   overflow: auto;
 }
@@ -2482,7 +2614,7 @@ p a:focus {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
-
+  
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -2518,7 +2650,7 @@ p a:focus {
   thead {
     display: table-header-group;
     /* h5bp.com/t */
-
+  
   }
   /* line 46, C:\Users\todd\Desktop\Markup Patterns\prometheus\less\print.less */
   tr,
