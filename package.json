@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "description": "A generator for Yeoman",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "BOA",
+    "Builders of Awesome",
+    "BOA Beginning Website Generator",
+    "Todd's Framework",
+    "LESS"
   ],
   "homepage": "https://github.com/tylerama/boagen",
   "bugs": "https://github.com/tylerama/boagen/issues",
