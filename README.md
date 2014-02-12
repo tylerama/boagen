@@ -85,6 +85,52 @@ To start using the amazingness of Grunt, go back to your command line and execut
 $ grunt serve
 ```
 
+You are now going to see all of your changes update on the fly, as you make them.
+
+## Benefits of using me
+
+The power of all of this is super obvious when you're developing a new project. The benefits are:
+1. Automatically start with the latest CSS/LESS Framework files made by Todd.
+2. Automatically start with the latest JavaScript files (minimum - jQuery, Modernizr).
+3. Using the GRUNT SERVE task, all open windows will update as you change any html, less, or js file. This means no switching to a window to refresh, this also means that you can watch different browsers update at the same time.
+4. LESS files are automatically compiled, and if there are errors the terminal will say where the error is.
+5. JavaScript files are Linted using JSHint. What is JSHint? It is a tool that ensures code quality and consistency. You can read more at [JSHint](http://jshint.com). If there are any errors or use of bad practices, the terminal will alert to these spots.
+6. Using the GRUNT SERVE task, there is a server started on your machine which runs the project. This minimizes cross-domain problems, and gives you a live shot of how the page will act.
+
+## Bonus Points
+If you want to get some bonus efficiency points, I have build the following tasks:
+
+```
+$ grunt build
+```
+When this command is executed a number of efficiency jobs get done. You'll notice in the base index.html file some weird commented areas:
+```
+<!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+```
+This is an example of a build block. What this says is that all of the files in this build block will get concatenated into one main.js file in the scripts folder. They get concatenated in the order that they appear here. There are a couple more of these build blocks in the file (css, js).
+
+Also, all images in the img folder will be optimized (over 86KB can be saved just by optimizing the two images this generator ships with!), all of the generated CSS and JavaScript files will also be minified and uglified. If that's not enough, the index.html file will be optimized too, allowing for maximum kb savings.
+
+Last, but not least, The CSS and JavaScript files that were just minified and uglified are renamed to be prefixed with a build code. The references to these files in index.html are replaced with the new name. Why? This guarantees that you will not be using a cached version of the file.
+
+*NOTE* If you plan on importing most of your files and code into a CMS (Kentico, for example), a lot of this build task may be useless. What would be of benefit in that situation would be to set up a new task to just concatenate the files that you want, and perhaps uglify certain ones.
+
+This brings us to the next task...
+
+```
+$ grunt cms
+```
+I have set up one last task which takes a few files that will for sure be imported into a CMS the way they are, and copied these into a new folder named cms-files. This is one that will likely evolve into something that includes more files when we work with this process some more. But it's there for you to use, look at, and play with.
+
+## Power User
+Want some power? Try writing some JavaScript tests. Or maybe add more grunt tasks, whatever suits your workflow. There are a billion resources, don't be afraid!
+
+## Collaboration
+In order to keep our projects and process up to date, use this generator. Do you have a good piece of workflow that you think everyone would benefit from? Open an issue on this repository, or create a pull request to add it in. Keeping local files and copying and pasting is bad, source control is good. Using git we can keep track of the changes made as well as see the evolution of this project generator. Not to mention we will be able to ensure that every new project start the same, keeping our websites consistent and up to date.
+
+We don't want to have a bunch of versions of Todd's beautiful framework running around each with a life of their own.
 
 ## License
 
