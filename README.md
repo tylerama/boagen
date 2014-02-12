@@ -107,7 +107,7 @@ When this command is executed a number of efficiency jobs get done. You'll notic
 ```
 <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+<!-- endbuild -->
 ```
 This is an example of a build block. What this says is that all of the files in this build block will get concatenated into one main.js file in the scripts folder. They get concatenated in the order that they appear here. There are a couple more of these build blocks in the file (css, js).
 

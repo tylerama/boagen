@@ -22,7 +22,8 @@ module.exports = function (grunt) {
         yeoman: {
             // Configurable paths
             app: 'app',
-            dist: 'dist'
+            dist: 'dist',
+            cms: 'cms-files'
         },
 
         // Watches files for changes and runs tasks based on the changed files
@@ -105,6 +106,14 @@ module.exports = function (grunt) {
                         '.tmp',
                         '<%= yeoman.dist %>/*',
                         '!<%= yeoman.dist %>/.git*'
+                    ]
+                }]
+            },
+            cms: {
+                files: [{
+                    dot: true,
+                    src: [
+                        '<%= yeoman.cms %>/*'
                     ]
                 }]
             },
@@ -300,6 +309,19 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '<%= yeoman.app %>/.tmp/styles/',
                 src: '{,*/}*.css'
+            },
+            cms: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>',
+                    dest: '<%= yeoman.cms %>',
+                    src: [
+                        'img/{,*/}*.*',
+                        'styles/less/{,*/}*.less',
+                        'scripts/jquery-1.11.0.min.js'
+                    ]
+                }]
             }
         },
 
@@ -390,6 +412,11 @@ module.exports = function (grunt) {
         'rev',
         // Minifies HTML, replaces css and js src with the renamed one from above
        'usemin'
+    ]);
+
+    grunt.registerTask('cms', [
+        'clean:cms',
+        'copy:cms'
     ]);
 
     grunt.registerTask('default', [
