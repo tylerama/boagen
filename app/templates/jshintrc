@@ -19,5 +19,8 @@
     "trailing": true,
     "smarttabs": true,
     "white": true,
+    "predef": [
+        "Modernizr"
+    ],
     "jquery": true
 }
