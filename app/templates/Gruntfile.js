@@ -297,7 +297,8 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*',
+                        '!{,*/}kitchen-sink.html'
+                        'fonts/{,*/}*.*',
                         'bower_components/jquery/jquery.min.js',
                         'scripts/jquery-1.11.0.min.js'
                     ]
