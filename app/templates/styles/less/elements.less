@@ -3,28 +3,18 @@
 /*=====================*/
 
 // Customize the background color of selected text to match your design.
-::-moz-selection,
-::selection {    
-	text-shadow: none; 
-}
-::-moz-selection { background: darken(@color-primary, 10%); }
-::selection { background: darken(@color-primary, 10%); }
+::-moz-selection { background: darken(@color-primary, 10%); color:white; }
+::selection { background: darken(@color-primary, 10%); color:white; }
 
-
-// Blockquotes
-blockquote { .margin(0, 1, 1, 1,); border-left: 3px solid @color-secondary; 
-	p { .margin-left(1); .padding-top(.25);
-		
-	  	.font-size(1); font-weight: bold; 
-	 	.line-height(1.5); color: @gray; font-style: italic; 
+// Blockquotes => http://html5doctor.com/blockquote-q-cite/
+blockquote { .margin(1, 0, 1, 1,); .padding-left(1); border-left: 3px solid @gray; 
+	// Use Correct Smart Quotes
+	// <q>I couldn’t believe it when she said <q>there’s no milk left</q>, so I just walked out of the door.</q>
+	q { quotes: "\201C" "\201D" "\2018" "\2019";
+		// &:before { content: open-quote; }
+		// &:after { content: no-close-quote; }
 	}
-	p:before, 
-	blockquote p:after { 
-		.font-size(24); .font-size(2.5); 
-		vertical-align: middle; 
-	}
-	blockquote p:before { content: "\201C\0020"; }
-	blockquote p:after { content: "\0020\201D"; }
+	small { .padding-left(.5); display:block; }
 }
 
 // Abbreviations
@@ -36,18 +26,30 @@ abbr {text-transform: none;}
 
 // A better looking default horizontal rule
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+	height: 1px;
+	.margin(2, 0, 2, 0);
     padding: 0;
+    display: block;
+    
+    border: 0;
+    border-top: 1px solid @gray;
+    
 }
 
-// Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440
-audio,
-canvas,
-img,
-video {
-	vertical-align: middle;
+mark { background: #ff0; color: #000; }
+
+// Give this a better font family
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
+
+
+
+
+
+// Used to display code
+xmp { padding:.25em; font-size: .75rem; display:inline; background: lighten(@silver, 5%); border:1px solid lighten(@gray, 10%); color: @red;}

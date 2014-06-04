@@ -11,9 +11,9 @@
 
 
 // Base Line Grid & Base Type
-h1 { .margin(0, 0, .5, 0); padding:0; .font-size(2.5);  line-height:1.1; }
+h1 { .margin(0, 0, .75, 0); padding:0; .font-size(2.25);  line-height:1.3; }
 
-h2 { .margin(0, 0, .5, 0); padding:0; .font-size(1.75); line-height:1.1; }
+h2 { .margin(0, 0, .75, 0); padding:0; .font-size(1.75); line-height:1.1; }
 
 h3 { .margin(0, 0, .5, 0); padding:0; .font-size(1.25); line-height:1.1; }
 
@@ -24,8 +24,8 @@ h5 { .margin(0); padding:0; .font-size(1.3); line-height:1.1; }
 h6 { .margin(0); padding:0; .font-size(1.25); line-height:1.1; }
 
 
-h1, h2, h3, h4, h5, h6 { color:@color-primary; font-family: Medula; font-weight: 300;
-  letter-spacing: .5px; text-transform: capitalize; 
+h1, h2, h3, h4, h5, h6 { .sans-r;  color:darken(@gray, 15%); 
+  letter-spacing: .003em; text-transform: capitalize; 
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
@@ -36,7 +36,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   color: #6F6F6F; font-size: 60%; line-height: 0; 
 }
 
-/* Turn on ligatures, as well as discretionary ligatures */
+/* Turn on ligatures & discretionary ligatures */
 h1, h2, h3, h4, h5, h6 {  text-rendering: optimizeLegibility;
    -moz-font-feature-settings: "liga=1, dlig=1";
     -ms-font-feature-settings: "liga", "dlig";
@@ -46,9 +46,10 @@ h1, h2, h3, h4, h5, h6 {  text-rendering: optimizeLegibility;
 }
 
 // Paragraphs
-p { .margin(1.5, 0, 1.5, 0); 
-  .font-size(.875); // 14px
-  line-height:1.5 ; // 24px
+p { .margin(1, 0, 1, 0); 
+  .font-size(1); // 16px
+  .line-height(1.375);
+  color: @color-text;
  
  -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -73,8 +74,46 @@ p:last-of-type { margin-bottom:0; }
 
 
 // Custom Font Family
-.serif { font-family: Lato, serif; }
-.sans-serif { font-family: Medula, sans-serif; }
+.sans-l { // Light
+   font-family: 'fira', sans-serif;
+   font-weight: 200;
+   font-style: normal;
+}
+.sans-li { // Light Italic
+   font-family: 'fira', sans-serif;
+   font-weight: 200;
+   font-style: italic;
+}
+.sans-r { // Regular
+   font-family: 'fira', sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+.sans-ri { // Regular Italic
+   font-family: 'fira', sans-serif;
+   font-weight: 400;
+   font-style: italic;
+}
+.sans-m { // Medium
+   font-family: 'fira', sans-serif;
+   font-weight: 600;
+   font-style: normal;
+}
+.sans-mi { // Medium Italic
+   font-family: 'fira', sans-serif;
+   font-weight: 600;
+   font-style: italic;
+}
+.sans-b { // Bold
+   font-family: 'fira', sans-serif;
+   font-weight: 800;
+   font-style: normal;
+}
+.sans-bi { // Bold Italic
+   font-family: 'fira', sans-serif;
+   font-weight: 800;
+   font-style: italic;
+}
 
 // Font Stacks
 //.stack-helvetica { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
@@ -98,9 +137,3 @@ p:last-of-type { margin-bottom:0; }
 .column-2 { .column-count(2); }
 .column-3 { .column-count(3); }
 
-// Use Correct Smart Quotes
-// <q>I couldn’t believe it when she said <q>there’s no milk left</q>, so I just walked out of the door.</q>
-q { quotes: "\201C" "\201D" "\2018" "\2019";
-  &:before { content: open-quote; }
-  &:after { content: no-close-quote; }
-}

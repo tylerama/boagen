@@ -30,7 +30,13 @@
     overflow: hidden;
     padding: 0;
     position: absolute;
-    width: 1px;
+}
+.visuallyshown {
+    clip: auto;
+    height: auto;
+    margin: auto;
+    overflow: visible;
+    padding: auto;
 }
 
 //Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
@@ -51,25 +57,18 @@
 .pull-right { float: right !important; }
 .pull-left { float: left !important; }
 
-// This is How James Dalton Clears a Float 
+// This is how James Dalton Clears a Float 
 .clear { clear:both }
 .clear-r { clear:right }
 .clear-l { clear:left }
 
 // Clearfix: Contain Your floats Son!
-.cf:before,
-.cf:after {
-    content: " "; display: table;
-}
-.cf:after { clear: both; }
-//.cf { *zoom: 1; } <= IE 7 fallback 
-
-//  LESS Clearfix 
-.cf() {
+.cf {
     // *zoom:1; <= IE 7 fallback
-	&:before,
-	&:after {
-	    content:""; display:table;
-	}
-	&:after { clear:both; }
+    &:before,
+    &:after {
+        content:""; display:table;
+    }
+    &:after { clear:both; }
 }
+

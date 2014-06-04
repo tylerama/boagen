@@ -2,55 +2,53 @@
 .test-grid { background:@silver; .margin-bottom(1); 
 	li {  min-height: 3rem; background: @gray; }
 }
-// Divide Into Number of Columns => 12 
-.inline-3 > li { .column(4); }
-.inline-4 > li { .column(3); }
-.inline-5 > li { .column(2.4); }
-.inline-6 > li { .column(2); }
-.inline-7 > li { .column(1.714); }
-.inline-14 > li { .column(.85714); }
+
 
 .hybrid-14 > li { .column(1, 14); }
 
+
 .nest-example {
+  
   .left{ .row(6); // .row is used to nest grids | .row(#); => The # is the number of columns of parent container 
-    li { .column(2, 6); background: darken(@gray, 15%); }
+    	li { .column(2, 6); background: darken(@gray, 15%); }
 	}
+	
 	.right{ .row(6); // .row is used to nest grids | .row(#); => The # is the number of columns of parent container 
 		li { .column(1.2, 6); background: darken(@gray, 15%); }
 	}
 }
 
+
 // Adds a label in the top-left corner that displays the current media query state.
-body {
-    &:after { 
-    padding: .5em 1em;
-    background: @black;
-    color: @white;
-    content: "undefined";
-    .opacity(1);
-    text-align: center;
-    position: fixed;top: 0; left: 0; z-index: 1000;
+// body {
+//     &:after { 
+//     padding: .5em 1em;
+//     background: @black;
+//     color: @white;
+//     content: "undefined";
+//     .opacity(1);
+//     text-align: center;
+//     position: fixed;top: 0; left: 0; z-index: 1000;
    
-    @media @mobile-sm {
-      background: @yellow;
-      content: "mobile-sm";
-    }
-    @media @mobile {
-      background: @orange;
-      content: "mobile";
-    }
-    @media @tablet {
-      background: @red;
-      content: "tablet";
-    }
-    @media @desktop {
-      background: @fuchsia;
-      content: "desktop";
-    }
-    @media @desktop-lg {
-      background: @purple;
-      content: "desktop-lg";
-    }
-  }
-}
+//     @media @mobile-sm {
+//       background: @yellow;
+//       content: "mobile-sm";
+//     }
+//     @media @mobile {
+//       background: @orange;
+//       content: "mobile";
+//     }
+//     @media @tablet {
+//       background: @red;
+//       content: "tablet";
+//     }
+//     @media @desktop {
+//       background: @fuchsia;
+//       content: "desktop";
+//     }
+//     @media @desktop-lg {
+//       background: @purple;
+//       content: "desktop-lg";
+//     }
+//   }
+// }

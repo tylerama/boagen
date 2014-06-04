@@ -64,7 +64,6 @@ BoagenGenerator.prototype.app = function app() {
 };
 
 BoagenGenerator.prototype.lessFramework = function lessFramework() {
-  this.copy('styles/less/animate.less', 'app/styles/less/animate.less');
   this.copy('styles/less/buttons.less', 'app/styles/less/buttons.less');
   this.copy('styles/less/classes.less', 'app/styles/less/classes.less');
   this.copy('styles/less/colors.less', 'app/styles/less/colors.less');
@@ -73,7 +72,6 @@ BoagenGenerator.prototype.lessFramework = function lessFramework() {
   this.copy('styles/less/form.less', 'app/styles/less/form.less');
   this.copy('styles/less/grid.less', 'app/styles/less/grid.less');
   this.copy('styles/less/helpers.less', 'app/styles/less/helpers.less');
-  this.copy('styles/less/hover.less', 'app/styles/less/hover.less');
   this.copy('styles/less/image-grid.less', 'app/styles/less/image-grid.less');
   this.copy('styles/less/images.less', 'app/styles/less/images.less');
   this.copy('styles/less/links.less', 'app/styles/less/links.less');
@@ -93,6 +91,7 @@ BoagenGenerator.prototype.lessFramework = function lessFramework() {
   this.copy('styles/less/pages/global.less', 'app/styles/less/pages/global.less');
   this.copy('styles/less/pages/home.less', 'app/styles/less/pages/home.less');
   this.copy('styles/less/pages/interior.less', 'app/styles/less/pages/interior.less');
+  this.copy('styles/less/pages/demo.less', 'app/styles/less/pages/demo.less');
 };
 
 BoagenGenerator.prototype.base = function base() {
@@ -127,6 +126,47 @@ BoagenGenerator.prototype.fonts = function fonts() {
   this.copy('fonts/MedulaOne-Regular.svg', 'app/fonts/MedulaOne-Regular.svg');
   this.copy('fonts/MedulaOne-Regular.ttf', 'app/fonts/MedulaOne-Regular.ttf');
   this.copy('fonts/MedulaOne-Regular.woff', 'app/fonts/MedulaOne-Regular.woff');
+  this.copy('fonts/FiraSansOT-Regular.eot', 'app/fonts/FiraSansOT-Regular.eot');
+  this.copy('fonts/FiraSansOT-Regular.svg', 'app/fonts/FiraSansOT-Regular.svg');
+  this.copy('fonts/FiraSansOT-Regular.ttf', 'app/fonts/FiraSansOT-Regular.ttf');
+  this.copy('fonts/FiraSansOT-Regular.woff', 'app/fonts/FiraSansOT-Regular.woff');
+  this.copy('fonts/FiraSansOT-RegularItalic.eot', 'app/fonts/FiraSansOT-RegularItalic.eot');
+  this.copy('fonts/FiraSansOT-RegularItalic.svg', 'app/fonts/FiraSansOT-RegularItalic.svg');
+  this.copy('fonts/FiraSansOT-RegularItalic.ttf', 'app/fonts/FiraSansOT-RegularItalic.ttf');
+  this.copy('fonts/FiraSansOT-RegularItalic.woff', 'app/fonts/FiraSansOT-RegularItalic.woff');
+  this.copy('fonts/FiraSansOT-Bold.eot', 'app/fonts/FiraSansOT-Bold.eot');
+  this.copy('fonts/FiraSansOT-Bold.svg', 'app/fonts/FiraSansOT-Bold.svg');
+  this.copy('fonts/FiraSansOT-Bold.ttf', 'app/fonts/FiraSansOT-Bold.ttf');
+  this.copy('fonts/FiraSansOT-Bold.woff', 'app/fonts/FiraSansOT-Bold.woff');
+  this.copy('fonts/FiraSansOT-BoldItalic.eot', 'app/fonts/FiraSansOT-BoldItalic.eot');
+  this.copy('fonts/FiraSansOT-BoldItalic.svg', 'app/fonts/FiraSansOT-BoldItalic.svg');
+  this.copy('fonts/FiraSansOT-BoldItalic.ttf', 'app/fonts/FiraSansOT-BoldItalic.ttf');
+  this.copy('fonts/FiraSansOT-BoldItalic.woff', 'app/fonts/FiraSansOT-BoldItalic.woff');
+  this.copy('fonts/FiraSansOT-Light.eot', 'app/fonts/FiraSansOT-Light.eot');
+  this.copy('fonts/FiraSansOT-Light.svg', 'app/fonts/FiraSansOT-Light.svg');
+  this.copy('fonts/FiraSansOT-Light.ttf', 'app/fonts/FiraSansOT-Light.ttf');
+  this.copy('fonts/FiraSansOT-Light.woff', 'app/fonts/FiraSansOT-Light.woff');
+  this.copy('fonts/FiraSansOT-LightItalic.eot', 'app/fonts/FiraSansOT-LightItalic.eot');
+  this.copy('fonts/FiraSansOT-LightItalic.svg', 'app/fonts/FiraSansOT-LightItalic.svg');
+  this.copy('fonts/FiraSansOT-LightItalic.ttf', 'app/fonts/FiraSansOT-LightItalic.ttf');
+  this.copy('fonts/FiraSansOT-LightItalic.woff', 'app/fonts/FiraSansOT-LightItalic.woff');
+  this.copy('fonts/FiraSansOT-Medium.eot', 'app/fonts/FiraSansOT-Medium.eot');
+  this.copy('fonts/FiraSansOT-Medium.svg', 'app/fonts/FiraSansOT-Medium.svg');
+  this.copy('fonts/FiraSansOT-Medium.ttf', 'app/fonts/FiraSansOT-Medium.ttf');
+  this.copy('fonts/FiraSansOT-Medium.woff', 'app/fonts/FiraSansOT-Medium.woff');
+  this.copy('fonts/FiraSansOT-MediumItalic.eot', 'app/fonts/FiraSansOT-MediumItalic.eot');
+  this.copy('fonts/FiraSansOT-MediumItalic.svg', 'app/fonts/FiraSansOT-MediumItalic.svg');
+  this.copy('fonts/FiraSansOT-MediumItalic.ttf', 'app/fonts/FiraSansOT-MediumItalic.ttf');
+  this.copy('fonts/FiraSansOT-MediumItalic.woff', 'app/fonts/FiraSansOT-MediumItalic.woff');
+  this.copy('fonts/FiraSansOT-preview.html', 'app/fonts/FiraSansOT-preview.html');
+  this.copy('fonts/FiraMonoOT-Bold.eot', 'app/fonts/FiraMonoOT-Bold.eot');
+  this.copy('fonts/FiraMonoOT-Bold.svg', 'app/fonts/FiraMonoOT-Bold.svg');
+  this.copy('fonts/FiraMonoOT-Bold.ttf', 'app/fonts/FiraMonoOT-Bold.ttf');
+  this.copy('fonts/FiraMonoOT-Bold.woff', 'app/fonts/FiraMonoOT-Bold.woff');
+  this.copy('fonts/FiraMonoOT-Regular.eot', 'app/fonts/FiraMonoOT-Regular.eot');
+  this.copy('fonts/FiraMonoOT-Regular.svg', 'app/fonts/FiraMonoOT-Regular.svg');
+  this.copy('fonts/FiraMonoOT-Regular.ttf', 'app/fonts/FiraMonoOT-Regular.ttf');
+  this.copy('fonts/FiraMonoOT-Regular.woff', 'app/fonts/FiraMonoOT-Regular.woff');
 };
 
 // BoagenGenerator.prototype.dist = function dist() {

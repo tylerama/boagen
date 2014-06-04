@@ -5,14 +5,7 @@
 a { text-decoration: none; color:@color-link; .transition(color .3s ease-in-out); 
 	&:hover { color:@gold; }
 }
-// All Links in a Paragraph
-p {
-	a { color:@color-secondary; text-decoration: none; line-height: inherit; 
-		&:visited {  }
-		&:hover { color:@color-secondary; text-decoration: none; border-bottom:1px solid @color-secondary; cursor:pointer; }
-		&:focus { outline: thin dotted;} 
-	} 
-}
+
 // Read More links
 .rm { .margin-top(1); display: block; .font-size(.75); .margin-bottom(.25);
 	&:after { content: " \00bb"; .font-size(.875); }

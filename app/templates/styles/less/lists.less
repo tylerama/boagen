@@ -2,13 +2,13 @@
 /*  Lists  */
 /*=========*/
 // Basic Vertical List w/ links 
-.lst-vert {
-	li { color:@color-secondary; font-size: 90%; } 
-	a { .padding(.4, 0, .4, 0);  display:block; color:inherit; }
+.lst-ver {
+	li { color:darken(@gray, 10%); font-size: 90%; } 
+	a { .padding(.4, 0, .4, 0);  display:block; color:inherit; font-size: inherit; }
 }
 
 // Basic Horizontal List w/ links 
-.lst-hori {
+.lst-hor {
 	li { color:@color-secondary; position: relative; 
 		&:first-child a { padding-left: 0; }
 		&:last-child a { padding-right: 0; }
@@ -17,8 +17,8 @@
 }
 
 // Basic Vertical List no links
-.lst-basic { color:@color-secondary; font-size: 90%; 
-	li { .padding(.2, 0, .2, 0); }
+.lst-basic { color:@color-text; font-size: 90%; 
+	li { .padding(.3, 0, .3, 0); }
 }
 
 // Add a Border to Top or Bottom of li's
@@ -42,3 +42,24 @@
 		a { display:inline-block; }
 	}
 }
+
+
+// Description List
+.before-after {
+	dt,
+	dd {
+		float:left; .padding(.5,0,.5,0); border-bottom: 1px solid @silver;
+	}
+	dt { .padding-left(.25);width:20%; }
+	dd { width:80%; }
+}
+
+
+// .over-under {
+// 	dt,
+// 	dd { }
+
+// 	dt {  }
+// 	dd {  }
+// }
+
